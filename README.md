@@ -1,4 +1,4 @@
-# README for Diamond Hunter: Lost Civilization Adventure
+# Diamond Hunter: Lost Civilization Adventure
 
 Embark on an epic quest through an interconnected ancient world in "Lost Civilization Adventure," a 2D Metroidvania game that combines treasure hunting and action-packed exploration. Unravel the mysteries of a lost civilization, dodge deadly traps, acquire new abilities, and uncover hidden areas with treasures by using intuitive controls and immersing yourself into our retro-inspired art style.
 
