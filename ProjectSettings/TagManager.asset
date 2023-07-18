@@ -41,20 +41,20 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3535331531
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 3535331531
+  - name: Platform
+    uniqueID: 2172613359
     locked: 0
   - name: Barrier
     uniqueID: 582679465
     locked: 0
   - name: Statue
     uniqueID: 3742404297
-    locked: 0
-  - name: Platform
-    uniqueID: 2172613359
     locked: 0
   - name: Player
     uniqueID: 3393438681
