@@ -1,9 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CoreLibrary;
+
+public enum PlayerStates
+{
+    Idle,
+    Run,
+    Spawn,
+    Attack,
+    Throw,
+    Damage,
+    Die
+}
 
 public class PlayerBehavior : MonoBehaviour
 {
+    
+
     private SpriteRenderer spriteRender;
     private Animator animator;
     private Rigidbody2D rb;
