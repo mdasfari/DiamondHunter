@@ -16,6 +16,7 @@ public class PlayerIdleState : PlayerGroundedState
     public override void Enter()
     {
         base.Enter();
+        player.SetVolcityX(0f);
     }
 
     public override void Exit()
@@ -27,8 +28,7 @@ public class PlayerIdleState : PlayerGroundedState
     {
         base.LogicUpdate();
 
-        Debug.Log(input.x);
-        if(input.x != 0.0f)
+        if(xInput != 0)
         {
             stateMachine.ChangeState(player.MoveState);
         }
