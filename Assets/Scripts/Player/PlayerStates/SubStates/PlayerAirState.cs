@@ -7,11 +7,12 @@ public class PlayerAirState : PlayerState
     private int xInput;
     private bool isGrounded;
     private bool isTouchingWall;
+    private bool isTouchingWallBack;
     private bool isJumping;
     private bool jumpInput;
     private bool jumpInputStop;
     private bool stickJumpTime;
-    private bool grabInput; 
+    private bool grabInput;
 
     public PlayerAirState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
@@ -22,6 +23,7 @@ public class PlayerAirState : PlayerState
         base.DoChecks();
         isGrounded = player.CheckIfGrounded();
         isTouchingWall = player.CheckIfWalled();
+        isTouchingWallBack = player.CheckIfWalledBack();
     }
 
     public override void Enter()
@@ -52,8 +54,14 @@ public class PlayerAirState : PlayerState
         {
             stateMachine.ChangeState(player.LandState);
         }
+        else if (jumpInput && (isTouchingWall || isTouchingWallBack))
+        {
+            player.WallJumpState.DetectWallJumpDirection(isTouchingWall);
+            stateMachine.ChangeState(player.WallJumpState);
+        }
         else if (jumpInput && player.JumpState.CanJump())
         {
+            player.InputHandler.ExitJumpInput();
             stateMachine.ChangeState(player.JumpState);
         }
         else if (isTouchingWall && grabInput)
@@ -92,7 +100,7 @@ public class PlayerAirState : PlayerState
 
     private void checkStickJump()
     {
-        if(stickJumpTime && Time.time > startTime + playerData.EdgeStickyJump)
+        if (stickJumpTime && Time.time > startTime + playerData.EdgeStickyJump)
         {
             stickJumpTime = false;
             player.JumpState.DecreaseAmountOfJumpLeft();

@@ -8,43 +8,13 @@ public class PlayerWallClimbState : PlayerTouchWallState
     {
     }
 
-    public override void AnimationTrigger()
-    {
-        base.AnimationTrigger();
-    }
-
-    public override void AnimationTriggerFinished()
-    {
-        base.AnimationTriggerFinished();
-    }
-
-    public override void DoChecks()
-    {
-        base.DoChecks();
-    }
-
-    public override void Enter()
-    {
-        base.Enter();
-    }
-
-    public override void Exit()
-    {
-        base.Exit();
-    }
-
     public override void LogicUpdate()
     {
         base.LogicUpdate();
         player.SetVolcityY(playerData.wallClimbVelocity);
-        if(yInput != 1)
+        if(yInput != 1 && !isExistingState)
         {
             stateMachine.ChangeState(player.WallGrapState);
         }
-    }
-
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
     }
 }

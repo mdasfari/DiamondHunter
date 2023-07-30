@@ -18,6 +18,7 @@ MonoBehaviour:
   EdgeStickyJump: 0.2
   JumpHeightMult: 0.5
   wallSlideVelocity: 2
+  wallClimbVelocity: 3
   groundCheckRadius: 0.3
   wallCheckDistance: 0.5
   GroundFloor:

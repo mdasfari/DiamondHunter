@@ -54,11 +54,10 @@ public class PlayerTouchWallState : PlayerState
         {
             stateMachine.ChangeState(player.IdleState);
         }
-        else if (!isTouchingWall || xInput != player.FaceDirection)
+        else if (!isTouchingWall || (xInput != player.FaceDirection && !grabInput))
         {
             stateMachine.ChangeState(player.AirState);
         }
-
     }
 
     public override void PhysicsUpdate()

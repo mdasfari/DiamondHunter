@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputHandler : MonoBehaviour
 {
-    public Vector2 RawMovementInput { get;private set; }
+    public Vector2 RawMovementInput { get; private set; }
     public int NormalInputX { get; private set; }
     public int NormalInputY { get; private set; }
 
@@ -27,19 +27,35 @@ public class PlayerInputHandler : MonoBehaviour
     public void OnMoveInut(InputAction.CallbackContext context)
     {
         RawMovementInput = context.ReadValue<Vector2>();
-        NormalInputX = (int)(RawMovementInput * Vector2.right).normalized.x;
-        NormalInputY = (int)(RawMovementInput * Vector2.right).normalized.y;
+
+        if (Mathf.Abs(RawMovementInput.x) > 0.5f)
+        {
+            NormalInputX = (int)(RawMovementInput * Vector2.right).normalized.x;
+        }
+        else
+        {
+            NormalInputX = 0;
+        }
+
+        if (Mathf.Abs(RawMovementInput.y) > 0.5f)
+        {
+            NormalInputY = (int)(RawMovementInput * Vector2.up).normalized.y;
+        }
+        else
+        {
+            NormalInputY = 0;
+        }
     }
 
 
     public void OnGrabInput(InputAction.CallbackContext context)
     {
-        if(context.started)
+        if (context.started)
         {
             GrabInput = true;
         }
 
-        if(context.canceled)
+        if (context.canceled)
         {
             GrabInput = false;
         }
@@ -56,7 +72,7 @@ public class PlayerInputHandler : MonoBehaviour
 
         if (context.performed)
         {
-            
+
         }
 
         if (context.canceled)

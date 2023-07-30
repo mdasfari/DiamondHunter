@@ -36,6 +36,8 @@ public class Player : MonoBehaviour
     public PlayerWallGrapState WallGrapState { get; private set; }
     public PlayerWallClimbState WallClimbState { get; private set; }
 
+    public PlayerWallJumpState WallJumpState { get; private set; }
+
     #endregion
 
     #region Transform Variable
@@ -54,13 +56,14 @@ public class Player : MonoBehaviour
         StateMachine = new PlayerStateMachine();
         IdleState = new PlayerIdleState(this, StateMachine, playerData, "idle");
         MoveState = new PlayerMoveState(this, StateMachine, playerData, "move");
-        JumpState = new PlayerJumpState(this, StateMachine, playerData, "jump");
+        JumpState = new PlayerJumpState(this, StateMachine, playerData, "air");
         AirState = new PlayerAirState(this, StateMachine, playerData, "air");
         LandState = new PlayerLandState(this, StateMachine, playerData, "land");
         
         WallSlideState = new PlayerWallSlideState(this, StateMachine, playerData, "wallSlide");
-        WallGrapState = new PlayerWallGrapState(this, StateMachine, playerData, "wallGrap");
+        WallGrapState = new PlayerWallGrapState(this, StateMachine, playerData, "wallGrab");
         WallClimbState = new PlayerWallClimbState(this, StateMachine, playerData, "wallClimb");
+        WallJumpState= new PlayerWallJumpState(this, StateMachine, playerData, "air");
     }
     
     private void Start()
@@ -100,6 +103,14 @@ public class Player : MonoBehaviour
         CurrentVelocity = workspace;
     }
 
+    public void SetVelocity(float velocity, Vector2 Angle, int direction)
+    {
+        Angle.Normalize();
+        workspace.Set(Angle.x * velocity * direction, Angle.y * velocity);
+        rb.velocity = workspace;
+        CurrentVelocity = workspace;
+    }
+
     public bool CheckIfGrounded()
     {
         return Physics2D.OverlapCircle(GroundedCheck.position, playerData.groundCheckRadius, playerData.GroundFloor);
@@ -108,6 +119,11 @@ public class Player : MonoBehaviour
     public bool CheckIfWalled()
     {
         return Physics2D.Raycast(WalledCheck.position, Vector2.right * FaceDirection, playerData.wallCheckDistance, playerData.GroundFloor);
+    }
+
+    public bool CheckIfWalledBack()
+    {
+        return Physics2D.Raycast(WalledCheck.position, Vector2.right * -FaceDirection, playerData.wallCheckDistance, playerData.GroundFloor);
     }
 
     private void AnimationTrigger()
