@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     private bool musicLooping;
 
-    public AudioSource audioSource;
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
         if (!musicLooping)
         {
             audioSource.clip = gameData.NormalState;
+            audioSource.loop = true;
             audioSource.Play();
 
             musicLooping = true;

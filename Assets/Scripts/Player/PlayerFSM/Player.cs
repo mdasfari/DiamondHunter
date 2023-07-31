@@ -7,6 +7,10 @@ using UnityEngine.PlayerLoop;
 public class Player : MonoBehaviour
 {
     #region Variables
+
+    private CameraFollowObject cameraFollowObject;
+
+
     public Animator Anim { get; private set; }
     public PlayerInputHandler InputHandler { get; private set; }
     public Rigidbody2D rb { get; private set; }
@@ -18,6 +22,8 @@ public class Player : MonoBehaviour
     private PlayerData playerData;
 
     private Vector2 workspace;
+
+    private float fallSpeedYDampingChangeThrehold;
 
     #endregion
 
@@ -32,7 +38,7 @@ public class Player : MonoBehaviour
     public PlayerLandState LandState { get; private set; }
 
 
-    public PlayerWallSlideState WallSlideState{ get; private set; }
+    public PlayerWallSlideState WallSlideState { get; private set; }
     public PlayerWallGrapState WallGrapState { get; private set; }
     public PlayerWallClimbState WallClimbState { get; private set; }
 
@@ -59,27 +65,50 @@ public class Player : MonoBehaviour
         JumpState = new PlayerJumpState(this, StateMachine, playerData, "air");
         AirState = new PlayerAirState(this, StateMachine, playerData, "air");
         LandState = new PlayerLandState(this, StateMachine, playerData, "land");
-        
+
         WallSlideState = new PlayerWallSlideState(this, StateMachine, playerData, "wallSlide");
         WallGrapState = new PlayerWallGrapState(this, StateMachine, playerData, "wallGrab");
         WallClimbState = new PlayerWallClimbState(this, StateMachine, playerData, "wallClimb");
-        WallJumpState= new PlayerWallJumpState(this, StateMachine, playerData, "air");
+        WallJumpState = new PlayerWallJumpState(this, StateMachine, playerData, "air");
     }
-    
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         Anim = GetComponent<Animator>();
         InputHandler = GetComponent<PlayerInputHandler>();
+
+        cameraFollowObject = GameObject.FindGameObjectWithTag("CinaCamera").GetComponent<CameraFollowObject>();
+
         StateMachine.Initialize(IdleState);
 
         FaceDirection = 1;
+
+        fallSpeedYDampingChangeThrehold = CameraManager.instance.fallSpeedYDampingChangeThreshold;
     }
 
     private void Update()
     {
         CurrentVelocity = rb.velocity;
         StateMachine.CurrentState.LogicUpdate();
+
+        //if we are falling past a certain speed threshold
+        if (rb.velocity.y < fallSpeedYDampingChangeThrehold
+            && !CameraManager.instance.IsLerpingYDamping
+            && !CameraManager.instance.LerpedFromPlayerFalling)
+        {
+            CameraManager.instance.LerpYDamping(true);
+        }
+
+        //if we are standing still or moving up
+        if (rb.velocity.y >= 0f
+            && !CameraManager.instance.IsLerpingYDamping
+            && CameraManager.instance.LerpedFromPlayerFalling)
+        {
+            //reset so it can be called again
+            CameraManager.instance.LerpedFromPlayerFalling = false;
+            CameraManager.instance.LerpYDamping(false);
+        }
     }
 
     private void FixedUpdate()
@@ -146,6 +175,6 @@ public class Player : MonoBehaviour
     {
         FaceDirection *= -1;
         transform.Rotate(0f, 180f, 0f);
+        cameraFollowObject.CallTurn();
     }
-
 }
