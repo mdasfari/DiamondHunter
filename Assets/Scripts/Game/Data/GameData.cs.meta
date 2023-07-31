@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 74f70a74abd472942bb2306711ff956c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - NormalState: {fileID: 8300000, guid: 96b9966767fa6e9418226cb2d4eb790c, type: 3}
+  - ChasingState: {fileID: 8300000, guid: cfe595e9988553749a26ca850db63e6e, type: 3}
+  - OceanWaves: {fileID: 8300000, guid: e1052e3bca32f874fa073db6813ac5fe, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -19,8 +19,13 @@ MonoBehaviour:
   JumpHeightMult: 0.5
   wallSlideVelocity: 2
   wallClimbVelocity: 3
+  wallJumpVelocity: 20
+  wallJumpTime: 0.4
+  wallJumpAngle: {x: 1, y: 2}
   groundCheckRadius: 0.3
   wallCheckDistance: 0.5
   GroundFloor:
     serializedVersion: 2
     m_Bits: 512
+  NormalState: {fileID: 8300000, guid: 96b9966767fa6e9418226cb2d4eb790c, type: 3}
+  ChasingState: {fileID: 8300000, guid: cfe595e9988553749a26ca850db63e6e, type: 3}

@@ -29,9 +29,13 @@ public class PlayerMoveState : PlayerGroundedState
 
         player.CheckFlipFace(xInput);
         player.SetVolcityX(playerData.movementVelocity * xInput);
-        if(xInput == 0 & !isExistingState)
+
+        if (!isExistingState)
         {
-            stateMachine.ChangeState(player.IdleState);
+            if (xInput == 0)
+            {
+                stateMachine.ChangeState(player.IdleState);
+            }
         }
 
     }

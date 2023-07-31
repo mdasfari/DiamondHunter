@@ -56,6 +56,7 @@ public class PlayerAirState : PlayerState
         }
         else if (jumpInput && (isTouchingWall || isTouchingWallBack))
         {
+            isTouchingWall = player.CheckIfWalled();
             player.WallJumpState.DetectWallJumpDirection(isTouchingWall);
             stateMachine.ChangeState(player.WallJumpState);
         }
@@ -117,8 +118,5 @@ public class PlayerAirState : PlayerState
         isJumping = true;
     }
 
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
-    }
+
 }
