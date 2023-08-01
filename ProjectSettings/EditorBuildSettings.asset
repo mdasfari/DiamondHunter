@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: c6f50ccbdc486e14ab88f361ec6e4c62
   - enabled: 1
+    path: Assets/Scenes/Tutorial/BeachIntro.unity
+    guid: 6a18fa14edb5a8648a5db466463a23b9
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/Beach.unity
+    guid: 1027cb95eff2394488b57f1525d91a46
+  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1

@@ -13,7 +13,7 @@ TextureImporter:
     second: Tropics_entities (16 x 16)_2
   - first:
       213: 808587544178781701
-    second: Tropics_entities (16 x 16)_3
+    second: WoodDock_0
   - first:
       213: -6144717249680659681
     second: Tropics_entities (16 x 16)_4
@@ -25,19 +25,19 @@ TextureImporter:
     second: Tropics_entities (16 x 16)_6
   - first:
       213: 2214257346866131166
-    second: Tropics_entities (16 x 16)_7
+    second: WoodDock_1
   - first:
       213: 4720048639599742247
-    second: Tropics_entities (16 x 16)_8
+    second: WoodDock_2
   - first:
       213: 3817733128199561193
-    second: Tropics_entities (16 x 16)_9
+    second: WoodDock_3
   - first:
       213: -7929009622148525126
-    second: Tropics_entities (16 x 16)_10
+    second: WoodDock_4
   - first:
       213: -1440394530555041990
-    second: Tropics_entities (16 x 16)_11
+    second: WoodDock_5
   - first:
       213: 3335706843031376295
     second: Tropics_entities (16 x 16)_12
@@ -273,13 +273,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tropics_entities (16 x 16)_3
+      name: WoodDock_0
       rect:
         serializedVersion: 2
         x: 179
-        y: 80
-        width: 80
-        height: 48
+        y: 96
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,6 +352,111 @@ TextureImporter:
       bones: []
       spriteID: 55700bd5e51289350800000000000000
       internalID: 6023601190790498133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed03149435f9abe10800000000000000
+      internalID: 2214257346866131166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_2
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d88e5da3bf08140800000000000000
+      internalID: 4720048639599742247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_3
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef53998d005bf430800000000000000
+      internalID: 3817733128199561193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_4
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3de2322cf76f190800000000000000
+      internalID: -7929009622148525126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodDock_5
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37e9d55ec0b20ce0800000000000000
+      internalID: -1440394530555041990
       vertices: []
       indices: 
       edges: []

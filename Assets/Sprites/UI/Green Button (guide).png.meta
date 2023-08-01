@@ -93,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 14
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,7 +112,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -124,7 +124,43 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -139,9 +175,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 47
-        width: 15
-        height: 15
+        y: 48
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,10 +195,10 @@ TextureImporter:
       name: Green Button (guide)_1
       rect:
         serializedVersion: 2
-        x: 15
-        y: 47
-        width: 15
-        height: 15
+        x: 16
+        y: 48
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,12 +216,12 @@ TextureImporter:
       name: Green Button (guide)_2
       rect:
         serializedVersion: 2
-        x: 30
-        y: 47
-        width: 16
-        height: 15
-      alignment: 9
-      pivot: {x: 1.017141, y: 0.48102266}
+        x: 32
+        y: 48
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,10 +237,10 @@ TextureImporter:
       name: Green Button (guide)_3
       rect:
         serializedVersion: 2
-        x: 47
-        y: 47
-        width: 15
-        height: 15
+        x: 48
+        y: 48
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,8 +260,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 32
-        width: 15
-        height: 15
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,10 +279,10 @@ TextureImporter:
       name: Green Button (guide)_5
       rect:
         serializedVersion: 2
-        x: 15
+        x: 16
         y: 32
-        width: 15
-        height: 15
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,10 +300,10 @@ TextureImporter:
       name: Green Button (guide)_6
       rect:
         serializedVersion: 2
-        x: 30
+        x: 32
         y: 32
-        width: 16
-        height: 15
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,10 +321,10 @@ TextureImporter:
       name: Green Button (guide)_7
       rect:
         serializedVersion: 2
-        x: 47
+        x: 48
         y: 32
-        width: 15
-        height: 15
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,8 +344,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 16
-        width: 15
-        height: 16
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,10 +363,10 @@ TextureImporter:
       name: Green Button (guide)_9
       rect:
         serializedVersion: 2
-        x: 15
+        x: 16
         y: 16
-        width: 15
-        height: 16
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,10 +384,10 @@ TextureImporter:
       name: Green Button (guide)_10
       rect:
         serializedVersion: 2
-        x: 30
+        x: 32
         y: 16
-        width: 16
-        height: 16
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -372,7 +408,7 @@ TextureImporter:
         x: 48
         y: 16
         width: 14
-        height: 16
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,7 +428,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 15
+        width: 14
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -411,9 +447,9 @@ TextureImporter:
       name: Green Button (guide)_13
       rect:
         serializedVersion: 2
-        x: 15
+        x: 16
         y: 0
-        width: 15
+        width: 14
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -432,10 +468,10 @@ TextureImporter:
       name: Green Button (guide)_14
       rect:
         serializedVersion: 2
-        x: 30
+        x: 32
         y: 0
-        width: 16
-        height: 15
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -453,9 +489,9 @@ TextureImporter:
       name: Green Button (guide)_15
       rect:
         serializedVersion: 2
-        x: 47
+        x: 48
         y: 0
-        width: 15
+        width: 14
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}

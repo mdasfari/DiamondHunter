@@ -9,6 +9,7 @@ TagManager:
   - Barriers
   - Water
   - CinaCamera
+  - LevelController
   layers:
   - Default
   - TransparentFX

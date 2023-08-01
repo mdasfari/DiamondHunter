@@ -18,8 +18,6 @@ public class CameraFollowObject : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         isFacingRight = player.FaceDirection == 1;
-
-        Debug.Log("Player Object:::: " + player.tag);
     }
 
     private void Update()
