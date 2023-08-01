@@ -10,6 +10,7 @@ TagManager:
   - Water
   - CinaCamera
   - LevelController
+  - DeadZone
   layers:
   - Default
   - TransparentFX

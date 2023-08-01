@@ -24,7 +24,7 @@ public class PlayerInputHandler : MonoBehaviour
         checkHumpInputHoldTime();
     }
 
-    public void OnMoveInut(InputAction.CallbackContext context)
+    public void OnMoveInput(InputAction.CallbackContext context)
     {
         RawMovementInput = context.ReadValue<Vector2>();
 
