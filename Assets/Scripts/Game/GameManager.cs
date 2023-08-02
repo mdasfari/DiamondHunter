@@ -7,6 +7,13 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameData gameData;
 
+    [SerializeField]
+    private GameObject HUD;
+
+    // Hud
+    private TextMesh score;
+    private GameObject health;
+
     private bool musicLooping;
 
     private AudioSource audioSource;
@@ -20,6 +27,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         if (!musicLooping)
         {
             audioSource.clip = gameData.NormalState;
@@ -28,5 +37,7 @@ public class GameManager : MonoBehaviour
 
             musicLooping = true;
         }
+
+
     }
 }

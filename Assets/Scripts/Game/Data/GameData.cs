@@ -12,4 +12,10 @@ public class GameData : ScriptableObject
     [Header("Effectis")]
     public AudioClip OceanWaves;
 
+    [Header("Game Settings")]
+    public int StartupLives = 3;
+    public int CurrentLives = 3;
+
+    public int Score;
+
 }
