@@ -11,6 +11,9 @@ TagManager:
   - CinaCamera
   - LevelController
   - DeadZone
+  - Score
+  - Lives
+  - Weapons
   layers:
   - Default
   - TransparentFX
