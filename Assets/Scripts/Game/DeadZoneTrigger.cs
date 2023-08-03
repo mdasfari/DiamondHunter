@@ -5,13 +5,13 @@ using UnityEngine;
 public class DeadZoneTrigger : MonoBehaviour
 {
     [SerializeField]
-    private GameObject gameManager;
+    private GameManager gameManager;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            Time.timeScale = 0f;
+            gameManager.PlayerDead();
         }
     }
         

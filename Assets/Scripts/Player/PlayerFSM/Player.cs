@@ -6,10 +6,27 @@ using UnityEngine.PlayerLoop;
 
 public class Player : MonoBehaviour
 {
+    #region Audio Variables
+    
+    [Header("Audio")]
+    [SerializeField]
+    private AudioClip Jump;
+    [SerializeField]
+    private AudioClip Sword;
+    [SerializeField]
+    private AudioClip Throw;
+    [SerializeField]
+    private AudioClip Respawn;
+    [SerializeField]
+    private AudioClip Damage;
+    [SerializeField]
+    private AudioClip LostLife;
+
+    #endregion 
+
     #region Variables
 
     private CameraFollowObject cameraFollowObject;
-
 
     public Animator Anim { get; private set; }
     public PlayerInputHandler InputHandler { get; private set; }
@@ -18,6 +35,7 @@ public class Player : MonoBehaviour
     public Vector2 CurrentVelocity { get; private set; }
     public int FaceDirection { get; private set; }
 
+    [Header("Others")]
     [SerializeField]
     private PlayerData playerData;
 
@@ -25,7 +43,10 @@ public class Player : MonoBehaviour
 
     private float fallSpeedYDampingChangeThrehold;
 
+    private AudioSource audioSource;
+
     #endregion
+
 
     #region FSM State
 
@@ -85,6 +106,8 @@ public class Player : MonoBehaviour
         FaceDirection = 1;
 
         fallSpeedYDampingChangeThrehold = CameraManager.instance.fallSpeedYDampingChangeThreshold;
+
+        audioSource = Camera.main.GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -176,5 +199,10 @@ public class Player : MonoBehaviour
         FaceDirection *= -1;
         transform.Rotate(0f, 180f, 0f);
         cameraFollowObject.CallTurn();
+    }
+
+    public void PlayLostLifeAudio()
+    {
+        audioSource.PlayOneShot(LostLife);
     }
 }

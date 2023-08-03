@@ -228,6 +228,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cdb9e638f1c3b841ade65617744d2b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Jump: {fileID: 8300000, guid: b866bb075aa9f8642925f40394c8bbd0, type: 3}
+  Sword: {fileID: 8300000, guid: b2dffd45f97c92243a12e520a3014f9f, type: 3}
+  Throw: {fileID: 8300000, guid: 27bb550c58799374084d0c345d9e7fc2, type: 3}
+  Respawn: {fileID: 8300000, guid: d3c2302f8d578ad459c9ad146afb92e5, type: 3}
+  Damage: {fileID: 8300000, guid: 64f9bb19048740a47922f11c04a24d78, type: 3}
+  LostLife: {fileID: 8300000, guid: 8f17bda6af4eb154fa413f62ecceb7e5, type: 3}
   playerData: {fileID: 11400000, guid: 9e5eeb302c2a535408fd13a2e5a62616, type: 2}
   GroundedCheck: {fileID: 2585830632549185166}
   WalledCheck: {fileID: 2585830633502440355}
@@ -302,8 +308,23 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 742c14e4-b1ee-4d4c-927a-63600a8c67c8
     m_ActionName: InGamePlay/Grab[/Keyboard/ctrl,/Keyboard/rightCtrl]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2585830633828084257}
+        m_MethodName: OnEscapeInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 5ca208a6-87cf-48bf-a984-a43c8de017f7
+    m_ActionName: InGamePlay/PauseGame[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: InGamePlay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

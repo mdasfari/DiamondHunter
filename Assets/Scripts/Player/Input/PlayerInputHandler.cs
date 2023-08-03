@@ -12,12 +12,20 @@ public class PlayerInputHandler : MonoBehaviour
     public bool JumpInput { get; private set; }
     public bool JumpInputStop { get; private set; }
 
+    private GameObject pauseMenu;
+    private bool GamePaused = false;
+
     [SerializeField]
     private float inputHoldTime = 0.2f;
 
     private float jumpInputStartTime;
 
     public bool GrabInput { get; private set; }
+
+    private void Start()
+    {
+        pauseMenu = GameObject.Find("PauseMenu");
+    }
 
     private void Update()
     {
@@ -81,14 +89,24 @@ public class PlayerInputHandler : MonoBehaviour
         }
     }
 
-    public void ExitJumpInput()
+    public void OnEscapeInput(InputAction.CallbackContext context)
     {
-        JumpInput = false;
+        if (!context.started)
+            return;
+
+        GamePaused = !GamePaused;
+        Time.timeScale = GamePaused ? 0f : 1f;
+        pauseMenu.gameObject.transform.Find("Panel").gameObject.SetActive(GamePaused);
     }
 
-    private void checkHumpInputHoldTime()
-    {
-        if (Time.time >= jumpInputStartTime + inputHoldTime)
-            JumpInput = false;
-    }
+    public void ExitJumpInput()
+{
+    JumpInput = false;
+}
+
+private void checkHumpInputHoldTime()
+{
+    if (Time.time >= jumpInputStartTime + inputHoldTime)
+        JumpInput = false;
+}
 }
