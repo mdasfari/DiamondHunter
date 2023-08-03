@@ -8,7 +8,20 @@ public class Player : MonoBehaviour
 {
     #region Audio Variables
     
+    public enum AudioFile
+    {
+        Walk,
+        Jump,
+        Sword,
+        Throw,
+        Respawn,
+        Damage,
+        LostLife
+    }
+
     [Header("Audio")]
+    [SerializeField]
+    private AudioClip Walk;
     [SerializeField]
     private AudioClip Jump;
     [SerializeField]
@@ -46,7 +59,6 @@ public class Player : MonoBehaviour
     private AudioSource audioSource;
 
     #endregion
-
 
     #region FSM State
 
@@ -141,6 +153,41 @@ public class Player : MonoBehaviour
 
     #endregion 
 
+    public void PlaySound(AudioFile audioFile)
+    {
+        AudioClip selectedAudio = null;
+
+        switch (audioFile)
+        {
+            case AudioFile.Walk:
+                selectedAudio = Walk;
+                break;
+            case AudioFile.Jump:
+                selectedAudio = Jump;
+                break;
+            case AudioFile.Sword:
+                selectedAudio = Sword;
+                break;
+            case AudioFile.Throw:
+                selectedAudio = Throw;
+                break;
+            case AudioFile.Respawn:
+                selectedAudio = Respawn;
+                break;
+            case AudioFile.Damage:
+                selectedAudio = Damage;
+                break;
+            case AudioFile.LostLife:
+                selectedAudio = LostLife;
+                break;
+        }
+
+        if (selectedAudio != null)
+        {
+            audioSource.PlayOneShot(LostLife);
+        }
+    }
+
     public void SetVolcityX(float velocity)
     {
         workspace.Set(velocity, CurrentVelocity.y);
@@ -199,10 +246,5 @@ public class Player : MonoBehaviour
         FaceDirection *= -1;
         transform.Rotate(0f, 180f, 0f);
         cameraFollowObject.CallTurn();
-    }
-
-    public void PlayLostLifeAudio()
-    {
-        audioSource.PlayOneShot(LostLife);
     }
 }

@@ -77,6 +77,7 @@ public class PlayerAirState : PlayerState
         {
             player.CheckFlipFace(xInput);
             player.SetVolcityX(playerData.movementVelocity * xInput);
+            //player.PlaySound(Player.AudioFile.Jump);
 
             player.Anim.SetFloat("yVelocity", player.CurrentVelocity.y);
             player.Anim.SetFloat("xVelocity", Mathf.Abs(player.CurrentVelocity.x));

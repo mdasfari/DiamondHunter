@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputHandler : MonoBehaviour
 {
+    [SerializeField]
+    private GameManager gameManager;
+
     public Vector2 RawMovementInput { get; private set; }
     public int NormalInputX { get; private set; }
     public int NormalInputY { get; private set; }
@@ -12,20 +15,12 @@ public class PlayerInputHandler : MonoBehaviour
     public bool JumpInput { get; private set; }
     public bool JumpInputStop { get; private set; }
 
-    private GameObject pauseMenu;
-    private bool GamePaused = false;
-
     [SerializeField]
     private float inputHoldTime = 0.2f;
 
     private float jumpInputStartTime;
 
     public bool GrabInput { get; private set; }
-
-    private void Start()
-    {
-        pauseMenu = GameObject.Find("PauseMenu");
-    }
 
     private void Update()
     {
@@ -94,19 +89,20 @@ public class PlayerInputHandler : MonoBehaviour
         if (!context.started)
             return;
 
-        GamePaused = !GamePaused;
-        Time.timeScale = GamePaused ? 0f : 1f;
-        pauseMenu.gameObject.transform.Find("Panel").gameObject.SetActive(GamePaused);
+        if (gameManager.IsGamePaused)
+            gameManager.ResumeGame();
+        else
+            gameManager.PauseGame();
     }
 
     public void ExitJumpInput()
-{
-    JumpInput = false;
-}
-
-private void checkHumpInputHoldTime()
-{
-    if (Time.time >= jumpInputStartTime + inputHoldTime)
+    {
         JumpInput = false;
-}
+    }
+
+    private void checkHumpInputHoldTime()
+    {
+        if (Time.time >= jumpInputStartTime + inputHoldTime)
+            JumpInput = false;
+    }
 }

@@ -29,6 +29,7 @@ public class PlayerMoveState : PlayerGroundedState
 
         player.CheckFlipFace(xInput);
         player.SetVolcityX(playerData.movementVelocity * xInput);
+//         player.PlaySound(Player.AudioFile.Walk);
 
         if (!isExistingState)
         {
