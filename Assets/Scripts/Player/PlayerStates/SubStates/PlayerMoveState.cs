@@ -16,6 +16,7 @@ public class PlayerMoveState : PlayerGroundedState
     public override void Enter()
     {
         base.Enter();
+        player.PlaySound(PlayerAudioFiles.Walk);
     }
 
     public override void Exit()
@@ -29,7 +30,6 @@ public class PlayerMoveState : PlayerGroundedState
 
         player.CheckFlipFace(xInput);
         player.SetVolcityX(playerData.movementVelocity * xInput);
-//         player.PlaySound(Player.AudioFile.Walk);
 
         if (!isExistingState)
         {

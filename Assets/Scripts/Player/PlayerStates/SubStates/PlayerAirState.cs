@@ -29,7 +29,7 @@ public class PlayerAirState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        player.PlaySound(Player.AudioFile.Jump);
+        player.PlaySound(PlayerAudioFiles.Jump);
     }
 
     public override void Exit()

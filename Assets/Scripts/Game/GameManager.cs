@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour
     private AudioSource audioSource;
     private GameObject gameOverMenu;
 
+    TextMeshProUGUI scoringDisplay;
+
     public bool IsGamePaused { get; private set; } 
 
     // Start is called before the first frame update
@@ -44,6 +46,8 @@ public class GameManager : MonoBehaviour
         pauseMenu = GameObject.Find("PauseMenu");
         gameOverMenu = GameObject.Find("GameOverMenu");
         audioSource = GetComponent<AudioSource>();
+
+        scoringDisplay = ScoringObject.GetComponent<TextMeshProUGUI>();
 
         SetupHuD();
         ChangeGameState(GameStates.Normal);
@@ -73,10 +77,12 @@ public class GameManager : MonoBehaviour
 
     private void SetupHuD()
     {
-        TextMeshProUGUI scoringDisplay = ScoringObject.GetComponent<TextMeshProUGUI>();
+        UpdateScore();
+        UpdateLives();
+    }
 
-        scoringDisplay.text = gameData.Score.ToString();
-
+    private void UpdateLives()
+    {
         while (HeartContainer.transform.childCount > 0)
         {
             Transform heartToDelete = HeartContainer.transform.GetChild(HeartContainer.transform.childCount - 1);
@@ -90,9 +96,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void ReduceOneLife()
+    private void UpdateScore()
     {
-
+        scoringDisplay.text = gameData.Score.ToString();
     }
 
     // Update is called once per frame
@@ -101,9 +107,21 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void AddScore(int Score)
+    {
+        audioSource.PlayOneShot(gameData.TreasureCollectionAudio);
+        gameData.Score += Score;
+        UpdateScore();
+    }
+
     private void RespawnPlayer()
     {
         player.transform.position = respawn.transform.position;
+    }
+
+    public void SetRespawnLocation(Vector3 newPsotion)
+    {
+        respawn.transform.position = newPsotion;
     }
 
     public void PlayerDead()
@@ -120,7 +138,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        player.PlaySound(Player.AudioFile.LostLife);
+        player.PlaySound(PlayerAudioFiles.LostLife);
         RespawnPlayer();
         Time.timeScale = 1;
     }

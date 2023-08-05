@@ -6,36 +6,6 @@ using UnityEngine.PlayerLoop;
 
 public class Player : MonoBehaviour
 {
-    #region Audio Variables
-
-    public enum AudioFile
-    {
-        Walk,
-        Jump,
-        Sword,
-        Throw,
-        Respawn,
-        Damage,
-        LostLife
-    }
-
-    [Header("Audio")]
-    [SerializeField]
-    private AudioClip Walk;
-    [SerializeField]
-    private AudioClip Jump;
-    [SerializeField]
-    private AudioClip Sword;
-    [SerializeField]
-    private AudioClip Throw;
-    [SerializeField]
-    private AudioClip Respawn;
-    [SerializeField]
-    private AudioClip Damage;
-    [SerializeField]
-    private AudioClip LostLife;
-
-    #endregion 
 
     #region Variables
 
@@ -153,32 +123,32 @@ public class Player : MonoBehaviour
 
     #endregion 
 
-    public void PlaySound(AudioFile audioFile)
+    public void PlaySound(PlayerAudioFiles audioFile)
     {
         AudioClip selectedAudio = null;
 
         switch (audioFile)
         {
-            case AudioFile.Walk:
-                selectedAudio = Walk;
+            case PlayerAudioFiles.Walk:
+                selectedAudio = playerData.Walk;
                 break;
-            case AudioFile.Jump:
-                selectedAudio = Jump;
+            case PlayerAudioFiles.Jump:
+                selectedAudio = playerData.Jump;
                 break;
-            case AudioFile.Sword:
-                selectedAudio = Sword;
+            case PlayerAudioFiles.Sword:
+                selectedAudio = playerData.Sword;
                 break;
-            case AudioFile.Throw:
-                selectedAudio = Throw;
+            case PlayerAudioFiles.Throw:
+                selectedAudio = playerData.Throw;
                 break;
-            case AudioFile.Respawn:
-                selectedAudio = Respawn;
+            case PlayerAudioFiles.Respawn:
+                selectedAudio = playerData.Respawn;
                 break;
-            case AudioFile.Damage:
-                selectedAudio = Damage;
+            case PlayerAudioFiles.Damage:
+                selectedAudio = playerData.Damage;
                 break;
-            case AudioFile.LostLife:
-                selectedAudio = LostLife;
+            case PlayerAudioFiles.LostLife:
+                selectedAudio = playerData.LostLife;
                 break;
         }
 
