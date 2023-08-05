@@ -11,10 +11,14 @@ public class Menu : MonoBehaviour
     [SerializeField]
     private GameData gameData;
 
-    [Header("Audio")]
-    [SerializeField]
-    private AudioClip MenuSelectSound;
-    
+
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public void NewGame()
     {
         PlayLocalSound();
@@ -55,10 +59,6 @@ public class Menu : MonoBehaviour
 
     private void PlayLocalSound()
     {
-        if (MenuSelectSound != null)
-        {
-            AudioSource audioSource = Camera.main.GetComponent<AudioSource>();
-            audioSource.PlayOneShot(MenuSelectSound);
-        }
+        audioSource.Play();
     }
 }

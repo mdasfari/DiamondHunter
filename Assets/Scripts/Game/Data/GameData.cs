@@ -8,6 +8,7 @@ public class GameData : ScriptableObject
     [Header("Game States")]
     public AudioClip NormalState;
     public AudioClip ChasingState;
+    public AudioClip GameOverState;
 
     [Header("Effectis")]
     public AudioClip OceanWaves;

@@ -7,7 +7,7 @@ using UnityEngine.PlayerLoop;
 public class Player : MonoBehaviour
 {
     #region Audio Variables
-    
+
     public enum AudioFile
     {
         Walk,
@@ -119,7 +119,7 @@ public class Player : MonoBehaviour
 
         fallSpeedYDampingChangeThrehold = CameraManager.instance.fallSpeedYDampingChangeThreshold;
 
-        audioSource = Camera.main.GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -184,7 +184,7 @@ public class Player : MonoBehaviour
 
         if (selectedAudio != null)
         {
-            audioSource.PlayOneShot(LostLife);
+            audioSource.PlayOneShot(selectedAudio);
         }
     }
 
