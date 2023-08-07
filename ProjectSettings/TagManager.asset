@@ -14,6 +14,8 @@ TagManager:
   - Score
   - Lives
   - Weapons
+  - Enemy
+  - CheckPoint
   layers:
   - Default
   - TransparentFX

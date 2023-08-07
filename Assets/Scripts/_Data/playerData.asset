@@ -27,3 +27,10 @@ MonoBehaviour:
   GroundFloor:
     serializedVersion: 2
     m_Bits: 512
+  Walk: {fileID: 8300000, guid: efe64d5a67622b64dbc15a92b6bf5b63, type: 3}
+  Jump: {fileID: 8300000, guid: b866bb075aa9f8642925f40394c8bbd0, type: 3}
+  Sword: {fileID: 8300000, guid: b2dffd45f97c92243a12e520a3014f9f, type: 3}
+  Throw: {fileID: 8300000, guid: 1b90f6afbb87b42479da082ec5464787, type: 3}
+  Respawn: {fileID: 8300000, guid: 120c636dbc41d8644abf073578db0269, type: 3}
+  Damage: {fileID: 8300000, guid: 8b9309d1074de86419254f135f3f6686, type: 3}
+  LostLife: {fileID: 8300000, guid: 8f17bda6af4eb154fa413f62ecceb7e5, type: 3}

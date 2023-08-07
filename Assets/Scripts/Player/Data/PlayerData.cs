@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerData : ScriptableObject
 {
     [Header("Move State")]
+    public bool CanMove = true;
     public float movementVelocity = 10;
 
     [Header("Jump State")]
@@ -31,4 +32,13 @@ public class PlayerData : ScriptableObject
     public float groundCheckRadius = 0.3f;
     public float wallCheckDistance = 1f;
     public LayerMask GroundFloor;
+
+    [Header("Audio")]
+    public AudioClip Walk;
+    public AudioClip Jump;
+    public AudioClip Sword;
+    public AudioClip Throw;
+    public AudioClip Respawn;
+    public AudioClip Damage;
+    public AudioClip LostLife;
 }

@@ -5,9 +5,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "newGameData", menuName = "Data/Game Data/Base Game Data")]
 public class GameData : ScriptableObject
 {
-    [Header("Game States")]
+    [Header("Game States Audio")]
     public AudioClip NormalState;
     public AudioClip ChasingState;
+    public AudioClip GameOverState;
+
+    public AudioClip TreasureCollectionAudio;
+
 
     [Header("Effectis")]
     public AudioClip OceanWaves;

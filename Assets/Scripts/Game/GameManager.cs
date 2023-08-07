@@ -29,10 +29,13 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Transform respawn;
 
-    private bool musicLooping;
-    private AudioSource audioSource;
+    // Internal Variables
+    private GameStates currentGameState;
 
+    private AudioSource audioSource;
     private GameObject gameOverMenu;
+
+    TextMeshProUGUI scoringDisplay;
 
     public bool IsGamePaused { get; private set; } 
 
@@ -42,18 +45,44 @@ public class GameManager : MonoBehaviour
         IsGamePaused = false;
         pauseMenu = GameObject.Find("PauseMenu");
         gameOverMenu = GameObject.Find("GameOverMenu");
-        audioSource = Camera.main.GetComponent<AudioSource>();
-        musicLooping = false;
+        audioSource = GetComponent<AudioSource>();
+
+        scoringDisplay = ScoringObject.GetComponent<TextMeshProUGUI>();
 
         SetupHuD();
+        ChangeGameState(GameStates.Normal);
+    }
+
+    private void ChangeGameState(GameStates newState)
+    {
+        switch (newState)
+        {
+            case GameStates.Normal:
+                audioSource.clip = gameData.NormalState;
+                audioSource.loop = true;
+                break;
+            case GameStates.Chase:
+                audioSource.clip = gameData.ChasingState;
+                audioSource.loop = true;
+                break;
+            case GameStates.GameOver:
+                audioSource.clip = gameData.GameOverState;
+                audioSource.loop = false;
+                break;
+        }
+
+        audioSource.Play();
+        currentGameState = newState;
     }
 
     private void SetupHuD()
     {
-        TextMeshProUGUI scoringDisplay = ScoringObject.GetComponent<TextMeshProUGUI>();
+        UpdateScore();
+        UpdateLives();
+    }
 
-        scoringDisplay.text = gameData.Score.ToString();
-
+    private void UpdateLives()
+    {
         while (HeartContainer.transform.childCount > 0)
         {
             Transform heartToDelete = HeartContainer.transform.GetChild(HeartContainer.transform.childCount - 1);
@@ -67,24 +96,22 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void ReduceOneLife()
+    private void UpdateScore()
     {
-
+        scoringDisplay.text = gameData.Score.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
 
-        if (!musicLooping)
-        {
-            audioSource.clip = gameData.NormalState;
-            audioSource.loop = true;
-            audioSource.Play();
-
-            musicLooping = true;
-        }
+    public void AddScore(int Score)
+    {
+        audioSource.PlayOneShot(gameData.TreasureCollectionAudio);
+        gameData.Score += Score;
+        UpdateScore();
     }
 
     private void RespawnPlayer()
@@ -92,10 +119,14 @@ public class GameManager : MonoBehaviour
         player.transform.position = respawn.transform.position;
     }
 
+    public void SetRespawnLocation(Vector3 newPsotion)
+    {
+        respawn.transform.position = newPsotion;
+    }
+
     public void PlayerDead()
     {
         Time.timeScale = 0;
-        player.PlaySound(Player.AudioFile.LostLife);
 
         gameData.CurrentLives--;
         Transform heartToDelete = HeartContainer.transform.GetChild(HeartContainer.transform.childCount - 1);
@@ -107,6 +138,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        player.PlaySound(PlayerAudioFiles.LostLife);
         RespawnPlayer();
         Time.timeScale = 1;
     }
@@ -117,6 +149,7 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0f;
 
         ShowMenu("Canvas", true);
+        ChangeGameState(GameStates.GameOver);
     }
 
     public void RetryGame()
@@ -124,6 +157,8 @@ public class GameManager : MonoBehaviour
         ShowMenu("Canvas", false);
         SetupHuD();
         RespawnPlayer();
+
+        ChangeGameState(GameStates.Normal);
 
         if (Time.timeScale != 1f)
             Time.timeScale = 1f;

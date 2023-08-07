@@ -29,6 +29,7 @@ public class PlayerAirState : PlayerState
     public override void Enter()
     {
         base.Enter();
+        player.PlaySound(PlayerAudioFiles.Jump);
     }
 
     public override void Exit()
@@ -77,7 +78,6 @@ public class PlayerAirState : PlayerState
         {
             player.CheckFlipFace(xInput);
             player.SetVolcityX(playerData.movementVelocity * xInput);
-            //player.PlaySound(Player.AudioFile.Jump);
 
             player.Anim.SetFloat("yVelocity", player.CurrentVelocity.y);
             player.Anim.SetFloat("xVelocity", Mathf.Abs(player.CurrentVelocity.x));
