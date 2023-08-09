@@ -7,58 +7,57 @@ public class Menu : MonoBehaviour
 {
     [Header("Game")]
     [SerializeField]
-    private GameManager gameManager;
+    private GameManager gameManager; // Reference to the GameManager to control game states.
     [SerializeField]
-    private GameData gameData;
+    private GameData gameData; // Reference to the GameData ScriptableObject to access game settings.
 
-
-    private AudioSource audioSource;
+    private AudioSource audioSource; // Reference to the AudioSource component to play sounds.
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>(); // Get the AudioSource component attached to this GameObject.
     }
 
     public void NewGame()
     {
-        PlayLocalSound();
-        gameData.CurrentLives = gameData.StartupLives;
-        SceneManager.LoadScene("BeachIntro");
+        PlayLocalSound(); // Play click sound.
+        gameData.CurrentLives = gameData.StartupLives; // Reset the current lives to the startup lives.
+        SceneManager.LoadScene("BeachIntro"); // Load the BeachIntro scene to start a new game.
     }
 
     public void QuitGame()
     {
-        PlayLocalSound();
-        Application.Quit();
+        PlayLocalSound(); // Play click sound.
+        Application.Quit(); // Quit the application.
     }
 
     public void ResumeGame()
     {
-        PlayLocalSound();
-        gameManager.ResumeGame();
+        PlayLocalSound(); // Play click sound.
+        gameManager.ResumeGame(); // Call the ResumeGame method from the GameManager to resume the game.
     }
 
     public void QuitToMainMenu()
     {
-        PlayLocalSound();
-        SceneManager.LoadScene("MainMenu");
+        PlayLocalSound(); // Play click sound.
+        SceneManager.LoadScene("MainMenu"); // Load the MainMenu scene.
     }
 
     public void RetryGame()
     {
-        PlayLocalSound();
-        gameData.CurrentLives = gameData.StartupLives;
-        gameManager.RetryGame();
+        PlayLocalSound(); // Play click sound.
+        gameData.CurrentLives = gameData.StartupLives; // Reset the current lives to the startup lives.
+        gameManager.RetryGame(); // Call the RetryGame method from the GameManager to retry the game.
     }
 
     public void Exit()
     {
-        PlayLocalSound();
-        Application.Quit();
+        PlayLocalSound(); // Play click sound.
+        Application.Quit(); // Quit the application.
     }
 
     private void PlayLocalSound()
     {
-        audioSource.Play();
+        audioSource.Play(); // Play the sound attached to the AudioSource component.
     }
 }
