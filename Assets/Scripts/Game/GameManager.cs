@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -36,6 +37,12 @@ public class GameManager : MonoBehaviour
     private GameObject gameOverMenu;
 
     TextMeshProUGUI scoringDisplay;
+
+    public void StartNewGame()
+    {
+        gameData.CurrentLives = gameData.StartupLives; 
+        SceneManager.LoadScene("BeachIntro"); 
+    }
 
     public bool IsGamePaused { get; private set; } 
 
@@ -154,6 +161,9 @@ public class GameManager : MonoBehaviour
 
     public void RetryGame()
     {
+        gameData.CurrentLives = gameData.StartupLives;
+        gameData.Score = 0;
+
         ShowMenu("Canvas", false);
         SetupHuD();
         RespawnPlayer();

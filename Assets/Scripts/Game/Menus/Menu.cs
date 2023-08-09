@@ -8,8 +8,6 @@ public class Menu : MonoBehaviour
     [Header("Game")]
     [SerializeField]
     private GameManager gameManager; // Reference to the GameManager to control game states.
-    [SerializeField]
-    private GameData gameData; // Reference to the GameData ScriptableObject to access game settings.
 
     private AudioSource audioSource; // Reference to the AudioSource component to play sounds.
 
@@ -21,8 +19,7 @@ public class Menu : MonoBehaviour
     public void NewGame()
     {
         PlayLocalSound(); // Play click sound.
-        gameData.CurrentLives = gameData.StartupLives; // Reset the current lives to the startup lives.
-        SceneManager.LoadScene("BeachIntro"); // Load the BeachIntro scene to start a new game.
+        gameManager.StartNewGame();
     }
 
     public void QuitGame()
@@ -46,7 +43,6 @@ public class Menu : MonoBehaviour
     public void RetryGame()
     {
         PlayLocalSound(); // Play click sound.
-        gameData.CurrentLives = gameData.StartupLives; // Reset the current lives to the startup lives.
         gameManager.RetryGame(); // Call the RetryGame method from the GameManager to retry the game.
     }
 

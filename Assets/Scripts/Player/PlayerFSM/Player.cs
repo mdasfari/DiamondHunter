@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
@@ -12,6 +13,7 @@ public class Player : MonoBehaviour
     public Animator Anim { get; private set; } // Reference to the Animator component to control animations.
     public PlayerInputHandler InputHandler { get; private set; } // Reference to the input handler for player input.
     public Rigidbody2D rb { get; private set; } // Reference to the Rigidbody2D component for physics.
+
     public Vector2 CurrentVelocity { get; private set; } // Stores the current velocity of the player.
     public int FaceDirection { get; private set; } // Stores the direction the player is facing (1 for right, -1 for left).
 
@@ -112,7 +114,7 @@ public class Player : MonoBehaviour
 
     #endregion 
 
-    public void PlaySound(PlayerAudioFiles audioFile)
+    public void PlaySound(PlayerAudioFiles audioFile, bool playLoop = false)
     {
         // Play sound based on the selected audio file.
         AudioClip selectedAudio = null; // Variable to hold the selected audio clip.
@@ -145,10 +147,17 @@ public class Player : MonoBehaviour
 
         if (selectedAudio != null)
         {
-            audioSource.PlayOneShot(selectedAudio); // Play the selected audio clip if it's not null.
+            audioSource.loop = playLoop;
+            audioSource.clip = selectedAudio;
+            audioSource.Play();
         }
     }
 
+    internal void StopPlaySound()
+    {
+        audioSource.Stop();
+        audioSource.loop = false;
+    }
     public void SetVolcityX(float velocity)
     {
         // Set the X component of the velocity.
@@ -176,20 +185,20 @@ public class Player : MonoBehaviour
 
     public bool CheckIfGrounded()
     {
-        // Check if the player is grounded using a physics overlap circle.
-        return Physics2D.OverlapCircle(GroundedCheck.position, playerData.groundCheckRadius, playerData.GroundFloor);
+        bool grounded = Physics2D.OverlapCircle(GroundedCheck.position, playerData.groundCheckRadius, playerData.GroundFloor);
+        return grounded;
     }
 
     public bool CheckIfWalled()
     {
-        // Check if the player is near a wall using a physics raycast in the direction the player is facing.
-        return Physics2D.Raycast(WalledCheck.position, Vector2.right * FaceDirection, playerData.wallCheckDistance, playerData.GroundFloor);
+        bool nearWall = Physics2D.Raycast(WalledCheck.position, Vector2.right * FaceDirection, playerData.wallCheckDistance, playerData.GroundFloor);
+        return nearWall;
     }
 
     public bool CheckIfWalledBack()
     {
-        // Check if the player is near a wall using a physics raycast in the opposite direction the player is facing.
-        return Physics2D.Raycast(WalledCheck.position, Vector2.right * -FaceDirection, playerData.wallCheckDistance, playerData.GroundFloor);
+        bool nearBackWall = Physics2D.Raycast(WalledCheck.position, Vector2.right * -FaceDirection, playerData.wallCheckDistance, playerData.GroundFloor);
+        return nearBackWall;
     }
 
     private void AnimationTrigger()
