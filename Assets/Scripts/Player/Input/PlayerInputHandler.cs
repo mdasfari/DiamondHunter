@@ -6,69 +6,103 @@ using UnityEngine.InputSystem;
 public class PlayerInputHandler : MonoBehaviour
 {
     [SerializeField]
-    private GameManager gameManager; // Reference to the GameManager.
+    private GameManager gameManager;
 
-    public Vector2 RawMovementInput { get; private set; } // Raw movement input.
-    public int NormalInputX { get; private set; } // Normalized X movement input.
-    public int NormalInputY { get; private set; } // Normalized Y movement input.
+    public Vector2 RawMovementInput { get; private set; }
+    public int NormalInputX { get; private set; }
+    public int NormalInputY { get; private set; }
 
-    public bool JumpInput { get; private set; } // Flag for jump input.
-    public bool JumpInputStop { get; private set; } // Flag for stopping jump input.
+    public bool JumpInput { get; private set; }
+    public bool JumpInputStop { get; private set; }
 
     [SerializeField]
-    private float inputHoldTime = 0.2f; // Time to hold jump input.
+    private float inputHoldTime = 0.2f;
 
-    private float jumpInputStartTime; // Start time for jump input.
+    private float jumpInputStartTime;
 
-    public bool GrabInput { get; private set; } // Flag for grab input.
+    public bool GrabInput { get; private set; }
 
     private void Update()
     {
-        checkHumpInputHoldTime(); // Check jump input hold time.
+        checkHumpInputHoldTime();
     }
 
     public void OnMoveInput(InputAction.CallbackContext context)
     {
-        RawMovementInput = context.ReadValue<Vector2>(); // Read raw movement input.
+        RawMovementInput = context.ReadValue<Vector2>();
 
-        // Normalize X movement input.
-        NormalInputX = Mathf.Abs(RawMovementInput.x) > 0.5f ? (int)(RawMovementInput * Vector2.right).normalized.x : 0;
+        if (Mathf.Abs(RawMovementInput.x) > 0.5f)
+        {
+            NormalInputX = (int)(RawMovementInput * Vector2.right).normalized.x;
+        }
+        else
+        {
+            NormalInputX = 0;
+        }
 
-        // Normalize Y movement input.
-        NormalInputY = Mathf.Abs(RawMovementInput.y) > 0.5f ? (int)(RawMovementInput * Vector2.up).normalized.y : 0;
+        if (Mathf.Abs(RawMovementInput.y) > 0.5f)
+        {
+            NormalInputY = (int)(RawMovementInput * Vector2.up).normalized.y;
+        }
+        else
+        {
+            NormalInputY = 0;
+        }
     }
+
 
     public void OnGrabInput(InputAction.CallbackContext context)
     {
-        GrabInput = context.started; // Set grab input flag on start.
-        if (context.canceled) GrabInput = false; // Reset grab input flag on cancel.
+        if (context.started)
+        {
+            GrabInput = true;
+        }
+
+        if (context.canceled)
+        {
+            GrabInput = false;
+        }
     }
 
     public void OnJumpInput(InputAction.CallbackContext context)
     {
         if (context.started)
         {
-            JumpInput = true; // Set jump input flag on start.
+            JumpInput = true;
             JumpInputStop = false;
-            jumpInputStartTime = Time.time; // Record jump input start time.
+            jumpInputStartTime = Time.time;
         }
-        if (context.canceled) JumpInputStop = true; // Set jump input stop flag on cancel.
+
+        if (context.performed)
+        {
+
+        }
+
+        if (context.canceled)
+        {
+            JumpInputStop = true;
+        }
     }
 
     public void OnEscapeInput(InputAction.CallbackContext context)
     {
-        if (!context.started) return;
-        if (gameManager.IsGamePaused) gameManager.ResumeGame(); // Resume game if paused.
-        else gameManager.PauseGame(); // Pause game if not paused.
+        if (!context.started)
+            return;
+
+        if (gameManager.IsGamePaused)
+            gameManager.ResumeGame();
+        else
+            gameManager.PauseGame();
     }
 
     public void ExitJumpInput()
     {
-        JumpInput = false; // Reset jump input flag.
+        JumpInput = false;
     }
 
     private void checkHumpInputHoldTime()
     {
-        if (Time.time >= jumpInputStartTime + inputHoldTime) JumpInput = false; // Reset jump input flag if hold time exceeded.
+        if (Time.time >= jumpInputStartTime + inputHoldTime)
+            JumpInput = false;
     }
 }

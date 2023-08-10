@@ -6,39 +6,39 @@ using UnityEngine;
 public class PlayerData : ScriptableObject
 {
     [Header("Move State")]
-    public bool CanMove = true; // Determines if the player can move.
-    public float movementVelocity = 10; // Movement speed of the player.
+    public bool CanMove = true;
+    public float movementVelocity = 10;
 
     [Header("Jump State")]
-    public float jumpVelocity = 15; // Jumping speed of the player.
-    public int amountOfJumps = 1; // Number of jumps the player can perform.
+    public float jumpVelocity = 15;
+    public int amountOfJumps = 1;
 
     [Header("Air State")]
-    public float EdgeStickyJump = 0.2f; // Stickiness factor when jumping near edges.
-    public float JumpHeightMult = 0.5f; // Multiplier for jump height.
+    public float EdgeStickyJump = 0.2f;
+    public float JumpHeightMult = 0.5f;
 
     [Header("Wall Slide State")]
-    public float wallSlideVelocity = 3f; // Sliding speed when against a wall.
+    public float wallSlideVelocity = 3f;
 
     [Header("Wall Climb State")]
-    public float wallClimbVelocity = 3f; // Climbing speed when on a wall.
+    public float wallClimbVelocity = 3f;
 
     [Header("Wall Jump State")]
-    public float wallJumpVelocity = 20f; // Jumping speed when jumping off a wall.
-    public float wallJumpTime = 0.4f; // Time duration for wall jump.
-    public Vector2 wallJumpAngle = new Vector2(1, 2); // Angle for wall jump.
+    public float wallJumpVelocity = 20f;
+    public float wallJumpTime = 0.4f;
+    public Vector2 wallJumpAngle = new Vector2(1, 2);
 
     [Header("Player Check States")]
-    public float groundCheckRadius = 0.3f; // Radius for checking if the player is on the ground.
-    public float wallCheckDistance = 1f; // Distance for checking if the player is near a wall.
-    public LayerMask GroundFloor; // Layer mask for identifying ground floor.
+    public float groundCheckRadius = 0.3f;
+    public float wallCheckDistance = 1f;
+    public LayerMask GroundFloor;
 
     [Header("Audio")]
-    public AudioClip Walk; // Audio clip for walking.
-    public AudioClip Jump; // Audio clip for jumping.
-    public AudioClip Sword; // Audio clip for sword attack.
-    public AudioClip Throw; // Audio clip for throwing.
-    public AudioClip Respawn; // Audio clip for respawning.
-    public AudioClip Damage; // Audio clip for taking damage.
-    public AudioClip LostLife; // Audio clip for losing a life.
+    public AudioClip Walk;
+    public AudioClip Jump;
+    public AudioClip Sword;
+    public AudioClip Throw;
+    public AudioClip Respawn;
+    public AudioClip Damage;
+    public AudioClip LostLife;
 }
