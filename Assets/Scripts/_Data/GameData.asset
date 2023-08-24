@@ -19,5 +19,5 @@ MonoBehaviour:
     type: 3}
   OceanWaves: {fileID: 8300000, guid: e1052e3bca32f874fa073db6813ac5fe, type: 3}
   StartupLives: 3
-  CurrentLives: 9
-  Score: 11
+  CurrentLives: 3
+  Score: 117
