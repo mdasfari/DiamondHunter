@@ -6,17 +6,18 @@ using UnityEngine.SceneManagement;
 public class LoadNextScene : MonoBehaviour
 {
     [SerializeField]
-    private string NextSceneName;
-    // Start is called before the first frame update
+    private string NextSceneName; 
+
+   
     void Start()
     {
-        SceneManager.LoadScene(NextSceneName);
+        SceneManager.LoadScene(NextSceneName); 
     }
 
-    // Update is called once per frame
+    
+    
     void Update()
     {
         
     }
-
 }

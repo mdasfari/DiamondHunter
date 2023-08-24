@@ -2,18 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public enum StateStatus 
 {
-    Idle,
-    Enter,
-    LogicUpdate,
-    PhysicsUpdate,
-    Exit,
+    Idle,           
+    Enter,          
+    LogicUpdate,    
+    PhysicsUpdate,  
+    Exit,           
 }
+
 
 public enum StateAnimationStatus
 {
-    Idle,
-    Start,
-    Finish
+    Idle,   
+    Start,  
+    Finish  
 }

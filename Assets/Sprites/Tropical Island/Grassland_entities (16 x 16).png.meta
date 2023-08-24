@@ -10,28 +10,28 @@ TextureImporter:
     second: Grassland_entities (16 x 16)_1
   - first:
       213: 1005101958320914242
-    second: Grassland_entities (16 x 16)_2
+    second: Platform_Silver_1
   - first:
       213: -219912757961798916
-    second: Grassland_entities (16 x 16)_3
+    second: Platform_Silver_2
   - first:
       213: -516603167571801937
     second: Grassland_entities (16 x 16)_4
   - first:
       213: -4425045917409265430
-    second: Grassland_entities (16 x 16)_5
+    second: Platform_Silver_3
   - first:
       213: 1665711953458769838
-    second: Grassland_entities (16 x 16)_6
+    second: Fence_Silver_0
   - first:
       213: -5149134790791671858
-    second: Grassland_entities (16 x 16)_7
+    second: Platform_Silver_4
   - first:
       213: -7386257474755204809
-    second: Grassland_entities (16 x 16)_8
+    second: Platform_Silver_5
   - first:
       213: 5980636130569547013
-    second: Grassland_entities (16 x 16)_11
+    second: Platform_Silver_0
   - first:
       213: -2188945747796002082
     second: Grassland_entities (16 x 16)_12
@@ -40,10 +40,19 @@ TextureImporter:
     second: Grassland_entities (16 x 16)_13
   - first:
       213: -1103052423056887393
-    second: Grassland_entities (16 x 16)_14
+    second: Large_Fence_0
   - first:
       213: -6705589934556993850
     second: Grassland_entities (16 x 16)_15
+  - first:
+      213: -8978847887994019658
+    second: Large_Fence_1
+  - first:
+      213: -4368853037261230407
+    second: Fence_Silver_1
+  - first:
+      213: -4091518037881114205
+    second: Fence_Silver_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -228,12 +237,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grassland_entities (16 x 16)_6
+      name: Fence_Silver_0
       rect:
         serializedVersion: 2
         x: 241
         y: 64
-        width: 48
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -249,13 +258,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grassland_entities (16 x 16)_11
+      name: Platform_Silver_0
       rect:
         serializedVersion: 2
         x: 227
-        y: 16
-        width: 80
-        height: 48
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,12 +321,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grassland_entities (16 x 16)_14
+      name: Large_Fence_0
       rect:
         serializedVersion: 2
         x: 81
         y: 16
-        width: 48
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -349,6 +358,174 @@ TextureImporter:
       bones: []
       spriteID: 6c6ab457b75f0f2a0800000000000000
       internalID: -6705589934556993850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform_Silver_1
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f74c4e7e6d2fd00800000000000000
+      internalID: 1005101958320914242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform_Silver_2
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa4c140386b2fcf0800000000000000
+      internalID: -219912757961798916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform_Silver_3
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8370ade241792c0800000000000000
+      internalID: -4425045917409265430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform_Silver_4
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfc14660399a88b0800000000000000
+      internalID: -5149134790791671858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform_Silver_5
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73964a5f5fdbe7990800000000000000
+      internalID: -7386257474755204809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large_Fence_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0a9d7fa69b46380800000000000000
+      internalID: -8978847887994019658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fence_Silver_1
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be682e4f47be53c0800000000000000
+      internalID: -4368853037261230407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fence_Silver_2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a13ef7b5020837c0800000000000000
+      internalID: -4091518037881114205
       vertices: []
       indices: 
       edges: []
