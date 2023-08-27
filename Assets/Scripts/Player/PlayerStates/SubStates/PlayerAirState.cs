@@ -8,11 +8,13 @@ public class PlayerAirState : PlayerState
     private bool isGrounded;
     private bool isTouchingWall;
     private bool isTouchingWallBack;
+    private bool isTouchingRampler;
     private bool isJumping;
     private bool jumpInput;
     private bool jumpInputStop;
     private bool stickJumpTime;
     private bool grabInput;
+    private bool attackInput;
 
     public PlayerAirState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
@@ -24,6 +26,7 @@ public class PlayerAirState : PlayerState
         isGrounded = player.CheckIfGrounded();
         isTouchingWall = player.CheckIfWalled();
         isTouchingWallBack = player.CheckIfWalledBack();
+        isTouchingRampler = player.CheckIfRambling();
     }
 
     public override void Enter()
@@ -47,13 +50,29 @@ public class PlayerAirState : PlayerState
         jumpInput = player.InputHandler.JumpInput;
         jumpInputStop = player.InputHandler.JumpInputStop;
         grabInput = player.InputHandler.GrabInput;
-
+        attackInput = player.InputHandler.AttackInput;
 
         CheckJumpMultiplier();
 
-        if (isGrounded && player.CurrentVelocity.y < 0.01f)
+        if (attackInput)
+        {
+            stateMachine.ChangeState(player.WeaponState);
+        }
+        else if (isGrounded && player.CurrentVelocity.y < 0.01f)
         {
             stateMachine.ChangeState(player.LandState);
+        }
+        else if (isTouchingRampler)
+        {
+            switch (player.ramplingType)
+            {
+                case RamplingTypes.Rope:
+                    stateMachine.ChangeState(player.RamblingRopeState);
+                    break;
+                case RamplingTypes.Ladder:
+                    stateMachine.ChangeState(player.RamblingLadderState);
+                    break;
+            }
         }
         else if (jumpInput && (isTouchingWall || isTouchingWallBack))
         {

@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &373004331875027066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8945954568034246128}
+  m_Layer: 8
+  m_Name: SwordBoundry
+  m_TagString: Weapons
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8945954568034246128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373004331875027066}
+  m_LocalRotation: {x: -0, y: -0, z: -0.6862563, w: 0.7273599}
+  m_LocalPosition: {x: 0.4979999, y: -0.24300003, z: 0}
+  m_LocalScale: {x: 0.34337166, y: 0.34337166, z: 0}
+  m_Children: []
+  m_Father: {fileID: 2585830633828084261}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2585830632549185165
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,6 +127,8 @@ Transform:
   m_Children:
   - {fileID: 2585830632549185166}
   - {fileID: 2585830633502440355}
+  - {fileID: 8902734494722723070}
+  - {fileID: 8945954568034246128}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -137,7 +169,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -901528615
-  m_SortingLayer: 5
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 5572483386824621533, guid: 0d395ff89f43eb548ad198f73563a4f3,
     type: 3}
@@ -229,16 +261,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cdb9e638f1c3b841ade65617744d2b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Walk: {fileID: 0}
-  Jump: {fileID: 8300000, guid: b866bb075aa9f8642925f40394c8bbd0, type: 3}
-  Sword: {fileID: 8300000, guid: b2dffd45f97c92243a12e520a3014f9f, type: 3}
-  Throw: {fileID: 8300000, guid: 27bb550c58799374084d0c345d9e7fc2, type: 3}
-  Respawn: {fileID: 8300000, guid: d3c2302f8d578ad459c9ad146afb92e5, type: 3}
-  Damage: {fileID: 8300000, guid: 64f9bb19048740a47922f11c04a24d78, type: 3}
-  LostLife: {fileID: 8300000, guid: 8f17bda6af4eb154fa413f62ecceb7e5, type: 3}
+  WeaponAnim: {fileID: 0}
+  gameManager: {fileID: 0}
   playerData: {fileID: 11400000, guid: 9e5eeb302c2a535408fd13a2e5a62616, type: 2}
+  OnWeaponDrawTriggered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2585830633828084263}
+        m_MethodName: DetectColliders
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   GroundedCheck: {fileID: 2585830632549185166}
   WalledCheck: {fileID: 2585830633502440355}
+  RamblingCheck: {fileID: 8902734494722723070}
+  weaponBoundry: {fileID: 8945954568034246128}
 --- !u!114 &2585830633828084256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,7 +311,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2585830633828084257}
-        m_MethodName: OnMoveInut
+        m_MethodName: OnMoveInput
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -325,6 +368,36 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 5ca208a6-87cf-48bf-a984-a43c8de017f7
     m_ActionName: InGamePlay/PauseGame[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2585830633828084257}
+        m_MethodName: OnAttackInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 66bf15ce-5492-4451-85d1-55f70af02066
+    m_ActionName: InGamePlay/Attack[/Keyboard/ctrl]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2585830633828084257}
+        m_MethodName: OnBombInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 40429af6-99ff-4485-939a-5e71aaa932a5
+    m_ActionName: InGamePlay/Bomb[/Keyboard/b]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: InGamePlay
@@ -440,3 +513,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &7312835777383853359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8902734494722723070}
+  m_Layer: 8
+  m_Name: Rambled
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8902734494722723070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7312835777383853359}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2585830633828084261}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

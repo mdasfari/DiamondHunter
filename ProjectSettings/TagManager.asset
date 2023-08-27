@@ -16,6 +16,9 @@ TagManager:
   - Weapons
   - Enemy
   - CheckPoint
+  - Rope
+  - Ladder
+  - Bee
   layers:
   - Default
   - TransparentFX
@@ -28,8 +31,8 @@ TagManager:
   - Player
   - Ground
   - Goal
-  - 
-  - 
+  - Rambler
+  - Enemy
   - 
   - 
   - 
@@ -56,18 +59,33 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Platform
-    uniqueID: 2172613359
+  - name: Cloud
+    uniqueID: 322355483
     locked: 0
   - name: Water
     uniqueID: 156143591
     locked: 0
+  - name: Rampler
+    uniqueID: 1993383367
+    locked: 0
+  - name: Trees
+    uniqueID: 3197719145
+    locked: 0
   - name: Barrier
     uniqueID: 582679465
+    locked: 0
+  - name: Dock
+    uniqueID: 2840392927
+    locked: 0
+  - name: Platform
+    uniqueID: 2172613359
     locked: 0
   - name: Statue
     uniqueID: 3742404297
     locked: 0
   - name: Player
     uniqueID: 3393438681
+    locked: 0
+  - name: Weapon
+    uniqueID: 2036627437
     locked: 0

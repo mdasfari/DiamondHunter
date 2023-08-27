@@ -23,12 +23,21 @@ MonoBehaviour:
   wallJumpVelocity: 20
   wallJumpTime: 0.4
   wallJumpAngle: {x: 1, y: 2}
+  Enemies:
+    serializedVersion: 2
+    m_Bits: 4096
+  weaponBoundryRadius: 0.44
+  weaponTime: 0.7
   groundCheckRadius: 0.4
   wallCheckDistance: 0.5
+  ramblingCheckDistance: 0.001
   GroundFloor:
     serializedVersion: 2
     m_Bits: 512
-  Walk: {fileID: 8300000, guid: efe64d5a67622b64dbc15a92b6bf5b63, type: 3}
+  Rambler:
+    serializedVersion: 2
+    m_Bits: 2048
+  Walk: {fileID: 8300000, guid: b761c268dc722d048b98e3fba3abd451, type: 3}
   Jump: {fileID: 8300000, guid: b866bb075aa9f8642925f40394c8bbd0, type: 3}
   Sword: {fileID: 8300000, guid: b2dffd45f97c92243a12e520a3014f9f, type: 3}
   Throw: {fileID: 8300000, guid: 1b90f6afbb87b42479da082ec5464787, type: 3}

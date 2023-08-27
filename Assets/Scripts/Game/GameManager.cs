@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
@@ -148,6 +149,21 @@ public class GameManager : MonoBehaviour
         player.PlaySound(PlayerAudioFiles.LostLife);
         RespawnPlayer();
         Time.timeScale = 1;
+    }
+
+    public void DestroyEnemy(GameObject enemy)
+    {
+        int newScore = 0;
+
+        Debug.Log(enemy.tag);
+        if (gameData.EnemyList.ContainsKey(enemy.tag))
+        {
+            newScore = gameData.EnemyList[enemy.tag];
+            Debug.Log(string.Format("{0} score: {1}", enemy.tag, newScore));
+        }
+
+        AddScore(newScore);
+        Destroy(enemy);
     }
 
     public void GameOver()

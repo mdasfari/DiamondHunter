@@ -1,0 +1,4568 @@
+fileFormatVersion: 2
+guid: a7f93d3abb1c6a046a805ee76756f0a9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4903900863223636934
+    second: tiles_packed_kenney_pixelPlatformer_0
+  - first:
+      213: 4645262604847654355
+    second: tiles_packed_kenney_pixelPlatformer_1
+  - first:
+      213: 1152287590051287072
+    second: tiles_packed_kenney_pixelPlatformer_2
+  - first:
+      213: -564739231440614361
+    second: tiles_packed_kenney_pixelPlatformer_3
+  - first:
+      213: 526482997518122733
+    second: tiles_packed_kenney_pixelPlatformer_4
+  - first:
+      213: -8423512215638896170
+    second: tiles_packed_kenney_pixelPlatformer_5
+  - first:
+      213: -7656342943309172369
+    second: tiles_packed_kenney_pixelPlatformer_6
+  - first:
+      213: 4152251843322553209
+    second: tiles_packed_kenney_pixelPlatformer_7
+  - first:
+      213: -2194150544618005337
+    second: tiles_packed_kenney_pixelPlatformer_8
+  - first:
+      213: 4698298346370172792
+    second: tiles_packed_kenney_pixelPlatformer_9
+  - first:
+      213: 4389040511378746676
+    second: tiles_packed_kenney_pixelPlatformer_10
+  - first:
+      213: -8899744240746765444
+    second: tiles_packed_kenney_pixelPlatformer_11
+  - first:
+      213: 4655099475748898724
+    second: tiles_packed_kenney_pixelPlatformer_12
+  - first:
+      213: -7888881983502187446
+    second: tiles_packed_kenney_pixelPlatformer_13
+  - first:
+      213: -5434052999600707897
+    second: tiles_packed_kenney_pixelPlatformer_14
+  - first:
+      213: 725486094677265999
+    second: tiles_packed_kenney_pixelPlatformer_15
+  - first:
+      213: -246021607103480066
+    second: tiles_packed_kenney_pixelPlatformer_16
+  - first:
+      213: 2773870787174799868
+    second: tiles_packed_kenney_pixelPlatformer_17
+  - first:
+      213: -7283516838588252730
+    second: tiles_packed_kenney_pixelPlatformer_18
+  - first:
+      213: -5198660237938027057
+    second: tiles_packed_kenney_pixelPlatformer_19
+  - first:
+      213: 8790987607367547078
+    second: tiles_packed_kenney_pixelPlatformer_20
+  - first:
+      213: 2725979353613938017
+    second: tiles_packed_kenney_pixelPlatformer_21
+  - first:
+      213: 4217365402898420054
+    second: tiles_packed_kenney_pixelPlatformer_22
+  - first:
+      213: -3871396678029940409
+    second: tiles_packed_kenney_pixelPlatformer_23
+  - first:
+      213: -5337494125442882211
+    second: tiles_packed_kenney_pixelPlatformer_24
+  - first:
+      213: -6620924249442958384
+    second: tiles_packed_kenney_pixelPlatformer_25
+  - first:
+      213: 2951756196362544608
+    second: tiles_packed_kenney_pixelPlatformer_26
+  - first:
+      213: -9008219968840261097
+    second: tiles_packed_kenney_pixelPlatformer_27
+  - first:
+      213: -7146407332061862737
+    second: tiles_packed_kenney_pixelPlatformer_28
+  - first:
+      213: -3498784406818149346
+    second: tiles_packed_kenney_pixelPlatformer_29
+  - first:
+      213: -3715511010009149543
+    second: tiles_packed_kenney_pixelPlatformer_30
+  - first:
+      213: -1161749752958743926
+    second: tiles_packed_kenney_pixelPlatformer_31
+  - first:
+      213: 6234760036460610719
+    second: tiles_packed_kenney_pixelPlatformer_32
+  - first:
+      213: -396799449781125368
+    second: tiles_packed_kenney_pixelPlatformer_33
+  - first:
+      213: -6290943011199345675
+    second: tiles_packed_kenney_pixelPlatformer_34
+  - first:
+      213: -7446265242324661506
+    second: tiles_packed_kenney_pixelPlatformer_35
+  - first:
+      213: 5709593864022230661
+    second: tiles_packed_kenney_pixelPlatformer_36
+  - first:
+      213: -6594651446613523563
+    second: tiles_packed_kenney_pixelPlatformer_37
+  - first:
+      213: -4206468628370723204
+    second: tiles_packed_kenney_pixelPlatformer_38
+  - first:
+      213: -4769360784633655122
+    second: tiles_packed_kenney_pixelPlatformer_39
+  - first:
+      213: -6558034451434308405
+    second: tiles_packed_kenney_pixelPlatformer_40
+  - first:
+      213: -4721255195620451471
+    second: tiles_packed_kenney_pixelPlatformer_41
+  - first:
+      213: -4621005564179511066
+    second: tiles_packed_kenney_pixelPlatformer_42
+  - first:
+      213: -6617274450282801054
+    second: tiles_packed_kenney_pixelPlatformer_43
+  - first:
+      213: -8048838268431175998
+    second: tiles_packed_kenney_pixelPlatformer_44
+  - first:
+      213: -1257848392624011233
+    second: tiles_packed_kenney_pixelPlatformer_45
+  - first:
+      213: -5652990211369296146
+    second: tiles_packed_kenney_pixelPlatformer_46
+  - first:
+      213: -6258843045909870906
+    second: tiles_packed_kenney_pixelPlatformer_47
+  - first:
+      213: -2706519504562399093
+    second: tiles_packed_kenney_pixelPlatformer_48
+  - first:
+      213: 7486187178930555141
+    second: tiles_packed_kenney_pixelPlatformer_49
+  - first:
+      213: 276199656633239687
+    second: tiles_packed_kenney_pixelPlatformer_50
+  - first:
+      213: -2598786170809735099
+    second: tiles_packed_kenney_pixelPlatformer_51
+  - first:
+      213: 2528646483018997555
+    second: tiles_packed_kenney_pixelPlatformer_52
+  - first:
+      213: -3258582437460606886
+    second: tiles_packed_kenney_pixelPlatformer_53
+  - first:
+      213: -1831734914794732425
+    second: tiles_packed_kenney_pixelPlatformer_54
+  - first:
+      213: 7333041177728889954
+    second: tiles_packed_kenney_pixelPlatformer_55
+  - first:
+      213: -4673513323885150690
+    second: tiles_packed_kenney_pixelPlatformer_56
+  - first:
+      213: 2450780296210075090
+    second: tiles_packed_kenney_pixelPlatformer_57
+  - first:
+      213: 3254777418868562871
+    second: tiles_packed_kenney_pixelPlatformer_58
+  - first:
+      213: 8749861751880577365
+    second: tiles_packed_kenney_pixelPlatformer_59
+  - first:
+      213: 6675380579571408199
+    second: tiles_packed_kenney_pixelPlatformer_60
+  - first:
+      213: 7781626789628523213
+    second: tiles_packed_kenney_pixelPlatformer_61
+  - first:
+      213: -8658934928543630254
+    second: tiles_packed_kenney_pixelPlatformer_62
+  - first:
+      213: 3061046626551962299
+    second: tiles_packed_kenney_pixelPlatformer_63
+  - first:
+      213: 5246151490539201804
+    second: tiles_packed_kenney_pixelPlatformer_64
+  - first:
+      213: 505017568822462055
+    second: tiles_packed_kenney_pixelPlatformer_65
+  - first:
+      213: 4494495004155630990
+    second: tiles_packed_kenney_pixelPlatformer_66
+  - first:
+      213: -146920253579190662
+    second: tiles_packed_kenney_pixelPlatformer_67
+  - first:
+      213: 8863341688976292866
+    second: tiles_packed_kenney_pixelPlatformer_68
+  - first:
+      213: 6981315354199844046
+    second: tiles_packed_kenney_pixelPlatformer_69
+  - first:
+      213: -8838899381629591405
+    second: tiles_packed_kenney_pixelPlatformer_70
+  - first:
+      213: 8913174796221010924
+    second: tiles_packed_kenney_pixelPlatformer_71
+  - first:
+      213: -7007984259874000843
+    second: tiles_packed_kenney_pixelPlatformer_72
+  - first:
+      213: -5901255153855731906
+    second: tiles_packed_kenney_pixelPlatformer_73
+  - first:
+      213: -100337504407286356
+    second: tiles_packed_kenney_pixelPlatformer_74
+  - first:
+      213: -63150776808096876
+    second: tiles_packed_kenney_pixelPlatformer_75
+  - first:
+      213: 9029243110843192728
+    second: tiles_packed_kenney_pixelPlatformer_76
+  - first:
+      213: -1641761567848247835
+    second: tiles_packed_kenney_pixelPlatformer_77
+  - first:
+      213: 5874184615091746037
+    second: tiles_packed_kenney_pixelPlatformer_78
+  - first:
+      213: -9085291133436600956
+    second: tiles_packed_kenney_pixelPlatformer_79
+  - first:
+      213: 3679155623349505423
+    second: tiles_packed_kenney_pixelPlatformer_80
+  - first:
+      213: 8967039695502584295
+    second: tiles_packed_kenney_pixelPlatformer_81
+  - first:
+      213: 3685735198699053230
+    second: tiles_packed_kenney_pixelPlatformer_82
+  - first:
+      213: 197373402661968376
+    second: tiles_packed_kenney_pixelPlatformer_83
+  - first:
+      213: 5815875845778230698
+    second: tiles_packed_kenney_pixelPlatformer_84
+  - first:
+      213: -8953109360446551434
+    second: tiles_packed_kenney_pixelPlatformer_85
+  - first:
+      213: -2509643536349216717
+    second: tiles_packed_kenney_pixelPlatformer_86
+  - first:
+      213: -8162605442376070864
+    second: tiles_packed_kenney_pixelPlatformer_87
+  - first:
+      213: -5635896234214412432
+    second: tiles_packed_kenney_pixelPlatformer_88
+  - first:
+      213: -5295582337542912603
+    second: tiles_packed_kenney_pixelPlatformer_89
+  - first:
+      213: -616606937036286929
+    second: tiles_packed_kenney_pixelPlatformer_90
+  - first:
+      213: -4152193796915245105
+    second: tiles_packed_kenney_pixelPlatformer_91
+  - first:
+      213: 5784645477468570900
+    second: tiles_packed_kenney_pixelPlatformer_92
+  - first:
+      213: -8394914659815386507
+    second: tiles_packed_kenney_pixelPlatformer_93
+  - first:
+      213: 5530639325309491129
+    second: tiles_packed_kenney_pixelPlatformer_94
+  - first:
+      213: -6397777819632959121
+    second: tiles_packed_kenney_pixelPlatformer_95
+  - first:
+      213: -1289217144829315939
+    second: tiles_packed_kenney_pixelPlatformer_96
+  - first:
+      213: -6782498120454000794
+    second: tiles_packed_kenney_pixelPlatformer_97
+  - first:
+      213: -6430161233765483743
+    second: tiles_packed_kenney_pixelPlatformer_98
+  - first:
+      213: -3271872010783081774
+    second: tiles_packed_kenney_pixelPlatformer_99
+  - first:
+      213: -8867355659467428279
+    second: tiles_packed_kenney_pixelPlatformer_100
+  - first:
+      213: -8143077108424345709
+    second: tiles_packed_kenney_pixelPlatformer_101
+  - first:
+      213: 3016241596830017298
+    second: tiles_packed_kenney_pixelPlatformer_102
+  - first:
+      213: -8178302527331695605
+    second: tiles_packed_kenney_pixelPlatformer_103
+  - first:
+      213: 2108003394727330708
+    second: tiles_packed_kenney_pixelPlatformer_104
+  - first:
+      213: -6253649478048455571
+    second: tiles_packed_kenney_pixelPlatformer_105
+  - first:
+      213: -7067322369468648666
+    second: tiles_packed_kenney_pixelPlatformer_106
+  - first:
+      213: 3148789148766308888
+    second: tiles_packed_kenney_pixelPlatformer_107
+  - first:
+      213: -5180603145633243488
+    second: tiles_packed_kenney_pixelPlatformer_108
+  - first:
+      213: -2535730455689501886
+    second: tiles_packed_kenney_pixelPlatformer_109
+  - first:
+      213: -7688290018435624972
+    second: tiles_packed_kenney_pixelPlatformer_110
+  - first:
+      213: 2702666285973036980
+    second: tiles_packed_kenney_pixelPlatformer_111
+  - first:
+      213: 8777815883866373814
+    second: tiles_packed_kenney_pixelPlatformer_112
+  - first:
+      213: 6086335018335219014
+    second: tiles_packed_kenney_pixelPlatformer_113
+  - first:
+      213: -3056419294511916889
+    second: tiles_packed_kenney_pixelPlatformer_114
+  - first:
+      213: 6848029252945873878
+    second: tiles_packed_kenney_pixelPlatformer_115
+  - first:
+      213: 8417566509619680363
+    second: tiles_packed_kenney_pixelPlatformer_116
+  - first:
+      213: -2657137778956218076
+    second: tiles_packed_kenney_pixelPlatformer_117
+  - first:
+      213: -3206549110832226421
+    second: tiles_packed_kenney_pixelPlatformer_118
+  - first:
+      213: 5943287307413533229
+    second: tiles_packed_kenney_pixelPlatformer_119
+  - first:
+      213: -3390281779089810466
+    second: tiles_packed_kenney_pixelPlatformer_120
+  - first:
+      213: -5079816761959741756
+    second: tiles_packed_kenney_pixelPlatformer_121
+  - first:
+      213: -6977162457391043637
+    second: tiles_packed_kenney_pixelPlatformer_122
+  - first:
+      213: 2398514167050955144
+    second: tiles_packed_kenney_pixelPlatformer_123
+  - first:
+      213: -6444979368865571461
+    second: tiles_packed_kenney_pixelPlatformer_124
+  - first:
+      213: 9036473496963348172
+    second: tiles_packed_kenney_pixelPlatformer_125
+  - first:
+      213: -351517382573041986
+    second: tiles_packed_kenney_pixelPlatformer_126
+  - first:
+      213: 2845624263480395204
+    second: tiles_packed_kenney_pixelPlatformer_127
+  - first:
+      213: 1859448227022066501
+    second: tiles_packed_kenney_pixelPlatformer_128
+  - first:
+      213: 4959624062554530729
+    second: tiles_packed_kenney_pixelPlatformer_129
+  - first:
+      213: 4045772088787426989
+    second: tiles_packed_kenney_pixelPlatformer_130
+  - first:
+      213: -118005616686015969
+    second: tiles_packed_kenney_pixelPlatformer_131
+  - first:
+      213: -3988310697141169137
+    second: tiles_packed_kenney_pixelPlatformer_132
+  - first:
+      213: 5212225528829075812
+    second: tiles_packed_kenney_pixelPlatformer_133
+  - first:
+      213: 314220851056554947
+    second: tiles_packed_kenney_pixelPlatformer_134
+  - first:
+      213: 4676234999659237594
+    second: tiles_packed_kenney_pixelPlatformer_135
+  - first:
+      213: 1848751579011977351
+    second: tiles_packed_kenney_pixelPlatformer_136
+  - first:
+      213: 6993908134221231866
+    second: tiles_packed_kenney_pixelPlatformer_137
+  - first:
+      213: 4285733961988480321
+    second: tiles_packed_kenney_pixelPlatformer_138
+  - first:
+      213: -8445957747958305724
+    second: tiles_packed_kenney_pixelPlatformer_139
+  - first:
+      213: -6612689755600378014
+    second: tiles_packed_kenney_pixelPlatformer_140
+  - first:
+      213: -997324819396441241
+    second: tiles_packed_kenney_pixelPlatformer_141
+  - first:
+      213: -1269981449688134044
+    second: tiles_packed_kenney_pixelPlatformer_142
+  - first:
+      213: 2443695463136466844
+    second: tiles_packed_kenney_pixelPlatformer_143
+  - first:
+      213: 5373264264451324236
+    second: tiles_packed_kenney_pixelPlatformer_144
+  - first:
+      213: 1583102407694817213
+    second: tiles_packed_kenney_pixelPlatformer_145
+  - first:
+      213: 2035447800672829540
+    second: tiles_packed_kenney_pixelPlatformer_146
+  - first:
+      213: 7975660601467885378
+    second: tiles_packed_kenney_pixelPlatformer_147
+  - first:
+      213: -7106970595000066034
+    second: tiles_packed_kenney_pixelPlatformer_148
+  - first:
+      213: 95119531157723861
+    second: tiles_packed_kenney_pixelPlatformer_149
+  - first:
+      213: 7293741803352390901
+    second: tiles_packed_kenney_pixelPlatformer_150
+  - first:
+      213: -5600304904592561095
+    second: tiles_packed_kenney_pixelPlatformer_151
+  - first:
+      213: -1963439652687145571
+    second: tiles_packed_kenney_pixelPlatformer_152
+  - first:
+      213: 8707602862279206122
+    second: tiles_packed_kenney_pixelPlatformer_153
+  - first:
+      213: 6026140570596037674
+    second: tiles_packed_kenney_pixelPlatformer_154
+  - first:
+      213: 2871210078416982632
+    second: tiles_packed_kenney_pixelPlatformer_155
+  - first:
+      213: -339922900778006016
+    second: tiles_packed_kenney_pixelPlatformer_156
+  - first:
+      213: -7001045899032231435
+    second: tiles_packed_kenney_pixelPlatformer_157
+  - first:
+      213: -4993967374040579171
+    second: tiles_packed_kenney_pixelPlatformer_158
+  - first:
+      213: 6795240529996474359
+    second: tiles_packed_kenney_pixelPlatformer_159
+  - first:
+      213: 9093350671408200415
+    second: tiles_packed_kenney_pixelPlatformer_160
+  - first:
+      213: -1781292046905524066
+    second: tiles_packed_kenney_pixelPlatformer_161
+  - first:
+      213: -8175779385351931583
+    second: tiles_packed_kenney_pixelPlatformer_162
+  - first:
+      213: 1347067811467433834
+    second: tiles_packed_kenney_pixelPlatformer_163
+  - first:
+      213: 989330295858733915
+    second: tiles_packed_kenney_pixelPlatformer_164
+  - first:
+      213: 9136128118509054417
+    second: tiles_packed_kenney_pixelPlatformer_165
+  - first:
+      213: -2775746790397897158
+    second: tiles_packed_kenney_pixelPlatformer_166
+  - first:
+      213: 8091853537736226224
+    second: tiles_packed_kenney_pixelPlatformer_167
+  - first:
+      213: -3049794387514819483
+    second: tiles_packed_kenney_pixelPlatformer_168
+  - first:
+      213: -639951689807061755
+    second: tiles_packed_kenney_pixelPlatformer_169
+  - first:
+      213: 4474119873615308363
+    second: tiles_packed_kenney_pixelPlatformer_170
+  - first:
+      213: -708277526676540233
+    second: tiles_packed_kenney_pixelPlatformer_171
+  - first:
+      213: 7764060325425379516
+    second: tiles_packed_kenney_pixelPlatformer_172
+  - first:
+      213: -9090392834377802766
+    second: tiles_packed_kenney_pixelPlatformer_173
+  - first:
+      213: 4416581547348321445
+    second: tiles_packed_kenney_pixelPlatformer_174
+  - first:
+      213: 1557809259394293173
+    second: tiles_packed_kenney_pixelPlatformer_175
+  - first:
+      213: -74696427583790132
+    second: tiles_packed_kenney_pixelPlatformer_176
+  - first:
+      213: 4949753312665706744
+    second: tiles_packed_kenney_pixelPlatformer_177
+  - first:
+      213: -1535035905929148622
+    second: tiles_packed_kenney_pixelPlatformer_178
+  - first:
+      213: 36818160403090260
+    second: tiles_packed_kenney_pixelPlatformer_179
+  - first:
+      213: 5246906782669843300
+    second: tiles_packed_kenney_pixelPlatformer_180
+  - first:
+      213: -2924693326164199753
+    second: tiles_packed_kenney_pixelPlatformer_181
+  - first:
+      213: 4504937311951273345
+    second: tiles_packed_kenney_pixelPlatformer_182
+  - first:
+      213: 534233326987483856
+    second: tiles_packed_kenney_pixelPlatformer_183
+  - first:
+      213: -739814805188791215
+    second: tiles_packed_kenney_pixelPlatformer_184
+  - first:
+      213: -5046258019797179092
+    second: tiles_packed_kenney_pixelPlatformer_185
+  - first:
+      213: 2763005332692458836
+    second: tiles_packed_kenney_pixelPlatformer_186
+  - first:
+      213: -5897734100085600144
+    second: tiles_packed_kenney_pixelPlatformer_187
+  - first:
+      213: 3093063760804750318
+    second: tiles_packed_kenney_pixelPlatformer_188
+  - first:
+      213: -7740314868403124675
+    second: tiles_packed_kenney_pixelPlatformer_189
+  - first:
+      213: -1768365800667724542
+    second: tiles_packed_kenney_pixelPlatformer_190
+  - first:
+      213: -3490703675228756784
+    second: tiles_packed_kenney_pixelPlatformer_191
+  - first:
+      213: -47799518709821847
+    second: tiles_packed_kenney_pixelPlatformer_192
+  - first:
+      213: -8464843090535833063
+    second: tiles_packed_kenney_pixelPlatformer_193
+  - first:
+      213: -5670081742314670935
+    second: tiles_packed_kenney_pixelPlatformer_194
+  - first:
+      213: 4452602009531233206
+    second: tiles_packed_kenney_pixelPlatformer_195
+  - first:
+      213: -6113449548039136228
+    second: tiles_packed_kenney_pixelPlatformer_196
+  - first:
+      213: -4104321805230381259
+    second: tiles_packed_kenney_pixelPlatformer_197
+  - first:
+      213: -1435687209553877045
+    second: tiles_packed_kenney_pixelPlatformer_198
+  - first:
+      213: -8157443451655076887
+    second: tiles_packed_kenney_pixelPlatformer_199
+  - first:
+      213: 360011649793125464
+    second: tiles_packed_kenney_pixelPlatformer_200
+  - first:
+      213: 7344508100922510262
+    second: tiles_packed_kenney_pixelPlatformer_201
+  - first:
+      213: -6612508812636286264
+    second: tiles_packed_kenney_pixelPlatformer_202
+  - first:
+      213: -1092087497717712143
+    second: tiles_packed_kenney_pixelPlatformer_203
+  - first:
+      213: 2776964184484137926
+    second: tiles_packed_kenney_pixelPlatformer_204
+  - first:
+      213: 2416691392611483112
+    second: tiles_packed_kenney_pixelPlatformer_205
+  - first:
+      213: -2847470507252138712
+    second: tiles_packed_kenney_pixelPlatformer_206
+  - first:
+      213: -4014386725529192914
+    second: tiles_packed_kenney_pixelPlatformer_207
+  - first:
+      213: 4393561846273917908
+    second: tiles_packed_kenney_pixelPlatformer_208
+  - first:
+      213: 9141916046037869735
+    second: tiles_packed_kenney_pixelPlatformer_209
+  - first:
+      213: -7164993606915370034
+    second: tiles_packed_kenney_pixelPlatformer_210
+  - first:
+      213: -8096570500987139958
+    second: tiles_packed_kenney_pixelPlatformer_211
+  - first:
+      213: 2591306174753101065
+    second: tiles_packed_kenney_pixelPlatformer_212
+  - first:
+      213: -2156034939311197874
+    second: tiles_packed_kenney_pixelPlatformer_213
+  - first:
+      213: 6888150540184699687
+    second: tiles_packed_kenney_pixelPlatformer_214
+  - first:
+      213: -5332444265882102325
+    second: tiles_packed_kenney_pixelPlatformer_215
+  - first:
+      213: -5929632594639613480
+    second: tiles_packed_kenney_pixelPlatformer_216
+  - first:
+      213: 5999234829068814414
+    second: tiles_packed_kenney_pixelPlatformer_217
+  - first:
+      213: -6874217871046134614
+    second: tiles_packed_kenney_pixelPlatformer_218
+  - first:
+      213: -5885054812300427584
+    second: tiles_packed_kenney_pixelPlatformer_219
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cd2d99528d1fbb0800000000000000
+      internalID: -4903900863223636934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5a95a3ab9477040800000000000000
+      internalID: 4645262604847654355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0201914457fbdff00800000000000000
+      internalID: 1152287590051287072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_3
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c414f39a4a928f0800000000000000
+      internalID: -564739231440614361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_4
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deeb95f2f717e4700800000000000000
+      internalID: 526482997518122733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_5
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d11ea1054ca91b80800000000000000
+      internalID: -8423512215638896170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_6
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61fc7978a43fb590800000000000000
+      internalID: -7656342943309172369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_7
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973a33b4d03cf9930800000000000000
+      internalID: 4152251843322553209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_8
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac505c64bfcc81e0800000000000000
+      internalID: -2194150544618005337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_9
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87703301475b33140800000000000000
+      internalID: 4698298346370172792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_10
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d6789471109ec30800000000000000
+      internalID: 4389040511378746676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_11
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73e57214c1cd7480800000000000000
+      internalID: -8899744240746765444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7ce163f4c3a9040800000000000000
+      internalID: 4655099475748898724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_13
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a448f5212af058290800000000000000
+      internalID: -7888881983502187446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_14
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c66724769d5694b0800000000000000
+      internalID: -5434052999600707897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_15
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e49b262c1711a00800000000000000
+      internalID: 725486094677265999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_16
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efeb68dd6a4f59cf0800000000000000
+      internalID: -246021607103480066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_17
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9136ac8c4ce7620800000000000000
+      internalID: 2773870787174799868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_18
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdfe586600cbea90800000000000000
+      internalID: -7283516838588252730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_19
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 144
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc591c9ae06aad7b0800000000000000
+      internalID: -5198660237938027057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8f00af6acdff970800000000000000
+      internalID: 8790987607367547078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_21
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d253d77cf94d520800000000000000
+      internalID: 2725979353613938017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_22
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65158c74d77178a30800000000000000
+      internalID: 4217365402898420054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_23
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749e56d9b39064ac0800000000000000
+      internalID: -3871396678029940409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_24
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d552e364f596de5b0800000000000000
+      internalID: -5337494125442882211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_25
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3ce2b6970cd14a0800000000000000
+      internalID: -6620924249442958384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_26
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e56fbb1f9eb6f820800000000000000
+      internalID: 2951756196362544608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_27
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71222ba7aaf5cf280800000000000000
+      internalID: -9008219968840261097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_28
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4a430156cd2dc90800000000000000
+      internalID: -7146407332061862737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_29
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1caded8e12d17fc0800000000000000
+      internalID: -3498784406818149346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_30
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f0a590c6adf6cc0800000000000000
+      internalID: -3715511010009149543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_31
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a0ff041c2a0efe0800000000000000
+      internalID: -1161749752958743926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_32
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9449015831568650800000000000000
+      internalID: 6234760036460610719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_33
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80fb9b4b0094e7af0800000000000000
+      internalID: -396799449781125368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_34
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb9c3389a412b8a0800000000000000
+      internalID: -6290943011199345675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_35
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa86efc63d89a890800000000000000
+      internalID: -7446265242324661506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_36
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5868bcc5e5d8c3f40800000000000000
+      internalID: 5709593864022230661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_37
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593c51303771b74a0800000000000000
+      internalID: -6594651446613523563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_38
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e632fb11f9f95c0800000000000000
+      internalID: -4206468628370723204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_39
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea09b32b2a3dfcdb0800000000000000
+      internalID: -4769360784633655122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bccfb71996e2df4a0800000000000000
+      internalID: -6558034451434308405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_41
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b5313f96bba7eb0800000000000000
+      internalID: -4721255195620451471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_42
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e80af92ce3eedfb0800000000000000
+      internalID: -4621005564179511066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_43
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26810a182f7ba24a0800000000000000
+      internalID: -6617274450282801054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_44
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cee69b4d38cc4090800000000000000
+      internalID: -8048838268431175998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_45
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1889502d893b8ee0800000000000000
+      internalID: -1257848392624011233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_46
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee92948a5b8c81b0800000000000000
+      internalID: -5652990211369296146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_47
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c64e97196f1429a0800000000000000
+      internalID: -6258843045909870906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_48
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8854e0b9d2807ad0800000000000000
+      internalID: -2706519504562399093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_49
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5094d32639744e760800000000000000
+      internalID: 7486187178930555141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_50
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78885b4df1245d300800000000000000
+      internalID: 276199656633239687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_51
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54820b12fb14febd0800000000000000
+      internalID: -2598786170809735099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_52
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f53e6349e871320800000000000000
+      internalID: 2528646483018997555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_53
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5085dfa98037c2d0800000000000000
+      internalID: -3258582437460606886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_54
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774caf8ccce5496e0800000000000000
+      internalID: -1831734914794732425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_55
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264b7d9591234c560800000000000000
+      internalID: 7333041177728889954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_56
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e35cca468542fb0800000000000000
+      internalID: -4673513323885150690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_57
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ddc022d1bbe20220800000000000000
+      internalID: 2450780296210075090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_58
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb9f9261da4b2d20800000000000000
+      internalID: 3254777418868562871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_59
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5517e9297e0cd6970800000000000000
+      internalID: 8749861751880577365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d15e9f447b3ac50800000000000000
+      internalID: 6675380579571408199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_61
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2b87a1654edfb60800000000000000
+      internalID: 7781626789628523213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_62
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c3fea3f8845d780800000000000000
+      internalID: -8658934928543630254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_63
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba998050b50b7a20800000000000000
+      internalID: 3061046626551962299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_64
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05a97f3cf21ec840800000000000000
+      internalID: 5246151490539201804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_65
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7668efa9dce220700800000000000000
+      internalID: 505017568822462055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_66
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85d677b467af5e30800000000000000
+      internalID: 4494495004155630990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_67
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e1a1bcec806fdf0800000000000000
+      internalID: -146920253579190662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_68
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20cb75e5e4ae00b70800000000000000
+      internalID: 8863341688976292866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_69
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4ef08735d92e060800000000000000
+      internalID: 6981315354199844046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_70
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3906c88c7dbe55580800000000000000
+      internalID: -8838899381629591405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_71
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3d7bdc045f1bb70800000000000000
+      internalID: 8913174796221010924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_72
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5307eae0273aebe90800000000000000
+      internalID: -7007984259874000843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_73
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e376c7924b78a1ea0800000000000000
+      internalID: -5901255153855731906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_74
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad872442978b9ef0800000000000000
+      internalID: -100337504407286356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_75
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b301df3b4af1ff0800000000000000
+      internalID: -63150776808096876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_76
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895937435c05e4d70800000000000000
+      internalID: 9029243110843192728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_77
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed448e6d8a4739e0800000000000000
+      internalID: -1641761567848247835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_78
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4bb9fd8cb458150800000000000000
+      internalID: 5874184615091746037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_79
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d518e99df8ae180800000000000000
+      internalID: -9085291133436600956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dc023eb8cfe0330800000000000000
+      internalID: 3679155623349505423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_81
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e92249f713517c70800000000000000
+      internalID: 8967039695502584295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_82
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea06c96a2ac562330800000000000000
+      internalID: 3685735198699053230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_83
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9d6c160163db200800000000000000
+      internalID: 197373402661968376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_84
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadc265944426b050800000000000000
+      internalID: 5815875845778230698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_85
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67acb57e87a20c380800000000000000
+      internalID: -8953109360446551434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_86
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330cc071084fb2dd0800000000000000
+      internalID: -2509643536349216717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_87
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0390185f89998be80800000000000000
+      internalID: -8162605442376070864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_88
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f20b83c3649c1b0800000000000000
+      internalID: -5635896234214412432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_89
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a50ce3dbef4286b0800000000000000
+      internalID: -5295582337542912603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_90
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2419e7f14f5177f0800000000000000
+      internalID: -616606937036286929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_91
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf4940bdb17066c0800000000000000
+      internalID: -4152193796915245105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_92
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4158514d960374050800000000000000
+      internalID: 5784645477468570900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_93
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5721cf558954f7b80800000000000000
+      internalID: -8394914659815386507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_94
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7d0ede927c0cc40800000000000000
+      internalID: 5530639325309491129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_95
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6187ec48f68637a0800000000000000
+      internalID: -6397777819632959121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_96
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94fa1c56d7cb1ee0800000000000000
+      internalID: -1289217144829315939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_97
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66fa59805e9bfd1a0800000000000000
+      internalID: -6782498120454000794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_98
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bbbe42d6a73c6a0800000000000000
+      internalID: -6430161233765483743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_99
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da3bb6cdb9f792d0800000000000000
+      internalID: -3271872010783081774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ee46c4203d0f480800000000000000
+      internalID: -8867355659467428279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_101
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39770c5838afdfe80800000000000000
+      internalID: -8143077108424345709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_102
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2176fc760c7dbd920800000000000000
+      internalID: 3016241596830017298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_103
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0407b09e25d08e80800000000000000
+      internalID: -8178302527331695605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_104
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4934a083be1214d10800000000000000
+      internalID: 2108003394727330708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_105
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d646d17dee29639a0800000000000000
+      internalID: -6253649478048455571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_106
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62336aecfb3dbed90800000000000000
+      internalID: -7067322369468648666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_107
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a02dc3c0fb2bb20800000000000000
+      internalID: 3148789148766308888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_108
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae524613ecca18b0800000000000000
+      internalID: -5180603145633243488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_109
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243ec7ed5964fccd0800000000000000
+      internalID: -2535730455689501886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_110
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff86f866f4bd4590800000000000000
+      internalID: -7688290018435624972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_111
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bfd8d1faacc18520800000000000000
+      internalID: 2702666285973036980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_112
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bef2ad1a0111d970800000000000000
+      internalID: 8777815883866373814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_113
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d24efc371077450800000000000000
+      internalID: 6086335018335219014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_114
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a897f168da6595d0800000000000000
+      internalID: -3056419294511916889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_115
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db8259b256190f50800000000000000
+      internalID: 6848029252945873878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_116
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b641b1f642431d470800000000000000
+      internalID: 8417566509619680363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_117
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4215b06a443ff1bd0800000000000000
+      internalID: -2657137778956218076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_118
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f100e929c0083d0800000000000000
+      internalID: -3206549110832226421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_119
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22b874315cca7250800000000000000
+      internalID: 5943287307413533229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb5fd43fac43f0d0800000000000000
+      internalID: -3390281779089810466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_121
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6805ba19dd089b0800000000000000
+      internalID: -5079816761959741756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_122
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcbe30b26b32c2f90800000000000000
+      internalID: -6977162457391043637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_123
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88960d35deb394120800000000000000
+      internalID: 2398514167050955144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_124
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ddb063965de86a0800000000000000
+      internalID: -6444979368865571461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_125
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc67bb8a4c0086d70800000000000000
+      internalID: 9036473496963348172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_126
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6db5f8dc82f1bf0800000000000000
+      internalID: -351517382573041986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_127
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c54bfcd030bd7720800000000000000
+      internalID: 2845624263480395204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_128
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54351e98f461ec910800000000000000
+      internalID: 1859448227022066501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_129
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3ea04cecf14d440800000000000000
+      internalID: 4959624062554530729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_130
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae5d528748752830800000000000000
+      internalID: 4045772088787426989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_131
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1addef4482cc5ef0800000000000000
+      internalID: -118005616686015969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_132
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04920b4d8ca6a8c0800000000000000
+      internalID: -3988310697141169137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_133
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461641fb08b855840800000000000000
+      internalID: 5212225528829075812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_134
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c33f3003365c5400800000000000000
+      internalID: 314220851056554947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_135
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad010f8d4f255e040800000000000000
+      internalID: 4676234999659237594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_136
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78093f814c518a910800000000000000
+      internalID: 1848751579011977351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_137
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6b8fb846a5f0160800000000000000
+      internalID: 6993908134221231866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_138
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d9626e45cf97b30800000000000000
+      internalID: 4285733961988480321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_139
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44cacf44d2ee9ca80800000000000000
+      internalID: -8445957747958305724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267239be3b10b34a0800000000000000
+      internalID: -6612689755600378014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_141
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bc13e5c5ac822f0800000000000000
+      internalID: -997324819396441241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_142
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ec004a99e106ee0800000000000000
+      internalID: -1269981449688134044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_143
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c979b739310c9e120800000000000000
+      internalID: 2443695463136466844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_144
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49fbe6316ba19a40800000000000000
+      internalID: 5373264264451324236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_145
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db717bd804f48f510800000000000000
+      internalID: 1583102407694817213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_146
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46044fd8dfc5f3c10800000000000000
+      internalID: 2035447800672829540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_147
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24752976f0d3fae60800000000000000
+      internalID: 7975660601467885378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_148
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00efdfe5e7fe5d90800000000000000
+      internalID: -7106970595000066034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_149
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da9bd9a5bee15100800000000000000
+      internalID: 95119531157723861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_150
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc7c38b683983560800000000000000
+      internalID: 7293741803352390901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_151
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ce1e76c58b742b0800000000000000
+      internalID: -5600304904592561095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_152
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d959aa3e90670c4e0800000000000000
+      internalID: -1963439652687145571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_153
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4a35b1bae97d870800000000000000
+      internalID: 8707602862279206122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_154
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2452fccbe621a350800000000000000
+      internalID: 6026140570596037674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_155
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862d09f9a5698d720800000000000000
+      internalID: 2871210078416982632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_156
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a4b183ce9584bf0800000000000000
+      internalID: -339922900778006016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_157
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f18af319d947de90800000000000000
+      internalID: -7001045899032231435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_158
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93cb6ae12dd1bab0800000000000000
+      internalID: -4993967374040579171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_159
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7e6c1624b8d4e50800000000000000
+      internalID: 6795240529996474359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda785bc142123e70800000000000000
+      internalID: 9093350671408200415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_161
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90c7fe22549747e0800000000000000
+      internalID: -1781292046905524066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_162
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149f22657fbc98e80800000000000000
+      internalID: -8175779385351931583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_163
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6711e6990fb1b210800000000000000
+      internalID: 1347067811467433834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_164
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53213299aecabd00800000000000000
+      internalID: 989330295858733915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_165
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9a0365e1c0ace70800000000000000
+      internalID: 9136128118509054417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_166
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3617eb20019a79d0800000000000000
+      internalID: -2775746790397897158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_167
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5714b8be90c4070800000000000000
+      internalID: 8091853537736226224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_168
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cf23eb924fca5d0800000000000000
+      internalID: -3049794387514819483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_169
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d93a7245f6e17f0800000000000000
+      internalID: -639951689807061755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_170
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b462b55f154471e30800000000000000
+      internalID: 4474119873615308363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_171
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b47d049751bb26f0800000000000000
+      internalID: -708277526676540233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_172
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8feafeabb7fbb60800000000000000
+      internalID: 7764060325425379516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_173
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb972e41ef68d180800000000000000
+      internalID: -9090392834377802766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_174
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4ed3b6489da4d30800000000000000
+      internalID: 4416581547348321445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_175
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bdd20e84437e9510800000000000000
+      internalID: 1557809259394293173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_176
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3a0efaeff96fef0800000000000000
+      internalID: -74696427583790132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_177
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0a047b96e01b440800000000000000
+      internalID: 4949753312665706744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_178
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2378f9df9f472bae0800000000000000
+      internalID: -1535035905929148622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_packed_kenney_pixelPlatformer_179
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b0c1cfbedc28000800000000000000
+      internalID: 36818160403090260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -28,10 +28,17 @@ public class PlayerData : ScriptableObject
     public float wallJumpTime = 0.4f;
     public Vector2 wallJumpAngle = new Vector2(1, 2);
 
+    [Header("Weapon States")]
+    public LayerMask Enemies;
+    public float weaponBoundryRadius;
+    public float weaponTime = 0.3f;
+
     [Header("Player Check States")]
     public float groundCheckRadius = 0.3f;
     public float wallCheckDistance = 1f;
+    public float ramblingCheckDistance = 1f;
     public LayerMask GroundFloor;
+    public LayerMask Rambler;
 
     [Header("Audio")]
     public AudioClip Walk;

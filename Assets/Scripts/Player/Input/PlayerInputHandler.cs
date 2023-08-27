@@ -15,6 +15,10 @@ public class PlayerInputHandler : MonoBehaviour
     public bool JumpInput { get; private set; }
     public bool JumpInputStop { get; private set; }
 
+    public bool AttackInput { get; private set; }
+
+    public bool BombInput { get; private set; }
+
     [SerializeField]
     private float inputHoldTime = 0.2f;
 
@@ -81,6 +85,42 @@ public class PlayerInputHandler : MonoBehaviour
         if (context.canceled)
         {
             JumpInputStop = true;
+        }
+    }
+
+    public void OnAttackInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            AttackInput = true;
+        }
+
+        if (context.performed)
+        {
+
+        }
+
+        if (context.canceled)
+        {
+            AttackInput = false;
+        }
+    }
+
+    public void OnBombInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            BombInput = true;
+        }
+
+        if (context.performed)
+        {
+
+        }
+
+        if (context.canceled)
+        {
+            BombInput = false;
         }
     }
 

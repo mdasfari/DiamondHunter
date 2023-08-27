@@ -1,24 +1,38 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
-// Attribute to allow the creation of this ScriptableObject from the Unity Editor.
+[Serializable] public class EnemyScoring : SerializableDictionary<string, int> { }
+
+
+[CustomPropertyDrawer(typeof(EnemyScoring))]
+public class MyDictionaryDrawer1 : DictionaryDrawer<string, int> { }
+
+
 [CreateAssetMenu(fileName = "newGameData", menuName = "Data/Game Data/Base Game Data")]
 public class GameData : ScriptableObject
 {
     [Header("Game States Audio")]
-    public AudioClip NormalState; // Audio clip for the normal state of the game.
-    public AudioClip ChasingState; // Audio clip for the chasing state of the game.
-    public AudioClip GameOverState; // Audio clip for the game over state.
+    public AudioClip NormalState; 
+    public AudioClip ChasingState; 
+    public AudioClip GameOverState; 
 
-    public AudioClip TreasureCollectionAudio; // Audio clip for collecting treasures.
+    public AudioClip TreasureCollectionAudio; 
 
     [Header("Effects")]
-    public AudioClip OceanWaves; // Audio clip for the ocean waves effect.
+    public AudioClip OceanWaves; 
 
     [Header("Game Settings")]
-    public int StartupLives = 3; // The initial number of lives when the game starts.
-    public int CurrentLives = 3; // The current number of lives during gameplay.
+    public int StartupLives = 3; 
+    public int CurrentLives = 3;
 
-    public int Score; // The current score of the game.
+    
+
+    [Header("Game Scoring")]
+    public int Score;
+
+    public int Coin = 1;
+    public EnemyScoring EnemyList = new EnemyScoring();
 }
