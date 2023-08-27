@@ -17,9 +17,11 @@ public class GameData : ScriptableObject
     [Header("Game States Audio")]
     public AudioClip NormalState; 
     public AudioClip ChasingState; 
-    public AudioClip GameOverState; 
+    public AudioClip GameOverState;
 
-    public AudioClip TreasureCollectionAudio; 
+    [Header("Game Objects Audio")]
+    public AudioClip TreasureCollectionAudio;
+    public AudioClip EnemyKillAudio;
 
     [Header("Effects")]
     public AudioClip OceanWaves; 

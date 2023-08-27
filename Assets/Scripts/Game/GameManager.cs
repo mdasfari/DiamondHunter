@@ -115,9 +115,14 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void AddScore(int Score)
+    public void CollectCoin()
     {
         audioSource.PlayOneShot(gameData.TreasureCollectionAudio);
+        AddScore(gameData.Coin);
+    }
+
+    private void AddScore(int Score)
+    {
         gameData.Score += Score;
         UpdateScore();
     }
@@ -163,6 +168,7 @@ public class GameManager : MonoBehaviour
         }
 
         AddScore(newScore);
+        audioSource.PlayOneShot(gameData.EnemyKillAudio);
         Destroy(enemy);
     }
 

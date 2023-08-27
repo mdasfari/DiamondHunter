@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    [Header("Treasure")]
-    public int ObjectValue = 1;
-
     [Header("Game")]
     [SerializeField]
     private GameManager gameManager;
@@ -19,7 +16,7 @@ public class Coin : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            gameManager.AddScore(ObjectValue);
+            gameManager.CollectCoin();
             Destroy(gameObject);
         }
     }
