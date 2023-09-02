@@ -24,8 +24,12 @@ public class GameData : ScriptableObject
     public AudioClip RuinsBGM;
 
     [Header("Game Objects Audio")]
+    public AudioClip CheckpointAudio;
+    public AudioClip PowerupAudio;
+    public AudioClip GoalAudio;
     public AudioClip TreasureCollectionAudio;
     public AudioClip EnemyKillAudio;
+    public AudioClip LostLife;
 
     [Header("Effects")]
     public AudioClip OceanWaves; 

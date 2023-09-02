@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6543767190005428391}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.0100012, y: 0.11904897, z: -10}
+  m_LocalPosition: {x: -5.943797, y: 2.5631976, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6543767190499843684}
@@ -58,7 +58,10 @@ MonoBehaviour:
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
+    ModeOverride: 0
     LensShift: {x: 0, y: 0}
+    GateFit: 2
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -123,23 +126,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0.1845913, y: 0, z: 0}
-  m_LookaheadTime: 0.5
-  m_LookaheadSmoothing: 1
+  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_LookaheadTime: 0.28
+  m_LookaheadSmoothing: 6.7
   m_LookaheadIgnoreY: 0
-  m_XDamping: 0.75
+  m_XDamping: 1
   m_YDamping: 2
   m_ZDamping: 1
   m_TargetMovementOnly: 1
-  m_ScreenX: 0.5
-  m_ScreenY: 0.5
+  m_ScreenX: 0.45599997
+  m_ScreenY: 0.6589999
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
+  m_DeadZoneWidth: 0.369
+  m_DeadZoneHeight: 0.49
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.2
-  m_SoftZoneHeight: 0.35
+  m_SoftZoneWidth: 0.382
+  m_SoftZoneHeight: 0.49
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -164,7 +167,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6543767190503812027}
   - component: {fileID: 6543767190503812026}
-  - component: {fileID: 6543767190503812025}
   - component: {fileID: 6543767190503812024}
   m_Layer: 0
   m_Name: Main Camera
@@ -181,7 +183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6543767190503812031}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.0100012, y: 0.11904897, z: -10}
+  m_LocalPosition: {x: -5.943797, y: 2.5631976, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6543767190675891510}
@@ -230,14 +232,6 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &6543767190503812025
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6543767190503812031}
-  m_Enabled: 1
 --- !u!114 &6543767190503812024
 MonoBehaviour:
   m_ObjectHideFlags: 0

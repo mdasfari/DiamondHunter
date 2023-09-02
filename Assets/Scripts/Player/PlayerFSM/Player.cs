@@ -9,12 +9,10 @@ using UnityEngine.PlayerLoop;
 public class Player : MonoBehaviour
 {
     #region Variables
-
+    [SerializeField]
     private CameraFollowObject cameraFollowObject; 
     public Animator Anim { get; private set; }
 
-    [SerializeField]
-    public Animator WeaponAnim; // { get; private set; }
     public PlayerInputHandler InputHandler { get; private set; } 
     public Rigidbody2D rb { get; private set; } 
 
@@ -107,7 +105,7 @@ public class Player : MonoBehaviour
         
         InputHandler = GetComponent<PlayerInputHandler>();
 
-        cameraFollowObject = GameObject.FindGameObjectWithTag("CinaCamera").GetComponent<CameraFollowObject>();
+        // cameraFollowObject = GameObject.FindGameObjectWithTag("CinaCamera").GetComponent<CameraFollowObject>();
 
         fallSpeedYDampingChangeThrehold = CameraManager.instance.fallSpeedYDampingChangeThreshold;
         StateMachine.Initialize(IdleState); 
@@ -174,9 +172,6 @@ public class Player : MonoBehaviour
                 break;
             case PlayerAudioFiles.Damage:
                 selectedAudio = playerData.Damage;
-                break;
-            case PlayerAudioFiles.LostLife:
-                selectedAudio = playerData.LostLife;
                 break;
         }
 

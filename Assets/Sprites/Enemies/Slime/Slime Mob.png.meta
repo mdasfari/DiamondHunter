@@ -1,7 +1,73 @@
 fileFormatVersion: 2
 guid: edfb4ede3ef1fb94db6d4f22a9aa2bdf
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6267443317341176680
+    second: Slime Mob_0
+  - first:
+      213: -5556623122105453522
+    second: Slime Mob_1
+  - first:
+      213: 5017879834679922037
+    second: Slime Mob_2
+  - first:
+      213: 3029570167068874209
+    second: Slime Mob_3
+  - first:
+      213: 2798304455876010385
+    second: Slime Mob_4
+  - first:
+      213: -6347790780577151697
+    second: Slime Mob_5
+  - first:
+      213: 8801723661250915446
+    second: Slime Mob_6
+  - first:
+      213: -4586143844234594608
+    second: Slime Mob_7
+  - first:
+      213: -5866083651813789839
+    second: Slime Mob_8
+  - first:
+      213: 7343336390534000952
+    second: Slime Mob_9
+  - first:
+      213: -8158450490643275314
+    second: Slime Mob_10
+  - first:
+      213: -8014514052764220797
+    second: Slime Mob_11
+  - first:
+      213: 5279241729407997443
+    second: Slime Mob_12
+  - first:
+      213: -2349011456195920166
+    second: Slime Mob_13
+  - first:
+      213: -929242365755751480
+    second: Slime Mob_14
+  - first:
+      213: -3958117940326122226
+    second: Slime Mob_15
+  - first:
+      213: -519588455973706921
+    second: Slime Mob_16
+  - first:
+      213: 1548646821429790025
+    second: Slime Mob_17
+  - first:
+      213: 7627890281579363928
+    second: Slime Mob_18
+  - first:
+      213: -3425367646278819162
+    second: Slime Mob_19
+  - first:
+      213: -8826551675040130264
+    second: Slime Mob_20
+  - first:
+      213: -5147455187108993692
+    second: Slime Mob_21
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -45,7 +111,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,7 +130,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -76,7 +142,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,7 +175,469 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Slime Mob_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 76
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8634404ad7e6af650800000000000000
+      internalID: 6267443317341176680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 76
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24be20f5b8e2e2b0800000000000000
+      internalID: -5556623122105453522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 76
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d41bfaf1713a540800000000000000
+      internalID: 5017879834679922037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 76
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5d24ef3023b0a20800000000000000
+      internalID: 3029570167068874209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_4
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 76
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191e1e9931395d620800000000000000
+      internalID: 2798304455876010385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_5
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 76
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f250337caed18e7a0800000000000000
+      internalID: -6347790780577151697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_6
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 76
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ce2005901062a70800000000000000
+      internalID: 8801723661250915446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_7
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 76
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d67d8bd87eba50c0800000000000000
+      internalID: -4586143844234594608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_8
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 76
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17fa9ee9ffb779ea0800000000000000
+      internalID: -5866083651813789839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_9
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 76
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8317aff5a85c8e560800000000000000
+      internalID: 7343336390534000952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 76
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1a89b018c57ce80800000000000000
+      internalID: -8158450490643275314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_11
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 76
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382cc958ee9b6c090800000000000000
+      internalID: -8014514052764220797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_12
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 14
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30658ccd162a34940800000000000000
+      internalID: 5279241729407997443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_13
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 14
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade7e14b682a66fd0800000000000000
+      internalID: -2349011456195920166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_14
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 14
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c382eeddfaaa13f0800000000000000
+      internalID: -929242365755751480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_15
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 14
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0db2cb44b0f119c0800000000000000
+      internalID: -3958117940326122226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_16
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 14
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7532b4c5d0d0ac8f0800000000000000
+      internalID: -519588455973706921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_17
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 14
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9454cd93416ed7510800000000000000
+      internalID: 1548646821429790025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_18
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 14
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e313bfbc5bbd960800000000000000
+      internalID: 7627890281579363928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_19
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 14
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a26f6a2646a670d0800000000000000
+      internalID: -3425367646278819162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_20
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 14
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b9a91440ac18580800000000000000
+      internalID: -8826551675040130264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime Mob_21
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 14
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465602b97c09098b0800000000000000
+      internalID: -5147455187108993692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

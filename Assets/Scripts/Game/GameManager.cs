@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Playables;
@@ -38,17 +39,18 @@ public class GameManager : MonoBehaviour
     // Internal Variables
     private GameStates currentGameState;
 
-    private AudioSource audioSource;
+    private AudioSource bgmAudioSource;
+    private AudioSource effectsAudioSource;
 
     TextMeshProUGUI scoringDisplay;
 
     public void StartNewGame()
     {
-        gameData.CurrentLives = gameData.StartupLives; 
-        SceneManager.LoadScene("BeachIntro"); 
+        gameData.CurrentLives = gameData.StartupLives;
+        SceneManager.LoadScene("BeachIntro");
     }
 
-    public bool IsGamePaused { get; private set; } 
+    public bool IsGamePaused { get; private set; }
 
     // Start is called before the first frame update
     void Start()
@@ -56,7 +58,11 @@ public class GameManager : MonoBehaviour
         IsGamePaused = false;
         //pauseMenu = GameObject.Find("PauseMenu");
         //gameOverMenu = GameObject.Find("GameOverMenu");
-        audioSource = GetComponent<AudioSource>();
+
+        // AssignAudioSources
+        AudioSource[] audioSources = GetComponents<AudioSource>();
+        bgmAudioSource = audioSources[0];
+        effectsAudioSource = audioSources[1];
 
         scoringDisplay = ScoringObject.GetComponent<TextMeshProUGUI>();
 
@@ -83,20 +89,20 @@ public class GameManager : MonoBehaviour
         switch (newState)
         {
             case GameStates.Normal:
-                audioSource.clip = gameData.NormalState;
-                audioSource.loop = true;
+                bgmAudioSource.clip = gameData.NormalState;
+                bgmAudioSource.loop = true;
                 break;
             case GameStates.Chase:
-                audioSource.clip = gameData.ChasingState;
-                audioSource.loop = true;
+                bgmAudioSource.clip = gameData.ChasingState;
+                bgmAudioSource.loop = true;
                 break;
             case GameStates.GameOver:
-                audioSource.clip = gameData.GameOverState;
-                audioSource.loop = false;
+                bgmAudioSource.clip = gameData.GameOverState;
+                bgmAudioSource.loop = false;
                 break;
         }
 
-        audioSource.Play();
+        bgmAudioSource.Play();
         currentGameState = newState;
     }
 
@@ -134,7 +140,7 @@ public class GameManager : MonoBehaviour
 
     public void CollectCoin()
     {
-        audioSource.PlayOneShot(gameData.TreasureCollectionAudio);
+        effectsAudioSource.PlayOneShot(gameData.TreasureCollectionAudio);
         AddScore(gameData.Coin);
     }
 
@@ -149,8 +155,12 @@ public class GameManager : MonoBehaviour
         player.transform.position = respawn.transform.position;
     }
 
-    public void SetRespawnLocation(Vector3 newPsotion)
+    public void SetRespawnLocation(UnityEngine.Vector3 newPsotion)
     {
+        if (respawn.transform.position == newPsotion)
+            return;
+
+        effectsAudioSource.PlayOneShot(gameData.CheckpointAudio);
         respawn.transform.position = newPsotion;
     }
 
@@ -175,7 +185,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        player.PlaySound(PlayerAudioFiles.LostLife);
+        effectsAudioSource.PlayOneShot(gameData.LostLife);
         RespawnPlayer();
         Time.timeScale = 1;
     }
@@ -192,7 +202,7 @@ public class GameManager : MonoBehaviour
         }
 
         AddScore(newScore);
-        audioSource.PlayOneShot(gameData.EnemyKillAudio);
+        effectsAudioSource.PlayOneShot(gameData.EnemyKillAudio);
         Destroy(enemy);
     }
 
@@ -236,5 +246,31 @@ public class GameManager : MonoBehaviour
     private void ShowMenu(string menuName, bool show)
     {
         gameOverMenu.gameObject.transform.Find(menuName).gameObject.SetActive(show);
+    }
+
+    internal void LoadNextLevel(string sceneName, bool withAudio)
+    {
+        if (withAudio)
+        {
+            effectsAudioSource.PlayOneShot(gameData.GoalAudio);
+            StartCoroutine(WaitForSound(effectsAudioSource, sceneName));
+            player.gameObject.SetActive(false);
+        }
+        else
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+    }
+
+    IEnumerator WaitForSound(AudioSource source, string sceneName)
+    {
+        // Wait until sound has finished playing
+        while (source.isPlaying)
+        {
+            yield return null;
+        }
+
+        // Audio has finished playing
+        SceneManager.LoadScene(sceneName);
     }
 }

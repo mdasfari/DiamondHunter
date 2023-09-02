@@ -33,9 +33,7 @@ public class CameraManager : MonoBehaviour
     private void Awake()
     {
         if (instance == null)
-        {
             instance = this;
-        }
 
         for (int i = 0; i < allVirtualCameras.Length; i++)
         {

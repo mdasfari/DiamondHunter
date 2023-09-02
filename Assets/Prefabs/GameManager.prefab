@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6697952950350997952}
   - component: {fileID: 6697952950350997953}
+  - component: {fileID: 1807286295}
   - component: {fileID: 52523891827428147}
   m_Layer: 0
   m_Name: GameManager
@@ -46,12 +47,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameData: {fileID: 11400000, guid: a9481fa1b2990794ea90f102fb7626e4, type: 2}
   pauseMenu: {fileID: 0}
+  gameOverMenu: {fileID: 0}
   HeartContainer: {fileID: 0}
   HeartObject: {fileID: 170050582156414132, guid: 9588c14fed333e347b55597bbaeea0c9,
     type: 3}
   ScoringObject: {fileID: 0}
   player: {fileID: 0}
   respawn: {fileID: 0}
+--- !u!81 &1807286295
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6697952950350997967}
+  m_Enabled: 1
 --- !u!82 &52523891827428147
 AudioSource:
   m_ObjectHideFlags: 0

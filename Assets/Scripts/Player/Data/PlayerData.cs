@@ -47,5 +47,4 @@ public class PlayerData : ScriptableObject
     public AudioClip Throw;
     public AudioClip Respawn;
     public AudioClip Damage;
-    public AudioClip LostLife;
 }

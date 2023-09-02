@@ -12,19 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74f70a74abd472942bb2306711ff956c, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
-  NormalState: {fileID: 8300000, guid: 96b9966767fa6e9418226cb2d4eb790c, type: 3}
+  NormalState: {fileID: 8300000, guid: d3b5bcadabd320a49bd243dbc21645a4, type: 3}
   ChasingState: {fileID: 8300000, guid: cfe595e9988553749a26ca850db63e6e, type: 3}
   GameOverState: {fileID: 8300000, guid: 5acd370d59a610a48b129d1a3360036a, type: 3}
   BeachBGM: {fileID: 8300000, guid: 96b9966767fa6e9418226cb2d4eb790c, type: 3}
   RuinsBGM: {fileID: 8300000, guid: d3b5bcadabd320a49bd243dbc21645a4, type: 3}
+  CheckpointAudio: {fileID: 8300000, guid: 27bb550c58799374084d0c345d9e7fc2, type: 3}
+  PowerupAudio: {fileID: 8300000, guid: 5acd370d59a610a48b129d1a3360036a, type: 3}
+  GoalAudio: {fileID: 8300000, guid: f02bc9fac173d9946871aa40c4af8c76, type: 3}
   TreasureCollectionAudio: {fileID: 8300000, guid: e70e0f7b6bcac84409b22c3009689878,
     type: 3}
   EnemyKillAudio: {fileID: 8300000, guid: 64f9bb19048740a47922f11c04a24d78, type: 3}
+  LostLife: {fileID: 8300000, guid: 8f17bda6af4eb154fa413f62ecceb7e5, type: 3}
   OceanWaves: {fileID: 8300000, guid: e1052e3bca32f874fa073db6813ac5fe, type: 3}
   StartupLives: 3
-  CurrentLives: 3
-  GameLevel: 0
-  Score: 117
+  CurrentLives: 2
+  GameLevel: 1
+  Score: 183
   Coin: 1
   EnemyList:
     _Buckets: ffffffffffffffffffffffff
