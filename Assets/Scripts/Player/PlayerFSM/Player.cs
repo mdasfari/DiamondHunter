@@ -105,11 +105,14 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>(); 
         Anim = GetComponent<Animator>(); 
         
-        InputHandler = GetComponent<PlayerInputHandler>(); 
-        cameraFollowObject = GameObject.FindGameObjectWithTag("CinaCamera").GetComponent<CameraFollowObject>(); 
+        InputHandler = GetComponent<PlayerInputHandler>();
+
+        cameraFollowObject = GameObject.FindGameObjectWithTag("CinaCamera").GetComponent<CameraFollowObject>();
+
+        fallSpeedYDampingChangeThrehold = CameraManager.instance.fallSpeedYDampingChangeThreshold;
         StateMachine.Initialize(IdleState); 
         FaceDirection = 1; 
-        fallSpeedYDampingChangeThrehold = CameraManager.instance.fallSpeedYDampingChangeThreshold; 
+        
         audioSource = GetComponent<AudioSource>(); 
 
         ramplingType = RamplingTypes.None;

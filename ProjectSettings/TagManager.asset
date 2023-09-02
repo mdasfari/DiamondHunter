@@ -19,6 +19,7 @@ TagManager:
   - Rope
   - Ladder
   - Bee
+  - Trap
   layers:
   - Default
   - TransparentFX
@@ -33,7 +34,7 @@ TagManager:
   - Goal
   - Rambler
   - Enemy
-  - 
+  - Traps
   - 
   - 
   - 

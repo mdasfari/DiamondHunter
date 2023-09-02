@@ -19,6 +19,10 @@ public class GameData : ScriptableObject
     public AudioClip ChasingState; 
     public AudioClip GameOverState;
 
+    [Header("Game Level Background Music")]
+    public AudioClip BeachBGM;
+    public AudioClip RuinsBGM;
+
     [Header("Game Objects Audio")]
     public AudioClip TreasureCollectionAudio;
     public AudioClip EnemyKillAudio;
@@ -30,9 +34,10 @@ public class GameData : ScriptableObject
     public int StartupLives = 3; 
     public int CurrentLives = 3;
 
-    
+
 
     [Header("Game Scoring")]
+    public GameLevels GameLevel;
     public int Score;
 
     public int Coin = 1;

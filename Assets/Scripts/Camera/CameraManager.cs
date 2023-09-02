@@ -46,7 +46,7 @@ public class CameraManager : MonoBehaviour
                 framingTransposer = currentCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
             }
         }
-        //normYPanAmount = framingTransposer.m_YDamping;
+        normYPanAmount = framingTransposer.m_YDamping;
     }
 
     #region Lerp the Y Damping

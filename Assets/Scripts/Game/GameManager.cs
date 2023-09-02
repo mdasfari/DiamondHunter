@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 
 
@@ -12,7 +13,10 @@ public class GameManager : MonoBehaviour
     private GameData gameData;
 
     [Header("UI")]
-    public GameObject pauseMenu;
+    [SerializeField]
+    private GameObject pauseMenu;
+    [SerializeField]
+    private GameObject gameOverMenu;
 
     [Header("Game HUD")]
     [SerializeField]
@@ -35,7 +39,6 @@ public class GameManager : MonoBehaviour
     private GameStates currentGameState;
 
     private AudioSource audioSource;
-    private GameObject gameOverMenu;
 
     TextMeshProUGUI scoringDisplay;
 
@@ -51,14 +54,28 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         IsGamePaused = false;
-        pauseMenu = GameObject.Find("PauseMenu");
-        gameOverMenu = GameObject.Find("GameOverMenu");
+        //pauseMenu = GameObject.Find("PauseMenu");
+        //gameOverMenu = GameObject.Find("GameOverMenu");
         audioSource = GetComponent<AudioSource>();
 
         scoringDisplay = ScoringObject.GetComponent<TextMeshProUGUI>();
 
         SetupHuD();
+        SetupBGM();
         ChangeGameState(GameStates.Normal);
+    }
+
+    private void SetupBGM()
+    {
+        switch (gameData.GameLevel)
+        {
+            case GameLevels.Beach:
+                gameData.NormalState = gameData.BeachBGM;
+                break;
+            case GameLevels.Ruine:
+                gameData.NormalState = gameData.RuinsBGM;
+                break;
+        }
     }
 
     private void ChangeGameState(GameStates newState)
@@ -141,9 +158,16 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0;
 
-        gameData.CurrentLives--;
-        Transform heartToDelete = HeartContainer.transform.GetChild(HeartContainer.transform.childCount - 1);
-        Destroy(heartToDelete.gameObject);
+        if (gameData.CurrentLives > 0)
+            gameData.CurrentLives--;
+        else
+            gameData.CurrentLives = 0;
+
+        if (HeartContainer.transform.childCount > 0)
+        {
+            Transform heartToDelete = HeartContainer.transform.GetChild(HeartContainer.transform.childCount - 1);
+            Destroy(heartToDelete.gameObject);
+        }
 
         if (gameData.CurrentLives == 0)
         {
