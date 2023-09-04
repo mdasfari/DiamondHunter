@@ -21,6 +21,7 @@ TagManager:
   - Bee
   - Trap
   - Bat
+  - DoubleJump
   layers:
   - Default
   - TransparentFX

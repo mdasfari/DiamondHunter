@@ -194,7 +194,6 @@ public class GameManager : MonoBehaviour
     {
         int newScore = 0;
 
-        Debug.Log(enemy.tag);
         if (gameData.EnemyList.ContainsKey(enemy.tag))
         {
             newScore = gameData.EnemyList[enemy.tag];

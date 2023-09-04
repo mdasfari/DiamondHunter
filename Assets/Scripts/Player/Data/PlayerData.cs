@@ -14,16 +14,20 @@ public class PlayerData : ScriptableObject
     public int amountOfJumps = 1;
 
     [Header("Air State")]
+    public bool EdgeSticky = false;
     public float EdgeStickyJump = 0.2f;
     public float JumpHeightMult = 0.5f;
 
     [Header("Wall Slide State")]
     public float wallSlideVelocity = 3f;
 
+    
     [Header("Wall Climb State")]
+    public bool wallClimb = false;
     public float wallClimbVelocity = 3f;
 
     [Header("Wall Jump State")]
+    public bool wallJump = false;
     public float wallJumpVelocity = 20f;
     public float wallJumpTime = 0.4f;
     public Vector2 wallJumpAngle = new Vector2(1, 2);

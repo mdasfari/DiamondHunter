@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 8450387895321559889}
   - component: {fileID: 8450387895321559893}
   - component: {fileID: 8450387895321559892}
-  - component: {fileID: 8450387895321559895}
   - component: {fileID: 8450387895321559894}
+  - component: {fileID: 612250547329932973}
+  - component: {fileID: 4214248235223045579}
   m_Layer: 12
   m_Name: Bee
   m_TagString: Bee
@@ -217,7 +218,23 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Speed: 0.5
   PetrolDistance: 100
---- !u!50 &8450387895321559895
+--- !u!70 &8450387895321559894
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8450387895321559888}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.018497229}
+  m_Size: {x: 0.5283165, y: 0.85202074}
+  m_Direction: 0
+--- !u!50 &612250547329932973
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -232,14 +249,14 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!70 &8450387895321559894
-CapsuleCollider2D:
+--- !u!58 &4214248235223045579
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -251,6 +268,6 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.018497229}
-  m_Size: {x: 0.5283165, y: 0.85202074}
-  m_Direction: 0
+  m_Offset: {x: -0.008068085, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.8968582

@@ -213,6 +213,11 @@ public class Player : MonoBehaviour
         CurrentVelocity = workspace;
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Debug.Log("Collision: " + collision.collider);
+    }
+
     private void OnTriggerEnter2D(Collider2D collsion)
     {
         ramplingType = RamplingTypes.None;
