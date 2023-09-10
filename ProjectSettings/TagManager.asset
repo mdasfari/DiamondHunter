@@ -22,6 +22,9 @@ TagManager:
   - Trap
   - Bat
   - DoubleJump
+  - Skeleton
+  - Skull
+  - Slime
   layers:
   - Default
   - TransparentFX

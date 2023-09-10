@@ -8,7 +8,8 @@ public class PlayerJumpState : PlayerAbilityState
 
     public PlayerJumpState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
-        amountOfJumpsLeft = playerData.amountOfJumps;
+        Debug.Log("Can Jump: " + player.NumberOfJump.ToString());
+        amountOfJumpsLeft = player.NumberOfJump;
     }
 
     public override void Enter()
@@ -23,12 +24,13 @@ public class PlayerJumpState : PlayerAbilityState
 
     public bool CanJump()
     {
+        Debug.Log("Can Jump: " + (amountOfJumpsLeft > 0).ToString());
         return (amountOfJumpsLeft > 0);
     }
 
     public void ResetAmountOfJump()
     {
-        amountOfJumpsLeft = playerData.amountOfJumps;
+        amountOfJumpsLeft = player.NumberOfJump;
     }
 
     public void DecreaseAmountOfJumpLeft()

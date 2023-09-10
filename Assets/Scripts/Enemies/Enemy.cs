@@ -57,9 +57,15 @@ public class Enemy : MonoBehaviour
                 if (Mathf.Abs(distanceTraveled) >= patrolDistance)
                 {
                     if (direction == firstLocation)
+                    {
                         direction = lastLocation;
+                        transform.Rotate(0f, 180f, 0f);
+                    }
                     else
+                    {
                         direction = firstLocation;
+                        transform.Rotate(0f, 180f, 0f);
+                    }
                 }
             }
             else

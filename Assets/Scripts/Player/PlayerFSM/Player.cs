@@ -10,25 +10,30 @@ public class Player : MonoBehaviour
 {
     #region Variables
     [SerializeField]
-    private CameraFollowObject cameraFollowObject; 
+    private CameraFollowObject cameraFollowObject;
     public Animator Anim { get; private set; }
 
-    public PlayerInputHandler InputHandler { get; private set; } 
-    public Rigidbody2D rb { get; private set; } 
+    public PlayerInputHandler InputHandler { get; private set; }
+    public Rigidbody2D rb { get; private set; }
 
-    public Vector2 CurrentVelocity { get; private set; } 
-    public int FaceDirection { get; private set; } 
+    public Vector2 CurrentVelocity { get; private set; }
+    public int FaceDirection { get; private set; }
 
     [Header("Others")]
     [SerializeField]
     private GameManager gameManager;
 
     [SerializeField]
-    private PlayerData playerData; 
+    private GameDataStore gameDataStore;
 
-    private Vector2 workspace; 
-    private float fallSpeedYDampingChangeThrehold; 
-    private AudioSource audioSource; 
+    [SerializeField]
+    private PlayerData playerData;
+
+    private Vector2 workspace;
+    private float fallSpeedYDampingChangeThrehold;
+    private AudioSource audioSource;
+
+    internal int NumberOfJump { get { return gameDataStore.NumberOfJump; } }
 
     public RamplingTypes ramplingType { get; private set; }
 
@@ -100,18 +105,18 @@ public class Player : MonoBehaviour
     private void Start()
     {
         // Get components and initialize variables.
-        rb = GetComponent<Rigidbody2D>(); 
-        Anim = GetComponent<Animator>(); 
-        
+        rb = GetComponent<Rigidbody2D>();
+        Anim = GetComponent<Animator>();
+
         InputHandler = GetComponent<PlayerInputHandler>();
 
         // cameraFollowObject = GameObject.FindGameObjectWithTag("CinaCamera").GetComponent<CameraFollowObject>();
 
         fallSpeedYDampingChangeThrehold = CameraManager.instance.fallSpeedYDampingChangeThreshold;
-        StateMachine.Initialize(IdleState); 
-        FaceDirection = 1; 
-        
-        audioSource = GetComponent<AudioSource>(); 
+        StateMachine.Initialize(IdleState);
+        FaceDirection = 1;
+
+        audioSource = GetComponent<AudioSource>();
 
         ramplingType = RamplingTypes.None;
     }
@@ -126,7 +131,7 @@ public class Player : MonoBehaviour
             && !CameraManager.instance.IsLerpingYDamping
             && !CameraManager.instance.LerpedFromPlayerFalling)
         {
-            CameraManager.instance.LerpYDamping(true); 
+            CameraManager.instance.LerpYDamping(true);
         }
 
         // Check if the player is standing still or moving up.
@@ -136,13 +141,13 @@ public class Player : MonoBehaviour
         {
             // Reset so it can be called again.
             CameraManager.instance.LerpedFromPlayerFalling = false;
-            CameraManager.instance.LerpYDamping(false); 
+            CameraManager.instance.LerpYDamping(false);
         }
     }
 
     private void FixedUpdate()
     {
-        StateMachine.CurrentState.PhysicsUpdate(); 
+        StateMachine.CurrentState.PhysicsUpdate();
     }
 
     #endregion 
@@ -150,7 +155,7 @@ public class Player : MonoBehaviour
     public void PlaySound(PlayerAudioFiles audioFile, bool playLoop = false)
     {
         // Play sound based on the selected audio file.
-        AudioClip selectedAudio = null; 
+        AudioClip selectedAudio = null;
 
         // Switch statement to select the appropriate audio clip based on the provided enum value.
         switch (audioFile)
@@ -191,24 +196,24 @@ public class Player : MonoBehaviour
     public void SetVolcityX(float velocity)
     {
         // Set the X component of the velocity.
-        workspace.Set(velocity, CurrentVelocity.y); 
-        rb.velocity = workspace; 
-        CurrentVelocity = workspace; 
+        workspace.Set(velocity, CurrentVelocity.y);
+        rb.velocity = workspace;
+        CurrentVelocity = workspace;
     }
 
     public void SetVolcityY(float velocity)
     {
         // Set the Y component of the velocity.
-        workspace.Set(CurrentVelocity.x, velocity); 
-        rb.velocity = workspace; 
-        CurrentVelocity = workspace; 
+        workspace.Set(CurrentVelocity.x, velocity);
+        rb.velocity = workspace;
+        CurrentVelocity = workspace;
     }
 
     public void SetVelocity(float velocity, Vector2 Angle, int direction)
     {
         // Set the velocity based on the provided angle and direction.
-        Angle.Normalize(); 
-        workspace.Set(Angle.x * velocity * direction, Angle.y * velocity); 
+        Angle.Normalize();
+        workspace.Set(Angle.x * velocity * direction, Angle.y * velocity);
         rb.velocity = workspace;
         CurrentVelocity = workspace;
     }
@@ -271,15 +276,15 @@ public class Player : MonoBehaviour
     {
         // Check if the player needs to flip face direction based on the X input.
         if (xInput != 0 && xInput != FaceDirection)
-            FlipFace(); 
+            FlipFace();
     }
 
     private void FlipFace()
     {
         // Flip the face direction of the player.
-        FaceDirection *= -1; 
-        transform.Rotate(0f, 180f, 0f); 
-        cameraFollowObject.CallTurn(); 
+        FaceDirection *= -1;
+        transform.Rotate(0f, 180f, 0f);
+        cameraFollowObject.CallTurn();
     }
     public void DetectColliders()
     {
@@ -294,31 +299,5 @@ public class Player : MonoBehaviour
         Gizmos.color = Color.yellow;
         Vector3 position = weaponBoundry == null ? Vector3.zero : weaponBoundry.position;
         Gizmos.DrawWireSphere(position, playerData.weaponBoundryRadius);
-    }
-
-    public void NewGame()
-    {
-        playerData.amountOfJumps = 1;
-        playerData.wallClimb = false;
-    }
-
-    public void CollectDoubleJump()
-    {
-        playerData.amountOfJumps = 2;
-    }
-
-    public void CollectWallGrab()
-    {
-        playerData.wallClimb = true;
-    }
-
-    internal bool isDoubleJump()
-    {
-        return (playerData.amountOfJumps > 1);
-    }
-
-    internal bool isCollectWallGrab()
-    {
-        return playerData.wallClimb;
     }
 }

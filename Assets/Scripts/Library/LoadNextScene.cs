@@ -1,23 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
+
 
 public class LoadNextScene : MonoBehaviour
 {
+    [SerializeField]
+    private GameManager gameManager;
+
     [SerializeField]
     private string NextSceneName; 
 
    
     void Start()
     {
-        SceneManager.LoadScene(NextSceneName); 
-    }
-
-    
-    
-    void Update()
-    {
-        
+        gameManager.LoadNextLevel(NextSceneName, false); 
     }
 }

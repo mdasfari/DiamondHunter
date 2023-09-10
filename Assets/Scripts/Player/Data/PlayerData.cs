@@ -11,10 +11,10 @@ public class PlayerData : ScriptableObject
 
     [Header("Jump State")]
     public float jumpVelocity = 15;
-    public int amountOfJumps = 1;
+    // public int amountOfJumps = 1;
 
     [Header("Air State")]
-    public bool EdgeSticky = false;
+    // public bool EdgeSticky = false;
     public float EdgeStickyJump = 0.2f;
     public float JumpHeightMult = 0.5f;
 
@@ -23,11 +23,11 @@ public class PlayerData : ScriptableObject
 
     
     [Header("Wall Climb State")]
-    public bool wallClimb = false;
+    // public bool wallClimb = false;
     public float wallClimbVelocity = 3f;
 
     [Header("Wall Jump State")]
-    public bool wallJump = false;
+    // public bool wallJump = false;
     public float wallJumpVelocity = 20f;
     public float wallJumpTime = 0.4f;
     public Vector2 wallJumpAngle = new Vector2(1, 2);

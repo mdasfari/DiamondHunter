@@ -15,11 +15,6 @@ public class MyDictionaryDrawer1 : DictionaryDrawer<string, int> { }
 [CreateAssetMenu(fileName = "newGameData", menuName = "Data/Game Data/Base Game Data")]
 public class GameData : ScriptableObject
 {
-    [Header("Game States Audio")]
-    public AudioClip NormalState; 
-    public AudioClip ChasingState; 
-    public AudioClip GameOverState;
-
     [Header("Game Level Background Music")]
     public AudioClip MainMenuBGM;
     public AudioClip BeachBGM;
@@ -42,21 +37,16 @@ public class GameData : ScriptableObject
 
     [Header("Game Settings")]
     public int StartupLives = 3; 
-    public int CurrentLives = 3;
-    public int AddedLives = 0;
-
-    [Header("Game Scoring")]
-    public GameLevels GameLevel;
+    
     public int NewLiveRequiredScore = 200;
-    public int Score;
 
     // public EnemyScoring EnemyList = new EnemyScoring();
-
     public int CoinScoreValue = 1;
     public int PowerUpScoreValue = 5;
     public int TreasureScoreValue = 10;
-
-    [Header("Collectables")]
-    public bool Gemstone;
-    public bool Nicklace;
+    public int BatScoreValue = 5;
+    public int BeeScoreValue = 5;
+    public int SlimeScoreValue = 10;
+    public int SkeletonScoreValue = 15;
+    public int SkullScoreValue = 25;
 }

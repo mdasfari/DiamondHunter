@@ -1,60 +1,73 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
     [Header("Game")]
     [SerializeField]
-    private GameManager gameManager; // Reference to the GameManager to control game states.
+    private GameManager gameManager;
 
-    private AudioSource audioSource; // Reference to the AudioSource component to play sounds.
+    private AudioSource audioSource;
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>(); // Get the AudioSource component attached to this GameObject.
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void NewGame()
     {
-        PlayLocalSound(); // Play click sound.
+        PlayLocalSound();
         gameManager.StartNewGame();
     }
 
     public void QuitGame()
     {
-        PlayLocalSound(); // Play click sound.
-        Application.Quit(); // Quit the application.
+        PlayLocalSound();
+        Application.Quit();
     }
 
     public void ResumeGame()
     {
-        PlayLocalSound(); // Play click sound.
-        gameManager.ResumeGame(); // Call the ResumeGame method from the GameManager to resume the game.
+        PlayLocalSound();
+        gameManager.ResumeGame();
     }
 
     public void QuitToMainMenu()
     {
-        PlayLocalSound(); // Play click sound.
-        SceneManager.LoadScene("MainMenu"); // Load the MainMenu scene.
+        PlayLocalSound();
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void RetryGame()
     {
-        PlayLocalSound(); // Play click sound.
-        gameManager.RetryGame(); // Call the RetryGame method from the GameManager to retry the game.
+        PlayLocalSound(); 
+        gameManager.RetryGame(); 
     }
 
     public void Exit()
     {
-        PlayLocalSound(); // Play click sound.
-        Application.Quit(); // Quit the application.
+        PlayLocalSound();
+        Application.Quit();
     }
 
-    private void PlayLocalSound()
+    private IEnumerator PlayLocalSound()
     {
-        if(audioSource)
-            audioSource.Play(); // Play the sound attached to the AudioSource component.
+        audioSource.Play();
+        yield return StartCoroutine(WaitForSound(audioSource));
+    }
+
+    IEnumerator WaitForSound(AudioSource source)
+    {
+        // Wait until sound has finished playing
+        while (source.isPlaying)
+        {
+            yield return null;
+        }
+
+        // Audio has finished playing
+        yield return true;
     }
 }

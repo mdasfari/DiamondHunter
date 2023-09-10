@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Numerics;
 using TMPro;
 using UnityEngine;
@@ -10,14 +11,20 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Game States Audio")]
+    public AudioClip NormalState;
+    public AudioClip ChasingState;
+    public AudioClip GameOverState;
+
+    [Header("Game Data")]
     [SerializeField]
-    private GameLevels gameLevel;
+    internal GameLevels GameLevel;
+
+    [SerializeField]
+    private GameDataStore gameDataStore;
 
     [SerializeField]
     private GameData gameData;
-    [SerializeField]
-    private PlayerData playerData;
-    
 
     [Header("UI")]
     [SerializeField]
@@ -51,63 +58,56 @@ public class GameManager : MonoBehaviour
 
     TextMeshProUGUI scoringDisplay;
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        // AssignAudioSources
+        AudioSource[] audioSources = GetComponents<AudioSource>();
+        if (audioSources.Count() > 0)
+        {
+            bgmAudioSource = audioSources[0];
+            effectsAudioSource = audioSources[1];
+        }
+
+        //gameDataStore = store.GetComponent<GameDataStore>();
+
+        if (ScoringObject)
+            scoringDisplay = ScoringObject.GetComponent<TextMeshProUGUI>();
+
+        IsGamePaused = false;
+        SetupBGM();
+        SetupHuD();
+
+        ChangeGameState(GameStates.Normal);
+    }
+
     public void StartNewGame()
     {
-        gameData.Score = 0;
-        gameData.Gemstone = false;
-        gameData.Nicklace = false;
-        gameData.CurrentLives = gameData.StartupLives;
-        gameData.AddedLives = 0;
-
-        playerData.amountOfJumps = 1;
-        playerData.wallClimb = false;
-        playerData.wallJump = false;
-        playerData.EdgeSticky = false;
-
+        gameDataStore.newGame();
         SceneManager.LoadScene("BeachIntro");
     }
 
     public bool IsGamePaused { get; private set; }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        gameData.GameLevel = gameLevel;
-        IsGamePaused = false;
-        //pauseMenu = GameObject.Find("PauseMenu");
-        //gameOverMenu = GameObject.Find("GameOverMenu");
-
-        // AssignAudioSources
-        AudioSource[] audioSources = GetComponents<AudioSource>();
-        bgmAudioSource = audioSources[0];
-        effectsAudioSource = audioSources[1];
-
-        if (ScoringObject)
-            scoringDisplay = ScoringObject.GetComponent<TextMeshProUGUI>();
-
-        SetupHuD();
-        SetupBGM();
-        ChangeGameState(GameStates.Normal);
-    }
-
     private void SetupBGM()
     {
-        switch (gameData.GameLevel)
+        Debug.Log(GameLevel);
+        switch (GameLevel)
         {
             case GameLevels.MainMenu:
-                gameData.NormalState = gameData.MainMenuBGM;
+                NormalState = gameData.MainMenuBGM;
                 break;
             case GameLevels.Beach:
-                gameData.NormalState = gameData.BeachBGM;
+                NormalState = gameData.BeachBGM;
                 break;
             case GameLevels.Ruine:
-                gameData.NormalState = gameData.RuinsBGM;
+                NormalState = gameData.RuinsBGM;
                 break;
             case GameLevels.Win:
-                gameData.NormalState = gameData.WinGameBGM;
+                NormalState = gameData.WinGameBGM;
                 break;
             case GameLevels.Lose:
-                gameData.NormalState = gameData.LoseGameBGM;
+                NormalState = gameData.LoseGameBGM;
                 break;
         }
     }
@@ -117,15 +117,15 @@ public class GameManager : MonoBehaviour
         switch (newState)
         {
             case GameStates.Normal:
-                bgmAudioSource.clip = gameData.NormalState;
+                bgmAudioSource.clip = NormalState;
                 bgmAudioSource.loop = true;
                 break;
             case GameStates.Chase:
-                bgmAudioSource.clip = gameData.ChasingState;
+                bgmAudioSource.clip = ChasingState;
                 bgmAudioSource.loop = true;
                 break;
             case GameStates.GameOver:
-                bgmAudioSource.clip = gameData.GameOverState;
+                bgmAudioSource.clip = GameOverState;
                 bgmAudioSource.loop = false;
                 break;
         }
@@ -155,7 +155,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < gameData.CurrentLives; i++)
+        for (int i = 0; i < gameDataStore.CurrentLives; i++)
         {
             AddDisplayHeart();
         }
@@ -173,38 +173,32 @@ public class GameManager : MonoBehaviour
     private void UpdateScore()
     {
         if (scoringDisplay)
-            scoringDisplay.text = gameData.Score.ToString();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+            scoringDisplay.text = gameDataStore.GameScore.ToString();
     }
 
     public void Collect(CollectableTypes type)
     {
         effectsAudioSource.PlayOneShot(gameData.TreasureCollectionAudio);
-        switch(type)
+        switch (type)
         {
             case CollectableTypes.Coin:
                 AddScore(gameData.CoinScoreValue);
                 break;
             case CollectableTypes.Gemstone:
                 AddScore(gameData.TreasureScoreValue);
-                gameData.Gemstone = true;
+                gameDataStore.Gemstone = true;
                 break;
             case CollectableTypes.Nicklace:
                 AddScore(gameData.TreasureScoreValue);
-                gameData.Nicklace = true;
+                gameDataStore.Nicklace = true;
                 break;
             case CollectableTypes.DoubleJump:
                 AddScore(gameData.PowerUpScoreValue);
-                player.CollectDoubleJump();
+                gameDataStore.NumberOfJump = 2;
                 break;
             case CollectableTypes.WallGrab:
                 AddScore(gameData.PowerUpScoreValue);
-                player.CollectWallGrab();
+                gameDataStore.WallClimb = true;
                 break;
         }
     }
@@ -216,18 +210,17 @@ public class GameManager : MonoBehaviour
         switch (type)
         {
             case CollectableTypes.Gemstone:
-                result = gameData.Gemstone;
+                result = gameDataStore.Gemstone;
                 break;
             case CollectableTypes.Nicklace:
-                result = gameData.Nicklace;
+                result = gameDataStore.Nicklace;
                 break;
             case CollectableTypes.DoubleJump:
-                
-                player.isDoubleJump();
+
+                result = gameDataStore.NumberOfJump > 1;
                 break;
             case CollectableTypes.WallGrab:
-                
-                player.isCollectWallGrab();
+                result = gameDataStore.WallClimb;
                 break;
         }
 
@@ -236,18 +229,18 @@ public class GameManager : MonoBehaviour
 
     private void AddScore(int Score)
     {
-        gameData.Score += Score;
+        Score += Score;
         CheckForNewLife();
         UpdateScore();
     }
 
     private void CheckForNewLife()
     {
-        float currentLiveIncrese = gameData.Score / gameData.NewLiveRequiredScore;
-        if (currentLiveIncrese > gameData.AddedLives)
+        float currentLiveIncrese = gameDataStore.GameScore / gameData.NewLiveRequiredScore;
+        if (currentLiveIncrese > gameDataStore.AddedLives)
         {
-            gameData.AddedLives = (int)Math.Floor(currentLiveIncrese);
-            gameData.CurrentLives++;
+            gameDataStore.AddedLives = (int)Math.Floor(currentLiveIncrese);
+            gameDataStore.CurrentLives++;
             AddDisplayHeart();
             effectsAudioSource.PlayOneShot(gameData.NewLife);
         }
@@ -271,10 +264,10 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0;
 
-        if (gameData.CurrentLives > 0)
-            gameData.CurrentLives--;
+        if (gameDataStore.CurrentLives > 0)
+            gameDataStore.CurrentLives--;
         else
-            gameData.CurrentLives = 0;
+            gameDataStore.CurrentLives = 0;
 
         if (HeartContainer)
         {
@@ -285,7 +278,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if (gameData.CurrentLives == 0)
+        if (gameDataStore.CurrentLives == 0)
         {
             GameOver();
             return;
@@ -308,7 +301,27 @@ public class GameManager : MonoBehaviour
         }
         */
 
-        newScore = 100;
+        switch (enemy.tag)
+        {
+            case "Bee":
+                newScore = gameData.BeeScoreValue;
+                break;
+            case "Bat":
+                newScore = gameData.BatScoreValue;
+                break;
+            case "Skeleton":
+                newScore = gameData.SkeletonScoreValue;
+                break;
+            case "Skull":
+                newScore = gameData.SkullScoreValue;
+                break;
+            case "Slime":
+                newScore = gameData.SlimeScoreValue;
+                break;
+            default:
+                newScore = 0;
+                break;
+        }
 
         AddScore(newScore);
         effectsAudioSource.PlayOneShot(gameData.EnemyKillAudio);
@@ -326,7 +339,7 @@ public class GameManager : MonoBehaviour
 
     public void RetryGame()
     {
-        gameData.CurrentLives = gameData.StartupLives;
+        gameDataStore.CurrentLives = gameData.StartupLives;
 
         ShowMenu("Canvas", false);
         SetupHuD();
@@ -366,6 +379,28 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            /*
+            switch (sceneName)
+            {
+                case "MainMenu":
+                    GameLevel = GameLevels.MainMenu;
+                    break;
+                case "Beach":
+                    GameLevel = GameLevels.Beach;
+                    break;
+                case "Ruine":
+                    GameLevel = GameLevels.Ruine;
+                    break;
+                case "VictoryLost":
+                    if (gameDataStore.Gemstone && gameDataStore.Nicklace)
+                        gameDataStore.GameLevel = GameLevels.Win;
+                    else
+                        gameDataStore.GameLevel = GameLevels.Lose;
+                    break;
+            
+            }
+            */
+
             SceneManager.LoadScene(sceneName);
         }
     }

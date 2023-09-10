@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 4425994538171420449}
   - component: {fileID: 4425994538171420455}
   - component: {fileID: 4425994538171420454}
-  m_Layer: 0
+  - component: {fileID: 4425994539441063927}
+  m_Layer: 12
   m_Name: Slime
-  m_TagString: Untagged
+  m_TagString: Slime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +30,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4425994538171420472}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 52.5, y: -5.28, z: 18.476562}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -139,12 +140,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 2
+  m_Constraints: 4
 --- !u!58 &4425994538171420455
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -158,9 +159,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17809296, y: 0}
+  m_Offset: {x: -0.029937744, y: -0.20803356}
   serializedVersion: 2
-  m_Radius: 8.905449
+  m_Radius: 10.361684
 --- !u!70 &4425994538171420454
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -177,3 +178,21 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.125, y: 1}
   m_Direction: 0
+--- !u!114 &4425994539441063927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4425994538171420472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcb554ee27324254e9c7444fc00cb718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  travelSpeed: 1.5
+  canPatrol: 1
+  patrolDistance: 150
+  firstLocation: 4
+  lastLocation: 2

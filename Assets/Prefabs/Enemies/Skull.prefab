@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 8249175092917712317}
   - component: {fileID: 8249175092917712307}
   - component: {fileID: 8249175092917712306}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Skull
-  m_TagString: Untagged
+  m_TagString: Skull
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8249175092917712308}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 59.031254, y: -15.722469, z: 18.476562}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -139,12 +139,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 2
+  m_Constraints: 4
 --- !u!58 &8249175092917712307
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -158,9 +158,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.11746216, y: 2.0320096}
+  m_Offset: {x: 0.045993805, y: 2.0320091}
   serializedVersion: 2
-  m_Radius: 5.45121
+  m_Radius: 10.28056
 --- !u!70 &8249175092917712306
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

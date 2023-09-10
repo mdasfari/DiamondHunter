@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6697952950350997952}
   - component: {fileID: 6697952950350997953}
-  - component: {fileID: 1807286295}
+  - component: {fileID: 3584662347462764411}
   - component: {fileID: 52523891827428147}
   - component: {fileID: 6697952950202952671}
   m_Layer: 0
@@ -46,6 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bec30cdc82c199740be18f27939b8d09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NormalState: {fileID: 8300000, guid: 96b9966767fa6e9418226cb2d4eb790c, type: 3}
+  ChasingState: {fileID: 8300000, guid: cfe595e9988553749a26ca850db63e6e, type: 3}
+  GameOverState: {fileID: 8300000, guid: f02bc9fac173d9946871aa40c4af8c76, type: 3}
+  gameDataStore: {fileID: 0}
   gameData: {fileID: 11400000, guid: a9481fa1b2990794ea90f102fb7626e4, type: 2}
   pauseMenu: {fileID: 0}
   gameOverMenu: {fileID: 0}
@@ -55,7 +59,7 @@ MonoBehaviour:
   ScoringObject: {fileID: 0}
   player: {fileID: 0}
   respawn: {fileID: 0}
---- !u!81 &1807286295
+--- !u!81 &3584662347462764411
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

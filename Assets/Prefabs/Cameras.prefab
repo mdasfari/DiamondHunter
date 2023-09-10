@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6543767190005428391}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.943797, y: 2.5631976, z: 0}
+  m_LocalPosition: {x: -6.730462, y: 2.8002086, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6543767190499843684}
@@ -54,9 +54,9 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 5
-    NearClipPlane: 0.3
-    FarClipPlane: 1000
+    OrthographicSize: 5.48
+    NearClipPlane: 0.54
+    FarClipPlane: 999.82
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_TrackedObjectOffset: {x: 0, y: -0.3, z: 0}
   m_LookaheadTime: 0.28
   m_LookaheadSmoothing: 6.7
   m_LookaheadIgnoreY: 0
@@ -134,16 +134,16 @@ MonoBehaviour:
   m_YDamping: 2
   m_ZDamping: 1
   m_TargetMovementOnly: 1
-  m_ScreenX: 0.45599997
-  m_ScreenY: 0.6589999
+  m_ScreenX: 0.5002099
+  m_ScreenY: 0.6940703
   m_CameraDistance: 10
   m_DeadZoneWidth: 0.369
-  m_DeadZoneHeight: 0.49
+  m_DeadZoneHeight: 0.47
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.382
-  m_SoftZoneHeight: 0.49
-  m_BiasX: 0
+  m_SoftZoneHeight: 0.6
+  m_BiasX: 0.01
   m_BiasY: 0
   m_CenterOnActivate: 1
   m_GroupFramingMode: 2
@@ -183,7 +183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6543767190503812031}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.943797, y: 2.5631976, z: 0}
+  m_LocalPosition: {x: -6.730462, y: 2.8002086, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6543767190675891510}
@@ -212,11 +212,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
+  near clip plane: 0.54
+  far clip plane: 999.82
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.48
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
