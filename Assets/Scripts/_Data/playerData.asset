@@ -16,17 +16,20 @@ MonoBehaviour:
   movementVelocity: 7
   jumpVelocity: 15
   amountOfJumps: 2
+  EdgeSticky: 0
   EdgeStickyJump: 0.2
   JumpHeightMult: 0.5
   wallSlideVelocity: 2
+  wallClimb: 1
   wallClimbVelocity: 3
+  wallJump: 0
   wallJumpVelocity: 20
   wallJumpTime: 0.4
   wallJumpAngle: {x: 1, y: 2}
   Enemies:
     serializedVersion: 2
     m_Bits: 4096
-  weaponBoundryRadius: 0.44
+  weaponBoundryRadius: 0.6
   weaponTime: 0.7
   groundCheckRadius: 0.4
   wallCheckDistance: 0.5
@@ -43,4 +46,3 @@ MonoBehaviour:
   Throw: {fileID: 8300000, guid: 1b90f6afbb87b42479da082ec5464787, type: 3}
   Respawn: {fileID: 8300000, guid: 120c636dbc41d8644abf073578db0269, type: 3}
   Damage: {fileID: 8300000, guid: 8b9309d1074de86419254f135f3f6686, type: 3}
-  LostLife: {fileID: 8300000, guid: 8f17bda6af4eb154fa413f62ecceb7e5, type: 3}

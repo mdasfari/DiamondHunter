@@ -295,4 +295,30 @@ public class Player : MonoBehaviour
         Vector3 position = weaponBoundry == null ? Vector3.zero : weaponBoundry.position;
         Gizmos.DrawWireSphere(position, playerData.weaponBoundryRadius);
     }
+
+    public void NewGame()
+    {
+        playerData.amountOfJumps = 1;
+        playerData.wallClimb = false;
+    }
+
+    public void CollectDoubleJump()
+    {
+        playerData.amountOfJumps = 2;
+    }
+
+    public void CollectWallGrab()
+    {
+        playerData.wallClimb = true;
+    }
+
+    internal bool isDoubleJump()
+    {
+        return (playerData.amountOfJumps > 1);
+    }
+
+    internal bool isCollectWallGrab()
+    {
+        return playerData.wallClimb;
+    }
 }

@@ -54,6 +54,7 @@ public class Menu : MonoBehaviour
 
     private void PlayLocalSound()
     {
-        audioSource.Play(); // Play the sound attached to the AudioSource component.
+        if(audioSource)
+            audioSource.Play(); // Play the sound attached to the AudioSource component.
     }
 }

@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     [Header("UI")]
     [SerializeField]
     private GameObject pauseMenu;
+
     [SerializeField]
     private GameObject gameOverMenu;
 
@@ -46,7 +47,12 @@ public class GameManager : MonoBehaviour
 
     public void StartNewGame()
     {
+        player.NewGame();
+        gameData.Score = 0;
+        gameData.Gemstone = false;
+        gameData.Nicklace = false;
         gameData.CurrentLives = gameData.StartupLives;
+        gameData.AddedLives = 0;
         SceneManager.LoadScene("BeachIntro");
     }
 
@@ -64,7 +70,8 @@ public class GameManager : MonoBehaviour
         bgmAudioSource = audioSources[0];
         effectsAudioSource = audioSources[1];
 
-        scoringDisplay = ScoringObject.GetComponent<TextMeshProUGUI>();
+        if (ScoringObject)
+            scoringDisplay = ScoringObject.GetComponent<TextMeshProUGUI>();
 
         SetupHuD();
         SetupBGM();
@@ -114,13 +121,28 @@ public class GameManager : MonoBehaviour
 
     private void UpdateLives()
     {
-        while (HeartContainer.transform.childCount > 0)
+        if (HeartContainer)
         {
-            Transform heartToDelete = HeartContainer.transform.GetChild(HeartContainer.transform.childCount - 1);
-            Destroy(heartToDelete.gameObject);
+            int hearCount = HeartContainer.transform.childCount;
+            if (hearCount > 0)
+            {
+                for (int i = 0; i < hearCount; i++)
+                {
+                    Transform heartToDelete = HeartContainer.transform.GetChild(0);
+                    Destroy(heartToDelete.gameObject);
+                }
+            }
         }
 
         for (int i = 0; i < gameData.CurrentLives; i++)
+        {
+            AddDisplayHeart();
+        }
+    }
+
+    private void AddDisplayHeart()
+    {
+        if (HeartContainer)
         {
             GameObject newHeart = Instantiate(HeartObject);
             newHeart.transform.SetParent(HeartContainer.transform);
@@ -129,7 +151,8 @@ public class GameManager : MonoBehaviour
 
     private void UpdateScore()
     {
-        scoringDisplay.text = gameData.Score.ToString();
+        if (scoringDisplay)
+            scoringDisplay.text = gameData.Score.ToString();
     }
 
     // Update is called once per frame
@@ -138,16 +161,75 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void CollectCoin()
+    public void Collect(CollectableTypes type)
     {
         effectsAudioSource.PlayOneShot(gameData.TreasureCollectionAudio);
-        AddScore(gameData.Coin);
+        switch(type)
+        {
+            case CollectableTypes.Coin:
+                AddScore(gameData.CoinScoreValue);
+                break;
+            case CollectableTypes.Gemstone:
+                AddScore(gameData.TreasureScoreValue);
+                gameData.Gemstone = true;
+                break;
+            case CollectableTypes.Nicklace:
+                AddScore(gameData.TreasureScoreValue);
+                gameData.Nicklace = true;
+                break;
+            case CollectableTypes.DoubleJump:
+                AddScore(gameData.PowerUpScoreValue);
+                player.CollectDoubleJump();
+                break;
+            case CollectableTypes.WallGrab:
+                AddScore(gameData.PowerUpScoreValue);
+                player.CollectWallGrab();
+                break;
+        }
+    }
+
+    internal bool IsCollectableAcquired(CollectableTypes type)
+    {
+        bool result = false;
+
+        switch (type)
+        {
+            case CollectableTypes.Gemstone:
+                result = gameData.Gemstone;
+                break;
+            case CollectableTypes.Nicklace:
+                result = gameData.Nicklace;
+                break;
+            case CollectableTypes.DoubleJump:
+                
+                player.isDoubleJump();
+                break;
+            case CollectableTypes.WallGrab:
+                
+                player.isCollectWallGrab();
+                break;
+        }
+
+        return result;
     }
 
     private void AddScore(int Score)
     {
         gameData.Score += Score;
+        CheckForNewLife();
         UpdateScore();
+    }
+
+    private void CheckForNewLife()
+    {
+        float currentLiveIncrese = gameData.Score / gameData.NewLiveRequiredScore;
+        if (currentLiveIncrese > gameData.AddedLives)
+        {
+            gameData.AddedLives = (int)Math.Floor(currentLiveIncrese);
+            gameData.CurrentLives++;
+            AddDisplayHeart();
+            effectsAudioSource.PlayOneShot(gameData.NewLife);
+        }
     }
 
     private void RespawnPlayer()
@@ -173,10 +255,13 @@ public class GameManager : MonoBehaviour
         else
             gameData.CurrentLives = 0;
 
-        if (HeartContainer.transform.childCount > 0)
+        if (HeartContainer)
         {
-            Transform heartToDelete = HeartContainer.transform.GetChild(HeartContainer.transform.childCount - 1);
-            Destroy(heartToDelete.gameObject);
+            if (HeartContainer.transform.childCount > 0)
+            {
+                Transform heartToDelete = HeartContainer.transform.GetChild(HeartContainer.transform.childCount - 1);
+                Destroy(heartToDelete.gameObject);
+            }
         }
 
         if (gameData.CurrentLives == 0)
@@ -194,11 +279,15 @@ public class GameManager : MonoBehaviour
     {
         int newScore = 0;
 
+        /*
         if (gameData.EnemyList.ContainsKey(enemy.tag))
         {
             newScore = gameData.EnemyList[enemy.tag];
             Debug.Log(string.Format("{0} score: {1}", enemy.tag, newScore));
         }
+        */
+
+        newScore = 100;
 
         AddScore(newScore);
         effectsAudioSource.PlayOneShot(gameData.EnemyKillAudio);
@@ -217,7 +306,6 @@ public class GameManager : MonoBehaviour
     public void RetryGame()
     {
         gameData.CurrentLives = gameData.StartupLives;
-        gameData.Score = 0;
 
         ShowMenu("Canvas", false);
         SetupHuD();

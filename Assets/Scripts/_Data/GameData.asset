@@ -24,12 +24,14 @@ MonoBehaviour:
     type: 3}
   EnemyKillAudio: {fileID: 8300000, guid: 64f9bb19048740a47922f11c04a24d78, type: 3}
   LostLife: {fileID: 8300000, guid: 8f17bda6af4eb154fa413f62ecceb7e5, type: 3}
+  NewLife: {fileID: 8300000, guid: 977f262325e7bba40bf1351267527885, type: 3}
   OceanWaves: {fileID: 8300000, guid: e1052e3bca32f874fa073db6813ac5fe, type: 3}
   StartupLives: 3
-  CurrentLives: 2
+  CurrentLives: 3
+  AddedLives: 3
   GameLevel: 1
-  Score: 183
-  Coin: 1
+  NewLiveRequiredScore: 200
+  Score: 680
   EnemyList:
     _Buckets: ffffffffffffffffffffffff
     _HashCodes: 000000000000000000000000
@@ -43,3 +45,8 @@ MonoBehaviour:
     - 
     - 
     _Values: 000000000000000000000000
+  CoinScoreValue: 1
+  PowerUpScoreValue: 5
+  TreasureScoreValue: 10
+  Gemstone: 0
+  Nicklace: 1
