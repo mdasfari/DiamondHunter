@@ -11,7 +11,13 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
+    private GameLevels gameLevel;
+
+    [SerializeField]
     private GameData gameData;
+    [SerializeField]
+    private PlayerData playerData;
+    
 
     [Header("UI")]
     [SerializeField]
@@ -47,12 +53,17 @@ public class GameManager : MonoBehaviour
 
     public void StartNewGame()
     {
-        player.NewGame();
         gameData.Score = 0;
         gameData.Gemstone = false;
         gameData.Nicklace = false;
         gameData.CurrentLives = gameData.StartupLives;
         gameData.AddedLives = 0;
+
+        playerData.amountOfJumps = 1;
+        playerData.wallClimb = false;
+        playerData.wallJump = false;
+        playerData.EdgeSticky = false;
+
         SceneManager.LoadScene("BeachIntro");
     }
 
@@ -61,6 +72,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameData.GameLevel = gameLevel;
         IsGamePaused = false;
         //pauseMenu = GameObject.Find("PauseMenu");
         //gameOverMenu = GameObject.Find("GameOverMenu");
@@ -82,11 +94,20 @@ public class GameManager : MonoBehaviour
     {
         switch (gameData.GameLevel)
         {
+            case GameLevels.MainMenu:
+                gameData.NormalState = gameData.MainMenuBGM;
+                break;
             case GameLevels.Beach:
                 gameData.NormalState = gameData.BeachBGM;
                 break;
             case GameLevels.Ruine:
                 gameData.NormalState = gameData.RuinsBGM;
+                break;
+            case GameLevels.Win:
+                gameData.NormalState = gameData.WinGameBGM;
+                break;
+            case GameLevels.Lose:
+                gameData.NormalState = gameData.LoseGameBGM;
                 break;
         }
     }

@@ -67327,9 +67327,20 @@ PrefabInstance:
       objectReference: {fileID: 918585289}
     - target: {fileID: 6697952950350997953, guid: 234ad0128dafd17408d30bc37ba0242d,
         type: 3}
+      propertyPath: gameLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697952950350997953, guid: 234ad0128dafd17408d30bc37ba0242d,
+        type: 3}
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 786163026}
+    - target: {fileID: 6697952950350997953, guid: 234ad0128dafd17408d30bc37ba0242d,
+        type: 3}
+      propertyPath: playerData
+      value: 
+      objectReference: {fileID: 11400000, guid: 9e5eeb302c2a535408fd13a2e5a62616,
+        type: 2}
     - target: {fileID: 6697952950350997953, guid: 234ad0128dafd17408d30bc37ba0242d,
         type: 3}
       propertyPath: gameOverMenu

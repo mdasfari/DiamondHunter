@@ -21,8 +21,12 @@ public class GameData : ScriptableObject
     public AudioClip GameOverState;
 
     [Header("Game Level Background Music")]
+    public AudioClip MainMenuBGM;
     public AudioClip BeachBGM;
     public AudioClip RuinsBGM;
+
+    public AudioClip WinGameBGM;
+    public AudioClip LoseGameBGM;
 
     [Header("Game Objects Audio")]
     public AudioClip CheckpointAudio;
