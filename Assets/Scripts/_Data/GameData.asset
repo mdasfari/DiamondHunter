@@ -34,7 +34,7 @@ MonoBehaviour:
   AddedLives: 0
   GameLevel: 2
   NewLiveRequiredScore: 200
-  Score: 123
+  Score: 0
   CoinScoreValue: 1
   PowerUpScoreValue: 5
   TreasureScoreValue: 10
