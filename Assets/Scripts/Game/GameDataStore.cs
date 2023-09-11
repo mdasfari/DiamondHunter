@@ -19,12 +19,25 @@ public class GameDataStore : MonoBehaviour
     internal bool Gemstone = false;
     internal bool Nicklace = false;
     internal bool WallClimb = false;
-    internal bool WallJump =false;
+    internal bool WallJump = false;
     internal bool EdgeSticky = false;
 
     public void Awake()
     {
         DontDestroyOnLoad(gameObject);
+    }
+
+    public void Start()
+    {
+        Debug.Log("CurrentLives " + CurrentLives.ToString());
+        Debug.Log("AddedLives " + AddedLives.ToString());
+        Debug.Log("GameScore " + GameScore.ToString());
+        Debug.Log("NumberOfJump " + NumberOfJump.ToString());
+        Debug.Log("Gemstone " + Gemstone.ToString());
+        Debug.Log("Nicklace " + Nicklace.ToString());
+        Debug.Log("WallClimb " + WallClimb.ToString());
+        Debug.Log("WallJump " + WallJump.ToString());
+        Debug.Log("EdgeSticky " + EdgeSticky.ToString());
     }
 
     internal void newGame()

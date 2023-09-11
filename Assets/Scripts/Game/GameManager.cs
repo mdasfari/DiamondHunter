@@ -84,6 +84,7 @@ public class GameManager : MonoBehaviour
     public void StartNewGame()
     {
         gameDataStore.newGame();
+        
         SceneManager.LoadScene("BeachIntro");
     }
 
@@ -97,17 +98,20 @@ public class GameManager : MonoBehaviour
             case GameLevels.MainMenu:
                 NormalState = gameData.MainMenuBGM;
                 break;
+            case GameLevels.BeachIntro:
+                NormalState = gameData.BeachIntroBGM;
+                break;
             case GameLevels.Beach:
                 NormalState = gameData.BeachBGM;
                 break;
             case GameLevels.Ruine:
                 NormalState = gameData.RuinsBGM;
                 break;
-            case GameLevels.Win:
-                NormalState = gameData.WinGameBGM;
-                break;
-            case GameLevels.Lose:
-                NormalState = gameData.LoseGameBGM;
+            case GameLevels.Victory:
+                if (gameDataStore.Gemstone && gameDataStore.Nicklace)
+                    NormalState = gameData.WinGameBGM;
+                else
+                    NormalState = gameData.LoseGameBGM;
                 break;
         }
     }
@@ -379,11 +383,13 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            /*
-            switch (sceneName)
+            /*switch (sceneName)
             {
                 case "MainMenu":
                     GameLevel = GameLevels.MainMenu;
+                    break;
+                case "BeachIntro":
+                    GameLevel = GameLevels.BeachIntro;
                     break;
                 case "Beach":
                     GameLevel = GameLevels.Beach;
@@ -393,13 +399,12 @@ public class GameManager : MonoBehaviour
                     break;
                 case "VictoryLost":
                     if (gameDataStore.Gemstone && gameDataStore.Nicklace)
-                        gameDataStore.GameLevel = GameLevels.Win;
+                        GameLevel = GameLevels.Win;
                     else
-                        gameDataStore.GameLevel = GameLevels.Lose;
+                        GameLevel = GameLevels.Lose;
                     break;
             
-            }
-            */
+            }*/
 
             SceneManager.LoadScene(sceneName);
         }

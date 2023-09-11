@@ -17,6 +17,7 @@ public class GameData : ScriptableObject
 {
     [Header("Game Level Background Music")]
     public AudioClip MainMenuBGM;
+    public AudioClip BeachIntroBGM;
     public AudioClip BeachBGM;
     public AudioClip RuinsBGM;
 

@@ -5,8 +5,8 @@ using UnityEngine;
 public enum GameLevels 
 {
     MainMenu,
+    BeachIntro,
     Beach,
     Ruine,
-    Win,
-    Lose
+    Victory
 }
