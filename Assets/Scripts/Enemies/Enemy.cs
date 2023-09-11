@@ -11,10 +11,17 @@ public class Enemy : MonoBehaviour
 
     [Header("Movement")]
     public float travelSpeed;
+    public float returnToPostSpeedMultiplier = 4;
+    public float attackPlayerSpeedMultiplier = 3;
     public bool canPatrol;
     public float patrolDistance;
     public MoveDirections firstLocation;
     public MoveDirections lastLocation;
+
+    [Header("Animation")]
+    public bool canSwitchAnimation;
+    // public string IdleAnimationName;
+    public string TransitAnimationName;
 
     protected float distanceTraveled = 0f;
 
@@ -26,11 +33,13 @@ public class Enemy : MonoBehaviour
     protected Vector3 originalPosition;
     protected Vector3 newTravelLocation;
 
+    private Animator animator;
     protected Transform player;
 
     // Start is called before the first frame update
     protected void Start()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         originalPosition = transform.position;
         direction = firstLocation;
@@ -57,17 +66,25 @@ public class Enemy : MonoBehaviour
                 if (Mathf.Abs(distanceTraveled) >= patrolDistance)
                 {
                     if (direction == firstLocation)
+                    {
                         direction = lastLocation;
+                        transform.Rotate(0f, 180f, 0f);
+                    }
                     else
+                    {
                         direction = firstLocation;
+                        transform.Rotate(0f, 180f, 0f);
+                    }
                 }
             }
             else
             {
-                measuredSpeed = travelSpeed * 4;
+                measuredSpeed = travelSpeed * returnToPostSpeedMultiplier;
                 newTravelLocation = originalPosition - transform.position;
                 if (GlobalFunctions.IsVectorNearBy(originalPosition, transform.position))
                 {
+                    if(canSwitchAnimation)
+                        animator.SetBool(TransitAnimationName, false);
                     distanceTraveled = 0;
                     direction = firstLocation;
                     isAtThePost = true;
@@ -77,7 +94,7 @@ public class Enemy : MonoBehaviour
         else
         {
             newTravelLocation = (player.position - transform.position);
-            measuredSpeed = travelSpeed * 3;
+            measuredSpeed = travelSpeed * attackPlayerSpeedMultiplier;
         }
 
         rb.velocity = newTravelLocation.normalized * measuredSpeed;
@@ -94,6 +111,8 @@ public class Enemy : MonoBehaviour
         if (collision.name == "Player")
         {
             player = collision.gameObject.transform;
+            if (canSwitchAnimation)
+                animator.SetBool(TransitAnimationName, true);
             isChasing = true;
             isAtThePost = false;
         }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74f70a74abd472942bb2306711ff956c, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
-  NormalState: {fileID: 8300000, guid: 96b9966767fa6e9418226cb2d4eb790c, type: 3}
+  NormalState: {fileID: 8300000, guid: d3b5bcadabd320a49bd243dbc21645a4, type: 3}
   ChasingState: {fileID: 8300000, guid: cfe595e9988553749a26ca850db63e6e, type: 3}
   GameOverState: {fileID: 8300000, guid: 5acd370d59a610a48b129d1a3360036a, type: 3}
   MainMenuBGM: {fileID: 8300000, guid: 006979ff2f2cc804e90c52dc99f98c06, type: 3}
@@ -30,13 +30,18 @@ MonoBehaviour:
   NewLife: {fileID: 8300000, guid: 977f262325e7bba40bf1351267527885, type: 3}
   OceanWaves: {fileID: 8300000, guid: e1052e3bca32f874fa073db6813ac5fe, type: 3}
   StartupLives: 3
-  CurrentLives: 3
-  AddedLives: 3
-  GameLevel: 0
+  CurrentLives: 1
+  AddedLives: 0
+  GameLevel: 2
   NewLiveRequiredScore: 200
-  Score: 680
+  Score: 123
   CoinScoreValue: 1
   PowerUpScoreValue: 5
   TreasureScoreValue: 10
+  BatScoreValue: 5
+  BeeScoreValue: 5
+  SlimeScoreValue: 10
+  SkeletonScoreValue: 15
+  SkullScoreValue: 25
   Gemstone: 0
-  Nicklace: 1
+  Nicklace: 0

@@ -56,6 +56,12 @@ public class GameData : ScriptableObject
     public int PowerUpScoreValue = 5;
     public int TreasureScoreValue = 10;
 
+    public int BatScoreValue = 5;
+    public int BeeScoreValue = 5;
+    public int SlimeScoreValue = 10;
+    public int SkeletonScoreValue = 15;
+    public int SkullScoreValue = 25;
+
     [Header("Collectables")]
     public bool Gemstone;
     public bool Nicklace;

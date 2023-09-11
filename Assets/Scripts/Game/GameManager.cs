@@ -222,12 +222,10 @@ public class GameManager : MonoBehaviour
                 result = gameData.Nicklace;
                 break;
             case CollectableTypes.DoubleJump:
-                
-                player.isDoubleJump();
+                result = player.isDoubleJump();
                 break;
             case CollectableTypes.WallGrab:
-                
-                player.isCollectWallGrab();
+                result = player.isCollectWallGrab();
                 break;
         }
 
@@ -308,7 +306,27 @@ public class GameManager : MonoBehaviour
         }
         */
 
-        newScore = 100;
+        switch (enemy.tag)
+        {
+            case "Bee":
+                newScore = gameData.BeeScoreValue;
+                break;
+            case "Bat":
+                newScore = gameData.BatScoreValue;
+                break;
+            case "Skeleton":
+                newScore = gameData.SkeletonScoreValue;
+                break;
+            case "Skull":
+                newScore = gameData.SkullScoreValue;
+                break;
+            case "Slime":
+                newScore = gameData.SlimeScoreValue;
+                break;
+            default:
+                newScore = 0;
+                break;
+        }
 
         AddScore(newScore);
         effectsAudioSource.PlayOneShot(gameData.EnemyKillAudio);

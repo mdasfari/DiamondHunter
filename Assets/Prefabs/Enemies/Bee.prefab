@@ -216,8 +216,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  Speed: 0.5
-  PetrolDistance: 100
+  travelSpeed: 1
+  returnToPostSpeedMultiplier: 4
+  attackPlayerSpeedMultiplier: 3
+  canPatrol: 1
+  patrolDistance: 1
+  firstLocation: 5
+  lastLocation: 6
+  canSwitchAnimation: 0
+  TransitAnimationName: 
 --- !u!70 &8450387895321559894
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

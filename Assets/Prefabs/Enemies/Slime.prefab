@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 4425994538171420475}
   - component: {fileID: 4425994538171420453}
   - component: {fileID: 4425994538171420474}
-  - component: {fileID: 4425994538171420452}
   - component: {fileID: 4425994538171420449}
   - component: {fileID: 4425994538171420455}
   - component: {fileID: 4425994538171420454}
-  m_Layer: 0
+  - component: {fileID: 4425994538171420452}
+  m_Layer: 12
   m_Name: Slime
-  m_TagString: Untagged
+  m_TagString: Slime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4425994538171420472}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 52.5, y: -5.28, z: 18.476562}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -106,24 +106,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4425994538171420452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4425994538171420472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcb554ee27324254e9c7444fc00cb718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
-  travelSpeed: 0.5
-  canPatrol: 1
-  patrolDistance: 200
-  firstLocation: 2
-  lastLocation: 4
 --- !u!50 &4425994538171420449
 Rigidbody2D:
   serializedVersion: 4
@@ -177,3 +159,25 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.125, y: 1}
   m_Direction: 0
+--- !u!114 &4425994538171420452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4425994538171420472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcb554ee27324254e9c7444fc00cb718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  travelSpeed: 1
+  returnToPostSpeedMultiplier: 4
+  attackPlayerSpeedMultiplier: 3
+  canPatrol: 1
+  patrolDistance: 200
+  firstLocation: 4
+  lastLocation: 2
+  canSwitchAnimation: 0
+  TransitAnimationName: 

@@ -15,12 +15,12 @@ MonoBehaviour:
   CanMove: 1
   movementVelocity: 7
   jumpVelocity: 15
-  amountOfJumps: 2
+  amountOfJumps: 1
   EdgeSticky: 0
   EdgeStickyJump: 0.2
   JumpHeightMult: 0.5
   wallSlideVelocity: 2
-  wallClimb: 1
+  wallClimb: 0
   wallClimbVelocity: 3
   wallJump: 0
   wallJumpVelocity: 20

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8807276808077504443}
   - component: {fileID: 8807276808077504444}
   - component: {fileID: 8807276808077504416}
-  - component: {fileID: 8807276808077504445}
+  - component: {fileID: 2995788080237279856}
   m_Layer: 12
   m_Name: Bat
   m_TagString: Bat
@@ -169,7 +169,7 @@ CircleCollider2D:
   m_Offset: {x: 0.042892456, y: -5.3158636}
   serializedVersion: 2
   m_Radius: 5.6832724
---- !u!114 &8807276808077504445
+--- !u!114 &2995788080237279856
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,12 +178,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8807276808077504418}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97cd2d0f132d27b4b969a0431de06d84, type: 3}
+  m_Script: {fileID: 11500000, guid: fcb554ee27324254e9c7444fc00cb718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  travelSpeed: 0.5
+  travelSpeed: 1
   canPatrol: 0
   patrolDistance: 0
   firstLocation: 0
   lastLocation: 0
+  canSwitchAnimation: 1
+  TransitAnimationName: fly
