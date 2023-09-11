@@ -40,6 +40,18 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("MainMenu"); // Load the MainMenu scene.
     }
 
+    public void SettingsMenu()
+    {
+        PlayLocalSound(); // Play click sound.
+        SceneManager.LoadScene("SettingsMenu"); // Load the SettingsMenu scene.
+    }
+
+    public void BackToMainMenu()
+    {
+        PlayLocalSound(); // Play click sound.
+        SceneManager.LoadScene("MainMenu"); // Load the MainMenu scene.
+    }
+
     public void RetryGame()
     {
         PlayLocalSound(); // Play click sound.
