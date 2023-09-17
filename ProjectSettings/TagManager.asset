@@ -86,15 +86,18 @@ TagManager:
   - name: Platform
     uniqueID: 2172613359
     locked: 0
+  - name: Wall
+    uniqueID: 2862716493
+    locked: 0
   - name: Statue
     uniqueID: 3742404297
+    locked: 0
+  - name: MessageBoard
+    uniqueID: 1135680637
     locked: 0
   - name: Player
     uniqueID: 3393438681
     locked: 0
   - name: Weapon
     uniqueID: 2036627437
-    locked: 0
-  - name: Pop-up text
-    uniqueID: 1135680637
     locked: 0

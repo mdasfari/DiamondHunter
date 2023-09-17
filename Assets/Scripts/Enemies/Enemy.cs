@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
     public MoveDirections firstLocation;
     public MoveDirections lastLocation;
 
+    public CharacterHorizontalDirections characterDirection;
+
     [Header("Animation")]
     public bool canSwitchAnimation;
     // public string IdleAnimationName;
@@ -66,15 +68,10 @@ public class Enemy : MonoBehaviour
                 if (Mathf.Abs(distanceTraveled) >= patrolDistance)
                 {
                     if (direction == firstLocation)
-                    {
                         direction = lastLocation;
-                        transform.Rotate(0f, 180f, 0f);
-                    }
                     else
-                    {
                         direction = firstLocation;
-                        transform.Rotate(0f, 180f, 0f);
-                    }
+                    filpCharacter();
                 }
             }
             else
@@ -83,7 +80,7 @@ public class Enemy : MonoBehaviour
                 newTravelLocation = originalPosition - transform.position;
                 if (GlobalFunctions.IsVectorNearBy(originalPosition, transform.position))
                 {
-                    if(canSwitchAnimation)
+                    if (canSwitchAnimation)
                         animator.SetBool(TransitAnimationName, false);
                     distanceTraveled = 0;
                     direction = firstLocation;
@@ -95,9 +92,27 @@ public class Enemy : MonoBehaviour
         {
             newTravelLocation = (player.position - transform.position);
             measuredSpeed = travelSpeed * attackPlayerSpeedMultiplier;
+
+            if ((player.position.x < transform.position.x && characterDirection == CharacterHorizontalDirections.Right)
+                || (player.position.x > transform.position.x && characterDirection == CharacterHorizontalDirections.Left))
+            {
+                filpCharacter();
+            }
         }
 
         rb.velocity = newTravelLocation.normalized * measuredSpeed;
+    }
+
+    private void filpCharacter()
+    {
+        if (characterDirection != CharacterHorizontalDirections.None)
+        {
+            if (characterDirection == CharacterHorizontalDirections.Right)
+                characterDirection = CharacterHorizontalDirections.Left;
+            else
+                characterDirection = CharacterHorizontalDirections.Right;
+        }
+        transform.Rotate(0f, 180f, 0f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

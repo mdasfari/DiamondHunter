@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74f70a74abd472942bb2306711ff956c, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
-  NormalState: {fileID: 8300000, guid: d3b5bcadabd320a49bd243dbc21645a4, type: 3}
+  NormalState: {fileID: 8300000, guid: 006979ff2f2cc804e90c52dc99f98c06, type: 3}
   ChasingState: {fileID: 8300000, guid: cfe595e9988553749a26ca850db63e6e, type: 3}
   GameOverState: {fileID: 8300000, guid: 5acd370d59a610a48b129d1a3360036a, type: 3}
   MainMenuBGM: {fileID: 8300000, guid: 006979ff2f2cc804e90c52dc99f98c06, type: 3}
@@ -32,7 +32,7 @@ MonoBehaviour:
   StartupLives: 3
   CurrentLives: 3
   AddedLives: 0
-  GameLevel: 2
+  GameLevel: 0
   NewLiveRequiredScore: 200
   Score: 0
   CoinScoreValue: 1
