@@ -23,4 +23,5 @@ public class Tooltip : MonoBehaviour
             MessageTrigger._instance.HideToolTip();
         }
     }
+}
 

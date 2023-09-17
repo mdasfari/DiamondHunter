@@ -8690,6 +8690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: "This ladder leads you to the cliffside ruins\u2026 the air grows thick
     with the weight of untold stories"
+  detectionRadius: 0.5
 --- !u!1 &609945461
 GameObject:
   m_ObjectHideFlags: 0
@@ -23603,7 +23604,7 @@ PrefabInstance:
     - target: {fileID: 3609872328679914857, guid: 851ccf34aa193dc47b876bb4acaab2c7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.237
+      value: -2.3
       objectReference: {fileID: 0}
     - target: {fileID: 3609872328679914857, guid: 851ccf34aa193dc47b876bb4acaab2c7,
         type: 3}
@@ -23761,7 +23762,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117145347}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7067642, y: 1.9629991, z: -10}
+  m_LocalPosition: {x: 0.79367065, y: 1.9629991, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1297352586}
@@ -24452,6 +24453,7 @@ MonoBehaviour:
     the queen's own lost relic. According to legend, this object, a jewelled crown
     of unfathomable beauty, has the ability to control desert winds, which, in the
     hands of the right person, has the potential to alter the path of history.
+  detectionRadius: 0.5
 --- !u!212 &1330101900
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25229,7 +25231,7 @@ PrefabInstance:
     - target: {fileID: 3609872328679914857, guid: 851ccf34aa193dc47b876bb4acaab2c7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.237
+      value: -2.3
       objectReference: {fileID: 0}
     - target: {fileID: 3609872328679914857, guid: 851ccf34aa193dc47b876bb4acaab2c7,
         type: 3}
@@ -25508,7 +25510,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700958747}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7067642, y: 1.9629991, z: -10}
+  m_LocalPosition: {x: 0.79367065, y: 1.9629991, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1121647832}
@@ -68333,7 +68335,7 @@ PrefabInstance:
     - target: {fileID: 3609872328679914857, guid: 851ccf34aa193dc47b876bb4acaab2c7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.237
+      value: -2.3
       objectReference: {fileID: 0}
     - target: {fileID: 3609872328679914857, guid: 851ccf34aa193dc47b876bb4acaab2c7,
         type: 3}

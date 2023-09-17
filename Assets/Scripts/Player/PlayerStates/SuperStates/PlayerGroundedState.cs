@@ -51,12 +51,8 @@ public class PlayerGroundedState : PlayerState
         {
             stateMachine.ChangeState(player.WeaponState);
         }
-        if (JumpInput && player.JumpState.CanJump())
-        {
-            player.InputHandler.ExitJumpInput();
-            stateMachine.ChangeState(player.JumpState);
-        }
-        else if (isTouchRambler && yInput == 1f)
+
+        if (isTouchRambler && yInput == 1f)
         {
             switch (player.ramplingType)
             {
@@ -67,6 +63,12 @@ public class PlayerGroundedState : PlayerState
                     stateMachine.ChangeState(player.RamblingLadderState);
                     break;
             }
+        }
+
+        if (JumpInput && player.JumpState.CanJump())
+        {
+            player.InputHandler.ExitJumpInput();
+            stateMachine.ChangeState(player.JumpState);
         }
         else if (!isGrounded)
         {
