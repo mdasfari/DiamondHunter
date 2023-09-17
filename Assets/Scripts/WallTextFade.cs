@@ -3,7 +3,6 @@ using UnityEngine.EventSystems;
 using TMPro;
 using System.Collections;
 
-
 [RequireComponent(typeof(CanvasGroup))]
 public class WallTextFade : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -13,19 +12,19 @@ public class WallTextFade : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     private void Awake()
     {
         canvasGroup = GetComponent<CanvasGroup>();
-        canvasGroup.alpha = 0; // Start with the text invisible
+        canvasGroup.alpha = 0.15f; // Start with the text at 30% opacity
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
         StopAllCoroutines();
-        StartCoroutine(FadeTo(1f)); // Fade in
+        StartCoroutine(FadeTo(1f)); // Fade to 100% opacity
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         StopAllCoroutines();
-        StartCoroutine(FadeTo(0f)); // Fade out
+        StartCoroutine(FadeTo(0.7f)); // Fade back to 30% opacity
     }
 
     private IEnumerator FadeTo(float targetAlpha)
