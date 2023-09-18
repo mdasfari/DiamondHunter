@@ -73,10 +73,10 @@ Version 1.1 (Sept 2023)
 - **Mohammad Asfari** - Game Designer and Programmer
 - **Kathleen Jiang** - Artist
 - **Patricia Manhenda** - Sound Designer
-- **Alex Tsui, Cheuk Lun** - Project Manager and Game Designer
+- **Alex, Tsui Cheuk Lun** - Project Manager and Game Designer
 
 ## Inactive Member
-- **Tristan Greenwood** - Game Designer and Quality Assurance ~~
+- **Tristan Greenwood** 
 
 
 See also the list of [contributors](https://github.com/your/repo/contributors) who participated in this project.
