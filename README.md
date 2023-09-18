@@ -43,10 +43,9 @@ In "Lost Civilization Adventure," players assume the role of an intrepid explore
 ### Controls
 
 - Movement: Use the arrow keys or W, A, S, D to move the character.
-- Interact: Press ‘E’ to interact with objects and characters.
-- Jump: Press ‘Space’ to jump.
-- Attack: Click the left mouse button to attack with the equipped weapon.
-- Inventory: Press ‘I’ to open the inventory.
+- Jump: Press ‘Space’ to jump. (Double-Jump: Press Twice)
+- Attack: Press 'Control' button to attack with the weapon.
+- To reveal story (aka. lore on the wall), mouse-over with cursor.
 
 ## Game World
 
@@ -67,14 +66,14 @@ Please read [CONTRIBUTING.md](https://github.com/your/repo/blob/master/CONTRIBUT
 
 ## Versioning
 
-Version 1.0 (June 2023)
+Version 1.1 (Sept 2023)
 
 ## Authors
 
 - **Mohammad Asfari** - Game Designer and Programmer
 - **Kathleen Jiang** - Artist
 - **Patricia Manhenda** - Sound Designer
-- **Tristan Greenwood** - Game Designer and Quality Assurance
+- ~~ **Tristan Greenwood** - Game Designer and Quality Assurance ~~
 - **Alex Tsui** - Project Manager and Game Designer
 
 See also the list of [contributors](https://github.com/your/repo/contributors) who participated in this project.
