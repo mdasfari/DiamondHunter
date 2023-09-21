@@ -64,7 +64,13 @@ public class GameManager : MonoBehaviour
         playerData.wallJump = false;
         playerData.EdgeSticky = false;
 
+        Time.timeScale = 1;
         SceneManager.LoadScene("BeachIntro");
+    }
+
+    public void ToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     public bool IsGamePaused { get; private set; }

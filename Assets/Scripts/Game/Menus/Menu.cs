@@ -37,7 +37,7 @@ public class Menu : MonoBehaviour
     public void QuitToMainMenu()
     {
         PlayLocalSound(); // Play click sound.
-        SceneManager.LoadScene("MainMenu"); // Load the MainMenu scene.
+        gameManager.ToMainMenu();
     }
 
     public void SettingsMenu()

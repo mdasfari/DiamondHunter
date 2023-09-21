@@ -23,6 +23,7 @@ public class PlayerData : ScriptableObject
 
     
     [Header("Wall Climb State")]
+    public LayerMask Walls;
     public bool wallClimb = false;
     public float wallClimbVelocity = 3f;
 

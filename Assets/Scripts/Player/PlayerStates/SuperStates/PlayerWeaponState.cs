@@ -6,6 +6,7 @@ using UnityEngine.Events;
 
 public class PlayerWeaponState : PlayerState
 {
+    private bool AttackInput;
     private bool isAttacking;
 
     public Transform originalBoundry;

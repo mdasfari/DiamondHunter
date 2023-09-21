@@ -20,6 +20,9 @@ MonoBehaviour:
   EdgeStickyJump: 0.2
   JumpHeightMult: 0.5
   wallSlideVelocity: 2
+  Walls:
+    serializedVersion: 2
+    m_Bits: 16384
   wallClimb: 0
   wallClimbVelocity: 3
   wallJump: 0
@@ -30,7 +33,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4096
   weaponBoundryRadius: 0.6
-  weaponTime: 0.7
+  weaponTime: 0.2
   groundCheckRadius: 0.4
   wallCheckDistance: 0.5
   ramblingCheckDistance: 0.001
