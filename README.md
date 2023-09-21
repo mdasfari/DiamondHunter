@@ -70,13 +70,10 @@ Version 1.1 (Sept 2023)
 
 ## Authors
 
-- **Mohammad Asfari** - Game Designer and Programmer
-- **Kathleen Jiang** - Artist
-- **Patricia Manhenda** - Sound Designer
-- **Alex, Tsui Cheuk Lun** - Project Manager and Game Designer
-
-## Inactive Member
-- **Tristan Greenwood** 
+- **Mohammad Asfari** - Game Designer, Level designer, Lead Programmer, and Tester
+- **Kathleen Jiang** - Artist, Level Designer, and Tester
+- **Patricia Manhenda** - Sound Designer, Creative member, and Tester
+- **Alex, Tsui Cheuk Lun** - Document Control, Project Manager, and Tester
 
 ## License
 
