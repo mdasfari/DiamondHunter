@@ -26,8 +26,8 @@ To get started with "Diamond Hunter: Lost Civilization Adventure," clone this re
 
 Ensure you have the following installed on your system:
 
-- Unity Game Engine (Version used in development)
-- Git for version control
+- Unity Game Engine (2019.4.16)
+- Git for version control (optional)
 
 ### Installation
 
@@ -43,7 +43,7 @@ In "Lost Civilization Adventure," players assume the role of an intrepid explore
 ### Controls
 
 - Movement: Use the arrow keys or W, A, S, D to move the character.
-- Jump: Press ‘Space’ to jump. (Double-Jump: Press Twice)
+- Jump: Press ‘Space’ to jump. (Double-Jump: Press Sapce again while in mid-air)
 - Attack: Press 'Control' button to attack with the weapon.
 - To reveal story (aka. lore on the wall), mouse-over with cursor.
 
@@ -62,7 +62,7 @@ The art style of "Lost Civilization Adventure" is inspired by retro 2D platforme
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/your/repo/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+See also the list of [contributors](https://github.com/mdasfari/DiamondHunter/graphs/contributors) who participated in this project.
 
 ## Versioning
 
@@ -78,16 +78,15 @@ Version 1.1 (Sept 2023)
 ## Inactive Member
 - **Tristan Greenwood** 
 
-
-See also the list of [contributors](https://github.com/your/repo/contributors) who participated in this project.
-
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is opened licensed.
 
 ## Acknowledgments
 
 - Thanks to all the team members for their hard work and dedication.
+- Special thanks to the University of London for provide us with the valuable material which make this happen.
 - Special thanks to the Unity community for providing valuable resources.
+- Thanks to all free resources sites.
 - Hat tip to classic Metroidvania games for inspiration.
 
